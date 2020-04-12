@@ -9,6 +9,9 @@
 ## 目錄
 
 1. 第一週：1px 也不差的版型控制術
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_1)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_1/index.html)
 
 2. 第二週：Flexbox 網頁排版術
 
