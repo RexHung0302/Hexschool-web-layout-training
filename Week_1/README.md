@@ -33,3 +33,5 @@
 設計稿：[點我](https://xd.adobe.com/view/3b004539-6382-47f6-51e9-f3b73ea5063e-4d31/)
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_1/index.html)
+
+Blog: [點我](https://rexhung0302.github.io/2020/04/12/20200412/#more)

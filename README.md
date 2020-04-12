@@ -12,6 +12,8 @@
     > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_1)
     >
     > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_1/index.html)
+    >
+    > [Blog](https://rexhung0302.github.io/2020/04/12/20200412/#more)
 
 2. 第二週：Flexbox 網頁排版術
 
