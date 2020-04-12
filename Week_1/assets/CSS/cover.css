@@ -4,8 +4,9 @@ body {
   height: 100%;
 }
 
-.article {
+.max-width {
   width: 1200px;
+  max-width: 1200px;
 }
 
 /****** 共用 Class ******/
@@ -181,22 +182,23 @@ body {
 
 .skills {
   height: 494px;
-  background-color: #415165;
-  padding: 24px 102px;
   margin-bottom: 72px;
 }
 
-.skills::after {
-  content: "";
+.skills .skills__bg {
   position: absolute;
   display: block;
   height: 360px;
   top: 50%;
   margin-top: -180px;
   background-color: #96a9c4;
-  width: 999999px;
-  left: -999px;
+  width: 100%;
   z-index: -1;
+}
+
+.skills .skills__content {
+  background-color: #415165;
+  padding: 24px 102px;
 }
 
 /* 這邊 CSS 另外下 因為 1px 也不能差，設計稿底部的標題離內容為 32px 這邊為 40px 所以分開下，另外設計稿寬度為 216px 所以這邊照設計稿  */
@@ -264,7 +266,6 @@ body {
 }
 
 .footer .content {
-  width: 529px;
   color: #ffffff;
   padding-top: 32px;
   padding-bottom: 48px;
