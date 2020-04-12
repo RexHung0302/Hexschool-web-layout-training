@@ -1,0 +1,288 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  width: 1200px;
+}
+
+/****** 共用 Class ******/
+
+.position-relative {
+  position: relative;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+/* 共用副標題 */
+
+.subtitle {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000000;
+}
+
+.subtitle__ch {
+  font-size: 32px;
+  font-family: "Medium";
+  padding-right: 16px;
+}
+
+.subtitle__eg {
+  font-size: 24px;
+  color: #a00404;
+  font-family: "Roboto", "Medium";
+}
+
+/* 包在深藍框內的副標題 */
+
+.subtitle-withBox {
+  color: #ffffff;
+  font-family: "Medium";
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.subtitle-withBox .subtitle-withBox-ch {
+  font-size: 32px;
+  line-height: 45px;
+  padding-right: 16px;
+}
+
+.subtitle-withBox .subtitle-withBox-eg {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* 共用副標題內的內文 */
+
+.content {
+  font-family: "Light";
+  line-height: 36px;
+  font-size: 24px;
+  padding-left: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+.content .li {
+  padding-left: 48px;
+  padding-bottom: 32px;
+}
+
+.content .li:last-child {
+  padding-bottom: 0;
+}
+
+/* 時間軸 */
+
+.timeLine .li::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  left: 16px;
+  top: 10px;
+  background-color: #96a9c4;
+}
+
+.timeLine .li::after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #96a9c4;
+  top: 20px;
+  height: 100%;
+  left: 23px;
+}
+
+.timeLine .li:last-child::after {
+  content: "";
+  position: absolute;
+  border-left: none;
+}
+
+/* ul li 裡的副標題 */
+
+.content .li .li__subtitle {
+   line-height: 36px;
+   font-size: 24px;
+}
+
+/****** 獨立 CSS ******/
+
+/* 標題姓名 */
+
+.title {
+  font-size: 80px;
+  font-family: "Andale Mono", "Regular";
+  padding-bottom: 30px;
+  border-bottom: 2px solid #000000;
+  line-height: 90px;
+}
+
+/* 大頭貼 */
+
+.headShot {
+  margin-top: 35px;
+  margin-bottom: 42px;
+}
+
+.headShot__img {
+  width: 324px;
+  height: 324px;
+}
+
+/* 個人資料 */
+
+.profile {
+  margin-bottom: 79px;
+}
+
+.profile .paragraphOne {
+  margin-bottom: 24px;
+}
+
+.profile .paragraphTwo {
+  margin-bottom: 79px;
+}
+
+/* 學歷 */
+
+.education {
+  margin-bottom: 72px;
+}
+
+/* 技能 */
+
+.skills {
+  height: 494px;
+  background-color: #415165;
+  padding: 24px 102px;
+  margin-bottom: 72px;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 360px;
+  top: 50%;
+  margin-top: -180px;
+  background-color: #96a9c4;
+  width: 999999px;
+  left: -999px;
+  z-index: -1;
+}
+
+/* 這邊 CSS 另外下 因為 1px 也不能差，設計稿底部的標題離內容為 32px 這邊為 40px 所以分開下，另外設計稿寬度為 216px 所以這邊照設計稿  */
+
+.skills .content {
+  width: 216px;
+  margin-top: 40px;
+  border-left: 1px solid #96a9c4;
+  color: #ffffff;
+  font-size: 24px;
+  padding-left: 24px;
+}
+
+.skills .content .li {
+  padding-left: 0px;
+  margin-bottom: 16px;
+  line-height: 36px;
+}
+
+.skills .content .li {
+  margin-bottom: 0;
+}
+
+/* 工作經驗 */
+
+.workExperience {
+  margin-bottom: 72px;
+}
+
+.workExperience .content {
+  padding-left: 48px;
+}
+
+.workExperience .content::after {
+  content: "";
+  border-left: 1px solid #96a9c4;
+  position: absolute;
+  left: 24px;
+  height: 100%;
+  width: 1px;
+  top: 0;
+}
+
+.workExperience .content .li {
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.workExperience .imgLogo {
+  width: 89.5px;
+  height: 66.85px;
+}
+
+.workExperience .imgTree {
+  width: 72px;
+  height: 72px;
+}
+
+/* 頁尾 */
+
+.footer {
+  background-color: #415165;
+  padding-top: 31px;
+}
+
+.footer .content {
+  width: 529px;
+  color: #ffffff;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.footer .content .li {
+  padding-left: 0;
+  padding-bottom: 16px;
+}
+
+.footer .content .li:last-child {
+  padding-bottom: 0;
+}
+
+.footer .img {
+  padding-right: 24px;
+}
+
+.footer .img:last-child {
+  padding-right: 0px;
+}
