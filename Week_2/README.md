@@ -26,6 +26,8 @@
 
 ## 連結
 
+Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_2)
+
 設計稿：[點我](https://xd.adobe.com/view/7cc08d73-d444-4b6f-7a94-01ffbdf8ce0a-0af1/)
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_2/index.html)
