@@ -4,6 +4,8 @@
 
 這是一個為期八週的切版直播班，從 0 到 1 的教學，俗話說的好，養兵千日用在一時，平時打好基礎功不怕來日任何困難；每一週會有一個版型題目，也會有小組練習題目，這邊會放練習後的程式碼也許也會有小組的練習程式碼。
 
+> *底下資料夾有一個 Assets 為專門放每週每個練習的圖片，需要練習的朋友可以抓取下來使用！*
+
 ---
 
 ## 目錄
@@ -16,6 +18,11 @@
     > [Blog](https://rexhung0302.github.io/2020/04/12/20200412/#more)
 
 2. 第二週：Flexbox 網頁排版術
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_2)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_2/index.html)
+    >
+    > [Blog](https://rexhung0302.github.io/2020/04/19/20200419/#more)
 
 3. 第三週：伸縮自如的 RWD 手機網頁排版術
 

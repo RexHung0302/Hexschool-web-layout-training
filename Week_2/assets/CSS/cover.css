@@ -1,0 +1,287 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+  width: 496px;
+  max-width: 496px;
+}
+
+/****** 共用 Class ******/
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-center-between {
+  justify-content: space-between;
+}
+
+.fxd-c {
+  flex-direction: column;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+
+/* wrap */
+
+.wrap {
+  font-style: italic;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.wrap .title {
+  line-height: 75px;
+  font-size: 64px;
+}
+
+/* First Part */
+
+.banner {
+  width: 100%;
+  height: 960px;
+  background: url('../Images/banner.png') no-repeat;
+  background-size: cover;
+  margin-bottom: 64px;
+}
+
+.banner .banner_content {
+  color: #FFFFFF;
+  max-width: 308px;
+}
+
+.banner .banner_content .text {
+  line-height: 42px;
+}
+
+.banner .banner_content .text.subText {
+  margin-bottom: 64px;
+}
+
+.banner .banner_content .h1 {
+  line-height: 94px;
+  font-size: 80px;
+  margin-bottom: 32px;
+}
+
+/* Second Part */
+
+.about .title {
+  margin-bottom: 40px;
+}
+
+.about .profileImg {
+  width: 384px;
+  height: 384px;
+  margin-bottom: 24px;
+}
+
+.about .ul.profileInfo .li {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.about .ul.profileInfo .li:last-child {
+  margin-bottom: 32px;
+}
+
+.about .hr {
+  border: 1px solid #000;
+  margin-bottom: 34px;
+}
+
+.about .ul.profileExp .li {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.about .ul.profileExp .li:last-child {
+  margin-bottom: 56px;
+}
+
+.about .ul.profileExp .li::before {
+  content: '';
+  position: relative;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+  left: -16px;
+}
+
+/* Third Part */
+
+.introduction {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+
+.introduction .introduction__content .title {
+  margin-bottom: 16px;
+}
+
+.introduction .introduction__content .subTitle {
+  line-height: 42px;
+  margin-bottom: 32px;
+}
+
+.introduction .introduction__content .dec {
+  line-height: 42px;
+  font-size: 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.introduction .introduction__content .dec:last-child {
+  margin-bottom: 48px;
+}
+
+.introduction .introduction__content .firstImg {
+  width: 792px;
+  height: 461px;
+  margin-bottom: 40px;
+}
+
+.introduction .introduction__content .imgRow {
+  max-width: 1200px;
+  padding-bottom: 160px;
+}
+
+.introduction .introduction__content .imgRow .img {
+  width: 588px;
+  height: 416px;
+}
+
+.introduction .introduction__content .imgRow .img:first-child {
+  padding-right: 24px;
+}
+
+/* Fourth Part */
+
+.works {
+  background: url(../Images/photo-1561291386-5be50364cfb5.png) no-repeat;
+  background-size: cover;
+}
+
+.works .title {
+  margin-bottom: 24px;
+}
+
+.works .subTitle {
+  line-height: 42px;
+  font-size: 20px;
+  margin-bottom: 48px;
+}
+
+.works .li .img {
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+
+.works .li:last-child .img {
+  margin-right: 0px;
+}
+
+.works .li .dec {
+  color: #FFFFFF;
+  line-height: 42px;
+  font-size: 20px;
+}
+
+.works .twoRow {
+  margin-bottom: 100px;
+}
+
+.works .ul:last-child {
+  padding-bottom: 204px;
+}
+
+/* Fifth */
+
+.contact {
+  padding-top: 64px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.contact .contact__content .title {
+  margin-bottom: 16px;
+}
+
+.contact .contact__content .dec {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+.contact .contact__content .dec:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 80px;
+}
