@@ -104,6 +104,7 @@ body {
   height: 960px;
   background: url('../Images/banner.png') no-repeat;
   background-size: cover;
+  background-position: center center;
   margin-bottom: 64px;
 }
 
