@@ -1,0 +1,69 @@
+i.fa-icon {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+i.icon-dollar {
+  background: url('../Images/icon-dollar.svg') no-repeat center;
+}
+
+i.icon-clock {
+  background: url('../Images/icon-clock.svg') no-repeat center;
+}
+
+i.icon-heart {
+  background: url('../Images/icon-heart.svg') no-repeat center;
+}
+
+i.icon-glasses {
+  background: url('../Images/icon-glasses.svg') no-repeat center;
+}
+
+i.icon-diamond {
+  background: url('../Images/icon-diamond.svg') no-repeat center;
+}
+
+i.icon-sun {
+  background: url('../Images/icon-sun.svg') no-repeat center;
+}
+
+i.icon-thunder {
+  background: url('../Images/icon-thunder.svg') no-repeat center;
+}
+
+i.icon-diamond-white {
+  background: url('../Images/icon-diamond-white.svg') no-repeat center;
+}
+
+i.icon-sun-white {
+  background: url('../Images/icon-sun-white.svg') no-repeat center;
+}
+
+i.icon-thunder-white {
+  background: url('../Images/icon-thunder-white.svg') no-repeat center;
+}
+
+i.icon-arrow-right {
+  background: url('../Images/icon-arrow.svg') no-repeat center;
+}
+
+i.icon-fb {
+  background: url('../Images/icon-fb.svg') no-repeat center;
+}
+
+i.icon-ig {
+  background: url('../Images/icon-ig.svg') no-repeat center;
+}
+
+i.icon-line {
+  background: url('../Images/icon-line.svg') no-repeat center;
+}
+
+i.icon-phone {
+  background: url('../Images/icon-phone.svg') no-repeat center;
+}
+
+i.icon-mail {
+  background: url('../Images/icon-mail.svg') no-repeat center;
+}

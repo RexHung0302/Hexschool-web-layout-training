@@ -25,6 +25,11 @@
     > [Blog](https://rexhung0302.github.io/2020/04/19/20200419/#more)
 
 3. 第三週：伸縮自如的 RWD 手機網頁排版術
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_3)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_3/index.html)
+    >
+    > [Blog](https://rexhung0302.github.io/2020/04/19/20200429/#more)
 
 4. 第四週：多頁式網頁設計
 
