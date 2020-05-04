@@ -8,9 +8,9 @@
 
 ## 關卡目標
 
-1. RWD 響應式設計原理
+1. 多頁 RWD 管理方式
 
-2. CSS Media Queries 語法運用
+2. RWD 斷點設計
 
 ---
 
