@@ -34,7 +34,7 @@
 4. 第四週：多頁式網頁設計
     > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_4)
     >
-    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/index.html)
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
     >
     > [Blog](#)
     >

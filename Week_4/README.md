@@ -51,7 +51,7 @@ Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-train
 
 設計稿：[點我](https://xd.adobe.com/view/8e014262-a911-458f-7b23-71a7fe4819c6-f830/grid)
 
-Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/index.html)
+Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
 
 Blog: [點我](#)
 
@@ -59,18 +59,18 @@ Blog: [點我](#)
 
 本週頁面較多，目錄在此：
 
-1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/index.html)
+1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
 
-2. [系列鏡框 OP](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/product-op.html)
+2. [系列鏡框 OP](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/product-op.html)
 
-3. [系列鏡框 SUNGLASSES](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/product-sunglasses.html)
+3. [系列鏡框 SUNGLASSES](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/product-sunglasses.html)
 
-4. [門市據點](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/location.html)
+4. [門市據點](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/location.html)
 
-5. [門市據點 分店資訊](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/location-detail.html)
+5. [門市據點 分店資訊](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/location-detail.html)
 
-6. [部落格](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/blog.html)
+6. [部落格](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/blog.html)
 
-7. [部落格 文章內容](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/blog-detail.html)
+7. [部落格 文章內容](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/blog-detail.html)
 
-8. [常見問題](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/FAQ.html)
+8. [常見問題](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/FAQ.html)
