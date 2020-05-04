@@ -1,0 +1,43 @@
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+@import './base/normalize'; //- 初始化 CSS
+
+/*------------------------------------*\
+    $MODULE
+\*------------------------------------*/
+
+// @import './module/bootstrap-v4.2/bootstrap.scss';           //- BootStrap-v4.2
+
+/*------------------------------------*\
+    $VARIABLE
+\*------------------------------------*/
+
+@import './helper/variable';    //- 共用 變數
+@import './helper/mixin.scss';  //- 函式
+@import './base/base';          //- 共用 CSS
+
+/*------------------------------------*\
+    $THEMES
+\*------------------------------------*/
+
+@import './themes/icon';    //- Icon CSS
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+
+//- layout
+@import './layout/header'; //- Header
+@import './layout/footer'; //- Footer
+
+//- pages
+@import './pages/index';                    //- 主頁
+@import './pages/_product_op';              //- 系列鏡框 OP
+@import './pages/_product_sunglasses';      //- 系列鏡框 SUNGLASSES
+@import './pages/location';                 //- 門市據點
+@import './pages/location_detail';          //- 門市據點 分店資訊
+@import './pages/blog';                     //- 部落格
+@import './pages/blog_content';             //- 部落格文章
+@import './pages/faq';                      //- FAQ

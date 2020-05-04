@@ -1,0 +1,597 @@
+.main_index {
+  padding-top: 108px;
+  @media screen and (max-width: $pads-media) {
+    padding-top: 50px;
+  }
+  // Banner
+  .banner {
+    background: url('../Images/banner.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: $Primary;
+    .slogan {
+      width: 100%;
+      text-align: end;
+      .slogan__subTitle {
+        text-align: right;
+        font-size: 36px;
+        line-height: 54px;
+        @media screen and (max-width: $pads-media) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 16px;
+        }
+      }
+      .slogan__title {
+        font-size: 64px;
+        line-height: 96px;
+        @media screen and (max-width: $pads-media) {
+          font-size: 48px;
+          line-height: 72px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+  // Business Ttem
+  .businessItem {
+    padding: 64px 0 80px 0;
+    background-color: #AA06010D;
+    margin-bottom: 64px;
+    .title {
+      line-height: 48px;
+      font-size: 32px;
+      color: $Primary;
+      margin-bottom: 60px;
+      @media screen and (max-width: $pads-media) {
+        font-size: 32px;
+        margin-bottom: 32px;
+      }
+      @media screen and (max-width: $phones-media) {
+        font-size: 24px;
+      }
+    }
+    .li {
+      text-align: center;
+      padding: 16px 37px 16px 37px;
+      margin-right: 24px;
+      transition: all .5s linear;
+      width: calc(100% / 4 - 24px);
+      &:last-child {
+        margin-right: 0;
+      }
+      @media screen and (max-width: $pads-media) {
+        padding: 20px 50px 20px 50px;
+        width: calc(100% / 2 - 24px);
+        margin-bottom: 12px;
+      }
+      @media screen and (max-width: $phones-media) {
+        padding: 20px 64px 20px 64px;
+        width: calc(100%);
+        margin-right: 0;
+        margin-bottom: 0px;
+      }
+    }
+    .li.moneyLi {
+      @media screen and (max-width: $pads-media) {
+        order: 3;
+      }
+    }
+    .li.timeLi {
+      @media screen and (max-width: $pads-media) {
+        order: 1;
+      }
+    }
+    .li.serviceLi {
+      @media screen and (max-width: $pads-media) {
+        order: 2;
+      }
+    }
+    .li.glassesLi {
+      @media screen and (max-width: $pads-media) {
+        order: 4;
+      }
+    }
+    .icon {
+      width: 100px;
+      height: 100px; 
+      margin: 0 auto;
+      margin-bottom: 40px;
+      transition: all .5s linear;
+      @media screen and (max-width: $pads-media) {
+        width: 80px;
+        height: 80px; 
+        margin-bottom: 16px;
+      }
+    }
+    .subTitle {
+      line-height: 36px;
+      font-size: 24px;
+      color: $Secondary;
+      margin-bottom: 4px;
+      @media screen and (max-width: $pads-media) {
+        margin-bottom: 8px;
+        line-height: 30px;
+        font-size: 20px;
+      }
+    }
+    .dec {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+  // Collection
+  .collection {
+    margin-bottom: 80px;
+    .title {
+      line-height: 72px;
+      font-size: 48px;
+      color: $Secondary;
+      margin-bottom: 60px;
+    }
+    .ul {
+      @media screen and (max-width: $pads-media) {
+        padding: 0 48px
+      }
+      @media screen and (max-width: $phones-media) {
+        padding: 0 11px
+      }
+    }
+    .li {
+      margin-bottom: 32px;
+      .herfImg {
+        flex-basis: 70%;
+        cursor: default;
+        max-width: 792px;
+        @media (max-width: 1100px) {
+          flex-basis: 60%;
+          width: 411px;
+        }
+        @media screen and (max-width: $phones-media) {
+          display: none;
+        }
+        &:hover {
+          .product-2-hover {
+            z-index: 1;
+            @media screen and (max-width: $phones-media) {
+              z-index: -1;
+            }
+          }
+        }
+        .img {
+          width: 100%;
+          max-width: 792px;
+          max-height: 320px;
+          @media screen and (max-width: $pads-media) {
+            max-width: 411px;
+            max-height: 168px;
+          }
+          @media screen and (max-width: $phones-media) {
+            max-width: 352px;
+            max-height: 134px;
+          }
+        }
+      }
+      .product-2-hover {
+        position: absolute;
+        width: 796px;
+        top: 0;
+        z-index: -1;
+      }
+      .item__dec .icon-diamond-white,
+      .item__dec .icon-sun-white,
+      .item__dec .icon-thunder-white {
+        display: none;
+      }
+      .item {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 48px;
+          height: 48px;
+          margin-right: 8px;
+        }
+        .item__dec {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-basis: 30%;
+          @media (max-width: 1100px){
+            flex-basis: 40%;
+          }
+          @media screen and (max-width: $phones-media) {
+            width: 352px;
+            height: 134px;
+            margin-left: 0;
+            flex-basis: 100%;
+          }
+          .icon-diamond,
+          .icon-sun,
+          .icon-thunder {
+            @media screen and (max-width: $phones-media) {
+              display: none;
+            }
+          }
+          .icon-diamond-white,
+          .icon-sun-white,
+          .icon-thunder-white {
+            @media screen and (max-width: $phones-media) {
+              display: inline-block;
+            }
+          }
+        }
+        .item__dec__text {
+          line-height: 72px;
+          font-size: 48px;
+          color: $Primary;
+          @media screen and (max-width: $pads-media) {
+            line-height: 42px;
+            font-size: 28px;
+          }
+          @media screen and (max-width: $phones-media) {
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+    .li:nth-child(even) .item {
+      flex-direction: row-reverse;
+      @media screen and (max-width: $pads-media) {
+        flex-direction: row;
+      }
+    }
+    .li:nth-child(even) .item__dec {
+      margin-left: 0;
+      margin-right: 24px;
+      @media screen and (max-width: $pads-media) {
+        margin-right: 0;
+      }
+      @media screen and (max-width: $phones-media) {
+        margin-left: 0;
+      }
+    }
+    .li:first-child .item__dec {
+      @media screen and (max-width: $phones-media) {
+        background: url('../Images/product-1.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .li:nth-child(2) .item__dec {
+      @media screen and (max-width: $phones-media) {
+        background: url('../Images/product-2.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .li:nth-child(3) .item__dec {
+      @media screen and (max-width: $phones-media) {
+        background: url('../Images/product-3.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  // CollectionSecond
+  .collectionSecond {
+    position: relative;
+    padding-top: 64px;
+    background: url('../Images/bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    .title {
+      line-height: 72px;
+      font-size: 48px;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+      @media screen and (max-width: $pads-media) {
+        line-height: 48px;
+        font-size: 32px;
+        color: #FFFFFF;
+        margin-bottom: 32px;
+      }
+    }
+    .album {
+      margin-bottom: 60px;
+      padding: 0 48px;
+      .first {
+        margin-right: 8px;
+      }
+      .second__img {
+        margin-bottom: 8px;
+      }
+      .fourth {
+        margin-left: 8px;
+      }
+      .fourth__img {
+        margin-bottom: 8px;
+      }
+    }
+    .moreArea {
+      height: 167px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .btnArea {
+      position: relative;
+      padding-right: 84px;
+      .btnArea__btn {
+        position: absolute;
+        background: #FFFFFF;
+        top: 50%;
+        margin-top: -52.5px;
+        width: calc(100% - 21px);
+        left: 22px;
+        &:hover {
+          .btnArea__btn__text::after {
+            top: -156px;
+          }
+          .btnArea__btn__text::before {
+            top: -94px;
+          }
+          .icon {
+            right: -20px;
+          }
+        }
+      }
+      .btnArea__btn__text {
+        line-height: 108px;
+        font-size: 72px;
+        color: $Primary;
+        padding-left: 32px;
+        margin-right: 17px;
+        &::after {
+          content: 'MORE';
+          position: absolute;
+          color: $Primary;
+          transition: top .5s;
+          top: 0;
+          left: 32px;
+        }
+        &::before {
+          content: 'MORE';
+          position: absolute;
+          color: $Primary;
+          top: 0;
+          transition: top .5s;
+        }
+        @media screen and (max-width: $pads-media) {
+          line-height: 30px;
+          font-size: 40px;
+        }
+      }
+      .icon {
+        position: relative;
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        right: 0;
+        transition: right .5s;
+        @media screen and (max-width: $pads-media) {
+          width: 27px;
+          height: 27px;
+        }
+      }
+    }
+    .titleTwo {
+      padding-bottom: 268px;
+      @media screen and (max-width: $pads-media) {
+        padding-bottom: 332px;
+        font-size: 32px;
+        line-height: 48px;
+      }
+      @media screen and (max-width: $phones-media) {
+        padding-bottom: 189px;
+      }
+    }
+    .albumSecond {
+      margin-bottom: 144px;
+      padding: 0 50px;
+      @media screen and (max-width: $pads-media) {
+        margin-bottom: 40px;
+      }
+      @media screen and (max-width: $phones-media) {
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+        padding: 0 11px;
+      }
+      .imgText {
+        position: relative;
+        width: 585px;
+        height: 592px;
+        white-space: nowrap;
+        overflow: hidden;
+        @media screen and (max-width: $pads-media) {
+          width: 322px;
+          height: 280px;
+        }
+        @media screen and (max-width: $phones-media) {
+          margin-right: 0px;
+          width: 352px;
+          height: 284px;
+        }
+      }
+      .imgText.doubleA {
+        background: url('../Images/product-8.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 30px;
+        @media screen and (max-width: $phones-media) {
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+      }
+      .imgText.youth {
+        background: url('../Images/product-9.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+        @media screen and (max-width: $phones-media) {
+          margin-left: 0;
+          margin-right: 0;
+          margin: 0 auto;
+        }
+      }
+      .subTitle {
+        line-height: 108px;
+        font-size: 72px;
+        color: $Primary;
+        z-index: 1;
+        @media screen and (max-width: $pads-media) {
+          font-size: 32px;
+          line-height: 25px;
+        }
+      }
+      .filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: hsla(0,0%,100%,.3);
+      }
+    }
+  }
+  // Card Menu
+  .cardMenu {
+    position: relative;
+    height: 306px;
+    transition: all .5s linear;
+    @media screen and (max-width: $pads-media) {
+      height: 632px;
+    }
+    @media screen and (max-width: $phones-media) {
+      height: 1500px;
+    }
+    .cardMenu__list {
+      width: 100%;
+      .ul {
+        position: absolute;
+        width: 100%;
+        top: -210px;
+        margin: 0 auto;
+        padding: 0 48px;
+        @media screen and (max-width: $pads-media) {
+          top: -254px;
+        }
+        @media screen and (max-width: $phones-media) {
+          top: -210px;
+        }
+        .li {
+          transition: all .5s linear;
+          width: calc(100% / 4 - 24px);
+          margin-right: 24px;
+          max-width: 282px;
+          &:last-child {
+            margin-right: 0;
+          }
+          @media screen and (max-width: $pads-media) {
+            width: calc(100% / 2 - 24px);
+            margin-bottom: 24px;
+          }
+          @media screen and (max-width: $phones-media) {
+            width: 100%;
+            margin-bottom: 16px;
+            margin-right: 0;
+          }
+        }
+        .li:nth-child(even) {
+          @media screen and (max-width: $pads-media) {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+    .cardBody {
+      padding: 16px;
+      border: 1px solid #DEE2E6;
+      border-top: none;
+      background: #FFFFFF;
+      .cardBody__title,
+      .cardBody__time {
+        line-height: 21px;
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .cardBody__dec {
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+      .cardBody__time {
+        color: #707070;
+      }
+    }
+  }
+  // Contact
+  .contact {
+    padding-top: 64px;
+    background: #AA06010D; 
+    .title {
+      line-height: 72px;
+      font-size: 48px;
+      margin-bottom: 24px;
+      @media screen and (max-width: $pads-media) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+    .dec {
+      line-height: 30px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      @media screen and (max-width: $pads-media) {
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+    .input-group {
+      margin-bottom: 16px;
+      .label {
+        line-height: 24px;
+        font-size: 16px;
+        @media screen and (max-width: $phones-media) {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+      .from-input,
+      .from-textarea {
+        width: 100%;
+        border: 1px solid #000000;
+        padding: 14px 16px;
+        background: #ffffff00;
+      }
+      .from-textarea {
+        resize:none
+      }
+      .from-input::placeholder,
+      .from-textarea::placeholder {
+        color: #c3baba;
+      }
+    }
+    .input-group:last-child {
+      margin-bottom: 0;
+    }
+    .btnArea {
+      margin-top: 42px;
+      text-align: center;
+      padding-bottom: 92px;
+      .btn {
+        background: $Primary;
+        border-color: $Primary;
+        width: 108px;
+        margin: 0 auto;
+        padding: 16px 0;
+        color: #FFFFFF;
+        &:hover {
+          background: #620004;
+          border-color: #620004;
+        }
+      }
+    }
+  }
+}

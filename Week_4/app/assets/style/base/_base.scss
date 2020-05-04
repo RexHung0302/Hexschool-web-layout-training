@@ -1,0 +1,491 @@
+/* 共同 Class & 全域 CSS */
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+/* 共用 Class */
+
+.h-100 {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.vw-100 {
+    width: 100vw;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.word-break-all {
+    word-break: break-all;
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: none
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.whiteRemind {
+    color: white;
+}
+
+.redRemind {
+    color: #C80000;
+}
+
+.yellowRemind {
+    color: $Secondary;
+}
+
+.grayRemind {
+    color: #c7c7c7;
+}
+
+.pinkRemind {
+    color: rgb(237, 34, 115)
+}
+
+.whiteBg {
+    background-color: white;
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.blackRemind {
+    color: #000000;
+}
+
+.height-auto {
+    height: auto;
+}
+
+.max-height-auto {
+    max-height: auto;
+}
+
+.max-height-none {
+    max-height: none;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-fe {
+    justify-content: flex-end;
+}
+
+.jc-fs {
+    justify-content: flex-start;
+}
+
+.ai-fs {
+    align-items: flex-start;
+}
+
+.ai-fe {
+    align-items: flex-end;
+}
+
+.fd-r {
+    flex-direction: row;
+}
+
+.fd-rr {
+    flex-direction: row-reverse;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.fw-w {
+    flex-wrap: wrap;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.aif-s {
+    align-items: flex-start;
+}
+
+.jcs-a {
+    justify-content: space-around;
+}
+
+.jcf-s {
+    justify-content: flex-start;
+}
+
+.jcf-e {
+    justify-content: flex-end;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.pr-2 {
+    padding-right: 2rem;
+}
+
+.pl-1 {
+    padding-left: 1rem;
+}
+
+.pl-2 {
+    padding-left: 2rem;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.flex-basis-50w {
+    flex-basis: 50%;
+}
+
+.btn-orange {
+    background-color: #ff9d00;
+    border: #ff9d00;
+    color: #FFFFFF;
+    &:hover {
+        color: #FFFFFF;
+    }
+}
+
+.hrefText {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.va-b {
+  vertical-align: baseline
+}
+
+/* 客製化勾勾 */
+
+.checkBoxArea {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .input {
+    margin-right: 5px;
+  }
+  .input[type="checkbox"]:checked + .selectCheckBox::before {
+    content: '';
+    height: 10px;
+    animation: do_before_check 0.2s ease 0s forwards;
+  }
+  .input[type="checkbox"]:checked + .selectCheckBox::after {
+    content: '';
+    height: 26px;
+    animation: do_after_check 0.4s ease 0s forwards;
+  }
+  .label {
+    margin-bottom: 0;
+  }
+  .selectCheckBox {
+    position: relative;
+    margin-right: 5px;
+    border: 2px solid #000;
+    background-color: #ffffff00;
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s;
+    text-align: center;
+    border-radius: 5px;
+    /* 短邊 */
+    &::before,
+    &::after {
+      position: absolute;
+      width: 4px;
+      background-color: #000;
+      box-sizing: border-box;
+      display: inline-block;
+      border-radius: 5px;
+      transition: opacity ease 0.5;
+      /* 設置轉換原點座標 */
+      transform-origin: left top;
+    }
+    /* 長邊 */
+    &::before {
+      left: 0;
+      top: 10px;
+      transform: rotate(-45deg);
+      z-index: 2;
+    }
+    &::after {
+      left: 8px;
+      top: 18px;
+      transform: rotate(-135deg);
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes do_before_check {
+  0% {
+      height: 0;
+  }
+  100% {
+      height: 10px;
+  }
+}
+
+@keyframes do_after_check {
+  0% {
+      height: 0;
+  }
+  50% {
+      height: 0;
+  }
+  100% {
+      height: 26px;
+  }
+}
+
+@media (max-width: 375px) {
+  .checkBoxArea__content .selectCheckBox {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  @include responsive-max-width(
+    1200px,
+    1200px,
+    672px,
+    352px
+  );
+}
+
+main {
+    min-height: 100%;
+}
+
+//- 折疊樣式
+
+.collapseDiv {
+  border: 2px solid #000000;
+  border-bottom: none;
+  &:last-child {
+    border-bottom: 2px solid #000000;
+  }
+  .icon {
+    position: absolute;
+    right: 24px;
+    top: 15px;
+    transition: all 0.5s linear;
+  }
+  &__header {
+    position: relative;
+    padding: 15px 24px;
+    padding-right: 80px;
+    border-bottom: 2px solid #000000;
+    border-bottom: none;
+  }
+  &__body {
+    background-color: #F2F2F2;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s linear;
+  }
+}
+
+//- 如果下拉
+.collapseDiv.active {
+  .icon {
+    transform: rotate(180deg);
+  }
+  .collapseDiv__header { 
+    @media screen and (max-width: $pads-media) {
+      padding: 16px 24px;
+      padding-right: 80px;
+    }
+    @media screen and (max-width: $phones-media) {
+      padding: 16px;
+      padding-right: 80px;
+    }
+  }
+  .collapseDiv__body {
+    padding: 22px 38px;
+    @media screen and (max-width: $pads-media) {
+      padding: 16px 24px;
+    }
+    @media screen and (max-width: $phones-media) {
+      padding: 16px;
+    }
+    max-height: 1000px;
+  }
+}
+
+
+// 分頁器
+.pagenation_ul {
+  .li {
+    cursor: pointer;
+    border: 1px solid #555555;
+    background-color: #FFFFFF;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 27px;
+    @media screen and (max-width: $phones-media) {
+      font-size: 11px;
+      line-height: 17px;
+    }
+    &:hover {
+      background-color: #eee;
+    }
+    &:last-child {
+      background-color: #F2F2F2;
+    }
+  }
+  .li.active {
+    color: #FFFFFF;
+    background-color: #000000;
+  }
+}
+
+// 麵包屑
+
+.breadcrumb {
+  .li {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 0.5rem;
+    &::before {
+      content: "/";
+      display: inline-block;
+      padding-right: 0.5rem;
+    }
+    &:first-child {
+      padding-left: 0;
+      &::before {
+        display: none;
+      }
+    }
+    &:last-child {
+      color: $Primary;
+    }
+  }
+}

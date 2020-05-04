@@ -1,0 +1,85 @@
+/* Header */
+.menu {
+  height: 108px;
+  color: #FFFFFF;
+  background-color: $Primary;
+  padding: 0 88px;
+  font-size: 20px;
+  transition: all .5s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  @include responsive-padding(
+    0 88px,
+    0 48px,
+    0 48px,
+    0 28px
+  );
+  @media screen and (max-width: $pads-media) {
+    height: 50px;
+    justify-content: center;
+  }
+  @media screen and (max-width: $phones-media) {
+    justify-content: center;
+  }
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .ul {
+    @media screen and (max-width: $pads-media) {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      max-height: 0;
+      transition: all 0.8s;
+      overflow: hidden;
+      z-index: 120;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  &.active .ul {
+    @media screen and (max-width: $pcs-media) {
+      max-height: 250px;
+    }
+  }
+  .li {
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 64px;
+    @media screen and (max-width: $pcs-media) {
+      margin-left: 40px;
+    }
+    @media screen and (max-width: $pads-media) {
+      margin-left: 0;
+      height: 60px;
+      width: 100%;
+      line-height: 60px;
+      background-color: $Primary;
+      border-top: 1px solid #FFFFFF;
+    }
+  }
+  .icon-menu {
+    position: absolute;
+    left: 16px;
+    display: none;
+    @media screen and (max-width: $pads-media) {
+      display: block;
+    }
+  }
+  .img {
+    @media screen and (max-width: $pads-media) {
+      width: 48px;
+      height: 29px;
+    }
+  }
+  // 放最後防止被蓋過
+  .li:first-child {
+    margin-left: 0;
+  }
+}

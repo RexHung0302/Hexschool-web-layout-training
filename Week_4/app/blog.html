@@ -1,0 +1,136 @@
+---
+title: Week_4 - [多頁式網頁設計] - Blog
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main_blog">
+  <div class="searchRow" id="searchRow">
+    <div class="moreRow" onclick="searchRowPullClick()"><img class="pull-icon cursor-pointer" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow"></div>
+    <ul class="ul container list-style-none pl-0 m-0 d-flex ai-c">
+      <li class="li">最新消息</li>
+      <li class="li">特別企劃</li>
+      <li class="li">新品上市</li>
+      <li class="li">鏡框小知識</li>
+      <img class="d-block icon cursor-pointer" src="./assets/Images/iconfinder_icon-ios7-search-strong_211817.svg" alt="search">
+    </ul>
+  </div>
+  <!-- 每一篇文章 -->
+  <section class="container d-flex articleBox">
+    <div class="flex-basis-50w imgPart">
+      <a href="./blog-content.html">
+        <img class="d-block img" src="./assets/Images/56.png" alt="56.png">
+      </a>
+    </div>
+    <div class="flex-basis-50w textPart">
+      <h3 class="m-0 title">情人特別企劃</h3>
+      <p class="m-0 d-flex jc-sb subRow">
+        <span class="subTitle">2020 Valentine’s Special</span>
+        <span class="timeText">2020/02/14</span>
+      </p>
+      <p class="m-0 dec">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯</p>
+      <p class="m-0 more">
+        <a href="./blog-content.html">
+          <span>MORE</span>
+          <img class="icon va-b" src="./assets/Images/ic_arrow_forward_24px.svg" alt="arrow_right">
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- 每一篇文章 -->
+  <section class="container d-flex articleBox">
+    <div class="flex-basis-50w imgPart">
+      <a href="./blog-content.html">
+        <img class="d-block img" src="./assets/Images/12.png" alt="12.png">
+      </a>
+    </div>
+    <div class="flex-basis-50w textPart">
+      <h3 class="m-0 title">街頭潮人訪問</h3>
+      <p class="m-0 d-flex jc-sb subRow">
+        <span class="subTitle">Street Interview</span>
+        <span class="timeText">2020/02/02</span>
+      </p>
+      <p class="m-0 dec">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯</p>
+      <p class="m-0 more">
+        <a href="./blog-content.html">
+          <span>MORE</span>
+          <img class="icon va-b" src="./assets/Images/ic_arrow_forward_24px.svg" alt="arrow_right">
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- 每一篇文章 -->
+  <section class="container d-flex articleBox">
+    <div class="flex-basis-50w imgPart">
+      <a href="./blog-content.html">
+        <img class="d-block img" src="./assets/Images/16.png" alt="16.png">
+      </a>
+    </div>
+    <div class="flex-basis-50w textPart">
+      <h3 class="m-0 title">春季新品上市</h3>
+      <p class="m-0 d-flex jc-sb subRow">
+        <span class="subTitle">New Selection</span>
+        <span class="timeText">2020/02/02</span>
+      </p>
+      <p class="m-0 dec">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯</p>
+      <p class="m-0 more">
+        <a href="./blog-content.html">
+          <span>MORE</span>
+          <img class="icon va-b" src="./assets/Images/ic_arrow_forward_24px.svg" alt="arrow_right">
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- 每一篇文章 -->
+  <section class="container d-flex articleBox">
+    <div class="flex-basis-50w imgPart">
+      <a href="./blog-content.html">
+        <img class="d-block img" src="./assets/Images/93.png" alt="93.png">
+      </a>
+    </div>
+    <div class="flex-basis-50w textPart">
+      <h3 class="m-0 title">設計師獨享鏡框優惠</h3>
+      <p class="m-0 d-flex jc-sb subRow">
+        <span class="subTitle">Sales for Designer</span>
+        <span class="timeText">2020/01/18</span>
+      </p>
+      <p class="m-0 dec">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯</p>
+      <p class="m-0 more">
+        <a href="#">
+          <span>MORE</span>
+          <img class="icon va-b" src="./assets/Images/ic_arrow_forward_24px.svg" alt="arrow_right">
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- 每一篇文章 -->
+  <section class="container d-flex articleBox">
+    <div class="flex-basis-50w imgPart">
+      <img class="d-block img" src="./assets/Images/94.png" alt="94.png">
+    </div>
+    <div class="flex-basis-50w textPart">
+      <h3 class="m-0 title">抵抗夏日大作戰</h3>
+      <p class="m-0 d-flex jc-sb subRow">
+        <span class="subTitle">Summer Special</span>
+        <span class="timeText">2019/08/07</span>
+      </p>
+      <p class="m-0 dec">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！ 即日起至2/16為止，不論是熱戀情侶、自由自在一個人或是老夫老妻，只要從未來過本店的新朋友，綁定官方LINE好友，都可享專屬優惠⋯⋯<a class="dec__more" href="#"><span>MORE</span></a></p>
+      <p class="m-0 more">
+        <a href="#">
+          <span>MORE</span>
+          <img class="icon va-b" src="./assets/Images/ic_arrow_forward_24px.svg" alt="arrow_right">
+        </a>
+      </p>
+    </div>
+  </section>
+  <!-- 分頁器 -->
+  <ul class="pagenation_ul container list-style-none pl-0 m-0 d-flex ai-c jc-c">
+    <li class="li">上一頁</li>
+    <li class="li">1</li>
+    <li class="li active">2</li>
+    <li class="li">3</li>
+    <li class="li">4</li>
+    <li class="li">5</li>
+    <li class="li">下一頁</li>
+  </ul>
+</main>

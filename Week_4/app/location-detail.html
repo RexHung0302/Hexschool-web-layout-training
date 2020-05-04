@@ -1,0 +1,60 @@
+---
+title: Week_4 - [多頁式網頁設計] - Location Detail
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main_location_detail">
+  <!-- Banner -->
+  <section class="banner d-flex ai-fe">
+    <div class="slogan container d-flex ai-c">
+      <h2 class="my-0 slogan__title">門市據點</h2>
+      <img class="d-block icon" src="./assets/Images/iconfinder_location_1585851.svg" alt="location-icon">
+    </div>
+  </section>
+  <!-- content -->
+  <section class="content container">
+    <div class="d-flex ai-c selectBox">
+      <label class="m-0 selectBox__title">選擇分店</label>
+      <div class="selectWrapper">
+        <select class="select">
+          <option>台北中山旗艦店</option>
+        </select>
+      </div>
+    </div>
+    <div class="detailRow d-flex ai-fs jc-sb fw-w">
+      <div class="store__card">
+        <div class="storeImg">
+          <img class="d-block icon w-100 h-100 va-b" src="./assets/Images/70.png" alt="storeImg">
+        </div>
+        <div class="store__body">
+          <h2 class="m-0 store__title">
+            台北中山旗艦店
+          </h2>
+          <ul class="list__ul list-style-none pl-0 m-0 d-flex ai-c fw-w">
+            <li class="list__li w-100 d-flex ai-fs">
+              <img class="d-block icon" src="./assets/Images/iconfinder_Essentials_phone_telephone_vintage_5298737.svg" alt="phone">
+              <label class="m-0 label">電話：(02)000-1234</label>
+            </li>
+            <li class="list__li w-100 d-flex ai-fs">
+              <img class="d-block icon" src="./assets/Images/iconfinder_Essentials_time_clock_timer_5298770.svg" alt="clock">
+              <label class="m-0 label">營業時間：10:00-21:00</label>
+            </li>
+            <li class="list__li w-100 d-flex ai-fs">
+              <img class="d-block icon" src="./assets/Images/iconfinder_Essentials_pin_map_location_5298741.svg" alt="location">
+              <label class="m-0 label">地址：台北市中山區南京東路25巷2-1號</label>
+            </li>
+          </ul>
+        </div>
+        <div class="store__footer d-flex ai-c jc-c cursor-pointer">
+          <a class="hrefText" href="#">
+            詳細資訊
+          </a>
+        </div>
+      </div>
+      <div class="store__map">
+        <img class="d-block icon" src="./assets/Images/map.png" alt="map">
+      </div>
+    </div>
+  </section>
+</main>

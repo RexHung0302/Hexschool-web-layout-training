@@ -1,0 +1,203 @@
+---
+title: Week_4 - [多頁式網頁設計] - 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main_index">
+  <!-- Banner -->
+  <section class="banner d-flex ai-c">
+    <div class="slogan container">
+      <p class="m-0 slogan__subTitle">Promise-Desert 2020 早春系列</p>
+      <h2 class="m-0 slogan__title">看得清，才能看得遠</h2>
+    </div>
+  </section>
+  <!-- Business Item -->
+  <section class="businessItem">
+    <h2 class="m-0 title text-center">用專業的心，做專業的事</h2>
+    <ul class="ul list-style-none pl-0 m-0 d-flex ai-fs jc-c fw-w container">
+      <li class="li moneyLi">
+        <img class="d-block icon" src="./assets/Images/icon-dollar.svg" alt="icon-dollar">
+        <p class="m-0 subTitle">單一價格</p>
+        <span class="dec">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</span>
+      </li>
+      <li class="li timeLi">
+        <img class="d-block icon" src="./assets/Images/icon-clock.svg" alt="icon-clock">
+        <p class="m-0 subTitle">20 分鐘即可取件</p>
+        <span class="dec">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</span>
+      </li>
+      <li class="li serviceLi">
+        <img class="d-block icon" src="./assets/Images/icon-heart.svg" alt="icon-heart">
+        <p class="m-0 subTitle">安心售後服務</p>
+        <span class="dec">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</span>
+      </li>
+      <li class="li glassesLi">
+        <img class="d-block icon" src="./assets/Images/icon-glasses.svg" alt="icon-glasses">
+        <p class="m-0 subTitle">關於鏡片</p>
+        <span class="dec">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</span>
+      </li>
+    </ul>
+  </section>
+  <!-- Collection -->
+  <section class="collection text-center">
+    <h2 class="m-0 title">經典系列鏡框</h2>
+    <ul class="ul list-style-none pl-0 m-0 container">
+      <li class="li">
+        <div class="item">
+          <div class="herfImg">
+            <img class="d-block img" src="./assets/Images/product-1.png" alt="product-1">
+          </div>
+          <div class="item__dec">
+            <img class="d-block icon-diamond icon" src="./assets/Images/icon-diamond.svg" alt="icon-diamond">
+            <img class="d-block icon-diamond-white icon" src="./assets/Images/icon-diamond-white.svg" alt="icon-diamond-white">
+            <span class="item__dec__text">OPTICAL</span>
+          </div>
+        </div>
+      </li>
+      <li class="li">
+        <div class="item">
+          <div class="herfImg">
+            <img class="d-block product-2 img" src="./assets/Images/product-2.png" alt="product-2">
+            <img class="d-block product-2-hover img" src="./assets/Images/product-2-hover.png" alt="product-2-hover">
+          </div>
+          <div class="item__dec">
+            <img class="d-block icon-sun icon" src="./assets/Images/icon-sun.svg" alt="icon-sun">
+            <img class="d-block icon-sun-white icon" src="./assets/Images/icon-sun-white.svg" alt="icon-sun-white">
+            <span class="item__dec__text">SUNGLASSES</span>
+          </div>
+        </div>
+      </li>
+      <li class="li">
+        <div class="item">
+          <div class="herfImg">
+            <img class="d-block img" src="./assets/Images/product-3.png" alt="product-3">
+          </div>
+          <div class="item__dec">
+            <img class="d-block icon-thunder icon" src="./assets/Images/icon-thunder.svg" alt="icon-thunder">
+            <img class="d-block icon-thunder-white icon" src="./assets/Images/icon-thunder-white.svg" alt="icon-thunder-white">
+            <span class="item__dec__text">FUNCTIONAL</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+  <!-- CollectionSecond -->
+  <section class="collectionSecond">
+    <h2 class="m-0 title text-center">聯名設計鏡框</h2>
+    <!-- Album -->
+    <div class="album d-flex jc-c container">
+      <div class="first">
+        <img class="d-block" src="./assets/Images/product-4.png" alt="product-4">
+      </div>
+      <div class="second">
+        <img class="d-block second__img" src="./assets/Images/product-5.png" alt="product-5">
+        <div class="third d-flex">
+          <div>
+            <img class="d-block" src="./assets/Images/product-6.png" alt="product-6">
+          </div>
+          <div class="fourth">
+            <div>
+              <img class="d-block fourth__img" src="./assets/Images/product-7.png" alt="product-7">
+            </div>
+            <div class="moreArea">
+              <div class="btnArea">
+                <img class="d-block" src="./assets/Images/more.png" alt="more">
+                <div class="btnArea__btn cursor-pointer">
+                  <span class="btnArea__btn__text">MORE</span>
+                  <!-- <i class="fa-icon icon-arrow-right icon"></i> -->
+                  <img class="d-block icon" src="./assets/Images/icon-arrow.svg" alt="icon-arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- AlbumSecond -->
+    <div class="albumSecond d-flex jc-c">
+      <div class="imgText doubleA d-flex ai-c jc-c">
+        <div class="filter"></div>
+        <h2 class="m-0 subTitle">Double A+</h2>
+      </div>
+      <div class="imgText youth d-flex ai-c jc-c">
+        <div class="filter"></div>
+        <h2 class="m-0 subTitle">YOUTH</h2>
+      </div>
+    </div>
+    <h2 class="m-0 title text-center titleTwo">顧客推薦</h2>
+  </section>
+  <!-- Card Menu -->
+  <section class="cardMenu">
+    <div class="cardMenu__list">
+      <ul class="ul list-style-none pl-0 m-0 d-flex ai-c jc-c fw-w">
+        <li class="li">
+          <img class="d-block" src="./assets/Images/rec-1.png" alt="rec-1">
+          <div class="cardBody">
+            <p class="m-0 cardBody__title">Jessy</p>
+            <p class="m-0 cardBody__dec">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="m-0 cardBody__time">Last updated 3 mins ago</p>
+          </div>
+        </li>
+        <li class="li">
+          <img class="d-block" src="./assets/Images/rec-2.png" alt="rec-2">
+          <div class="cardBody">
+            <p class="m-0 cardBody__title">Jessy</p>
+            <p class="m-0 cardBody__dec">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="m-0 cardBody__time">Last updated 3 mins ago</p>
+          </div>
+        </li>
+        <li class="li">
+          <img class="d-block" src="./assets/Images/rec-3.png" alt="rec-3">
+          <div class="cardBody">
+            <p class="m-0 cardBody__title">Jessy</p>
+            <p class="m-0 cardBody__dec">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="m-0 cardBody__time">Last updated 3 mins ago</p>
+          </div>
+        </li>
+        <li class="li">
+          <img class="d-block" src="./assets/Images/rec-4.png" alt="rec-4">
+          <div class="cardBody">
+            <p class="m-0 cardBody__title">Jessy</p>
+            <p class="m-0 cardBody__dec">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <p class="m-0 cardBody__time">Last updated 3 mins ago</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="m-0 title text-center">聯絡我們</h2>
+      <p class="m-0 dec text-center">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <div class="input-group">
+        <label class="m-0 d-block label">姓名</label>
+        <input type="text" class="from-input" placeholder="陳小明">
+      </div>
+      <div class="input-group">
+        <label class="m-0 d-block label">聯絡電話</label>
+        <input type="text" class="from-input" placeholder="0912-345-678">
+      </div>
+      <div class="input-group">
+        <label class="m-0 d-block label">電子郵件</label>
+        <input type="text" class="from-input" placeholder="example@email.com">
+      </div>
+      <div class="input-group">
+        <label class="m-0 d-block label">意見反應</label>
+        <textarea type="text" rows="6" class="from-textarea" placeholder="請輸入您的意見"></textarea>
+      </div>
+      <div class="input-group">
+        <div class="checkBoxArea jc-fs">
+          <div class="checkBoxArea__content">
+            <input class="input d-none" type="checkbox" id="agree" name="agree" value="1"> 
+            <label for="agree" class="selectCheckBox m-0"></label>
+            <label for="agree" class="label m-0">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </div>
+        </div>
+      </div>
+      <div class="btnArea">
+        <button class="btn btn-primary cursor-pointer">確認送出</button>
+      </div>
+    </div>
+  </section>
+</main>

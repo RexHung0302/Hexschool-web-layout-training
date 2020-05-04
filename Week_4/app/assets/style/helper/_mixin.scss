@@ -1,0 +1,192 @@
+//- 上方為 FUNCTION
+// 電腦  960px
+@mixin pc-width() {
+    @media all and (min-width: $pc-media) {
+        @content;
+    }
+}
+
+// 平板 767px - 959px
+@mixin pad-width() {
+    @media all and (min-width: $pad-media) and (max-width: $pcs-media) {
+        @content;
+    }
+}
+
+// 小平板 480px - 610px
+@mixin small-pad-width() {
+    @media all and (min-width: $phone-media) and (max-width: $pads-media) {
+        @content;
+    }
+}
+
+// 手機 479px
+@mixin phone-width() {
+    @media all and (max-width: $phones-media) {
+        @content;
+    }
+}
+
+//- 以下為應用到的 CSS
+@mixin responsive-padding($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        padding: $pc;
+    }
+    // 平板
+    @include pad-width {
+        padding: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        padding: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        padding: $phone;
+    }
+}
+
+//margin responsive的mixin
+@mixin responsive-margin($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        margin: $pc;
+    }
+    // 平板
+    @include pad-width {
+        margin: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        margin: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        margin: $phone;
+    }
+}
+
+//- 寬度
+@mixin responsive-width($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        width: $pc;
+    }
+    // 平板
+    @include pad-width {
+        width: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        width: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        width: $phone;
+    }
+}
+
+//- 最大寬度
+@mixin responsive-max-width($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        max-width: $pc;
+    }
+    // 平板
+    @include pad-width {
+        max-width: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        max-width: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        max-width: $phone;
+    }
+}
+
+//- 高度
+@mixin responsive-height($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        height: $pc;
+        max-height: $pc;
+    }
+    // 平板
+    @include pad-width {
+        height: $pad;
+        max-height: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        height: $small-pad;
+        max-height: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        height: $phone;
+        max-height: $phone;
+    }
+}
+
+//- Flex 寬度
+@mixin responsive-flex-basis($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        flex-basis: $pc;
+    }
+    // 平板
+    @include pad-width {
+        flex-basis: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        flex-basis: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        flex-basis: $phone;
+    }
+}
+
+//- 是否隱藏
+@mixin responsive-hidden($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        display: $pc;
+    }
+    // 平板
+    @include pad-width {
+        display: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        display: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        display: $phone;
+    }
+}
+
+//- 文字大小
+@mixin responsive-font-size($pc, $pad, $small-pad, $phone) {
+    // 電腦版
+    @include pc-width {
+        font-size: $pc;
+    }
+    // 平板
+    @include pad-width {
+        font-size: $pad;
+    }
+    // 小平板
+    @include small-pad-width {
+        font-size: $small-pad;
+    }
+    // 手機
+    @include phone-width {
+        font-size: $phone;
+    }
+}

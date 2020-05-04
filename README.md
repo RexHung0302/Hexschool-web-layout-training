@@ -32,6 +32,13 @@
     > [Blog](https://rexhung0302.github.io/2020/04/19/20200429/#more)
 
 4. 第四週：多頁式網頁設計
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_4)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/index.html)
+    >
+    > [Blog](#)
+    >
+    > 本週頁面較多，可至 [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_4) 內參考目錄或點進 [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/index.html) 自由切換
 
 5. 第五週：後台表單設計
 

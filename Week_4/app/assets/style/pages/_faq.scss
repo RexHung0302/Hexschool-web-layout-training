@@ -1,0 +1,71 @@
+.main_FAQ {
+  padding-top: 108px;
+  @media screen and (max-width: $pads-media) {
+    padding-top: 50px;
+  }
+  // Banner
+  .banner {
+    background: url('../Images/72.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 304px;
+    margin-bottom: 88px;
+    @media screen and (max-width: $pads-media) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: $phones-media) {
+      margin-bottom: 24px;
+    }
+    .slogan {
+      width: 100%;
+      @media screen and (max-width: $pads-media) {
+        padding: 0 48px
+      }
+      @media screen and (max-width: $phones-media) {
+        padding: 0 11px
+      }
+      &__title {
+        font-size: 64px;
+        line-height: 80px;
+        margin-right: 10px;
+        @media screen and (max-width: $pads-media) {
+          font-size: 48px;
+          line-height: 80px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 28px;
+        }
+      }
+      .icon {
+        @media screen and (max-width: $pads-media) {
+          width: 48px;
+          height: 48px;
+        }
+        @media screen and (max-width: $phones-media) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  // Content
+  .content {
+    padding-bottom: 156px;
+    @media screen and (max-width: $pads-media) {
+      padding: 0 48px;
+      padding-bottom: 104px;
+    }
+    @media screen and (max-width: $phones-media) {
+      padding: 0 11px;
+      padding-bottom: 56px;
+    }
+    .subTitle {
+      font-size: 32px;
+      line-height: 63px;
+      margin-bottom: 32px;
+      @media screen and (max-width: $pads-media) {
+        font-size: 28px
+      }
+    }
+  }
+}

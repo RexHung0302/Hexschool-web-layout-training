@@ -1,0 +1,302 @@
+.main_blog_content {
+  padding-top: 108px;
+  @media screen and (max-width: $pads-media) {
+    padding-top: 50px;
+  }
+  .searchRow {
+    background-color: $Secondary;
+    margin-bottom: 8px;
+    @media screen and (max-width: $pads-media) {
+      background-color: #FFFFFF;
+      top: 50px;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+    }
+    .ul {
+      position: relative;
+      padding: 13px 0;
+      padding-right: 24px;
+      color: #FFFFFF;
+      transition: all 0.8s;
+      @media screen and (max-width: $pads-media) {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        max-height: 0;
+        z-index: 100;
+        padding-bottom: 28px;
+        margin: 0;
+      }
+    }
+    .li {
+      font-size: 20px;
+      line-height: 24px;
+      margin-right: 48px;
+      font-weight: bold;
+      @media screen and (max-width: $pads-media) {
+        width: 100vw;
+        color: #000000;
+        font-size: 16px;
+        padding: 14px 0;
+        border-bottom: 1px solid #00000020;
+        margin: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+        @media screen and (max-width: $pads-media) {
+          border-bottom: none;
+        }
+      }
+    }
+    .icon {
+      position: absolute;
+      right: 0;
+      width: 24px;
+      height: 24px;
+      @media screen and (max-width: $pads-media) {
+        display: none;
+      }
+    }
+    .moreRow {
+      display: none;
+      width: 100%;
+      min-height: 28px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      border: 1px solid #000000;
+      background-color: #FFFFFF;
+      z-index: 200;
+      @media screen and (max-width: $pads-media) {
+        display: flex;
+      }
+    }
+    .pull-icon {
+      transition: all 0.8s;
+    }
+  }
+  .searchRow.active {
+    .ul {
+      @media screen and (max-width: $pads-media) {
+        max-height: 500px;
+      }
+    }
+    .pull-icon {
+      transform: rotate(180deg);
+    }
+  }
+  .breadcrumb {
+    margin-bottom: 8px;
+    @media screen and (max-width: $pads-media) {
+      padding-left: 48px;
+      padding-right: 48px;
+      padding-top: 36px;
+    }
+    @media screen and (max-width: $phones-media) {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+  }
+  .subTitle_tag {
+    @media screen and (max-width: $pads-media) {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+    @media screen and (max-width: $phones-media) {
+      padding-left: 11px;
+      padding-right: 11px;
+    }
+    .li {
+      font-size: 16px;
+      line-height: 36px;
+      color: $Primary;
+      padding-left: 8px;
+      font-weight: bold;
+      &:first-child {
+        padding-left: 0;
+      }
+      &::before {
+        content: "#";
+        display: inline-block;
+      }
+    }
+  }
+  .titleBox {
+    margin-bottom: 156px;
+    @media screen and (max-width: $pads-media) {
+      padding-left: 48px;
+      padding-right: 48px;
+      margin: 0;
+      @media screen and (max-width: $phones-media) {
+        padding-left: 11px;
+        padding-right: 11px;
+      }
+    }
+    .textPart {
+      transition: all 0.8s;
+      flex-basis: 60%;
+      @media screen and (max-width: $phones-media) {
+        flex-basis: 100%;
+      }
+      h2 {
+        font-size: 48px;
+        line-height: 95px;
+        @media screen and (max-width: $pads-media) {
+          font-size: 32px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+      .subTitle {
+        margin-bottom: 24px;
+        @media screen and (max-width: $phones-media) {
+          margin-bottom: 16px;
+        }
+        span:first-child {
+          font-size: 28px;
+          line-height: 42px;
+          @media screen and (max-width: $pads-media) {
+            font-size: 16px;
+          }
+          @media screen and (max-width: $phones-media) {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+        span:last-child {
+          font-size: 16px;
+          line-height: 24px;
+          @media screen and (max-width: $pads-media) {
+            font-size: 14px;
+          }
+          @media screen and (max-width: $phones-media) {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+      .img {
+        width: 100%;
+      }
+    }
+    .contentBox {
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        @media screen and (max-width: $pads-media) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    .tagPart {
+      padding-left: 24px;
+      flex-basis: 40%;
+      @media screen and (max-width: $phones-media) {
+        display: none;
+        flex-basis: 0%;
+      }
+    }
+  }
+  .shareRow {
+    padding-top: 48px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 14px;
+    @media screen and (max-width: $pads-media) {
+      font-size: 16px;
+    }
+    .item {
+      padding-right: 16px;
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      @media screen and (max-width: $pads-media) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .hr {
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+  }
+  .otherPageRow {
+    @media screen and (max-width: $phones-media) {
+      flex-wrap: wrap;
+    }
+    .lastPage {
+      @media screen and (max-width: $phones-media) {
+        width: 100%;
+      }
+    }
+    .nextPage {
+      @media screen and (max-width: $phones-media) {
+        width: 100%;
+      }
+      a {
+        @media screen and (max-width: $phones-media) {
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .icon {
+      width: 24px;
+      height: 21px;
+    }
+    .icon:first-child {
+      padding-right: 8px;
+    }
+    .icon:last-child {
+      padding-left: 8px;
+      @media screen and (max-width: $phones-media) {
+        padding-left: 0;
+        padding-right: 8px;
+      }
+    }
+    a {
+      color: #000000;
+      text-decoration: none;
+      font-size: 19px;
+      line-height: 30px;
+      @media screen and (max-width: $pads-media) {
+        font-size: 16px;
+      }
+    }
+  }
+  .tagPart {
+    color: $Primary;
+    font-weight: bold;
+    .tagTitleBox {
+      .icon {
+        padding-right: 8px;
+      }
+    }
+    .li {
+      padding-right: 24px;
+      &:last-child {
+        padding-right: 0;
+      }
+      a {
+        color: $Primary;
+        text-decoration: none;
+        &::before {
+          content: "#";
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

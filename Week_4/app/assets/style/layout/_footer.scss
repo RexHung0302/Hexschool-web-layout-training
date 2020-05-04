@@ -1,0 +1,140 @@
+// Footer
+.footer {
+  padding-top: 36px;
+  background-color: $Primary;
+  color: #FFFFFF;
+  .infos .menu__ul {
+    height: 48px;
+    line-height: 48px;
+    .li {
+      margin-right: 48px;
+      @media screen and (max-width: $pads-media) {
+        margin-right: 40px;
+      }
+    }
+    .li:last-child {
+      margin-right: 0;
+    }
+    .hrefText {
+      line-height: 24px;
+      font-size: 16px;
+    }
+  }
+  .infosTwo {
+    margin-top: 18px;
+    .imgTextUl {
+      .icon {
+        width: 48px;
+        height: 48px;
+        display: inline-block;
+        margin-right: 12px;
+        @media screen and (max-width: $phones-media) {
+          margin-right: 8px;
+        }
+      }
+      .li {
+        display: flex;
+        align-items: center;
+      }
+      .text {
+        line-height: 54px;
+        font-size: 36px;
+        @media screen and (max-width: $pads-media) {
+          line-height: 30px;
+          font-size: 20px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .icons {
+    .li {
+      margin-right: 32px;
+      @media screen and (max-width: $phones-media) {
+        margin-right: 24px;
+      }
+    }
+    .li:last-child {
+      margin-right: 0;
+    }
+    .icon {
+      width: 48px;
+      height: 48px;
+      @media screen and (max-width: $pads-media) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .hr {
+    margin: 24px 0;
+  }
+  .copyright {
+    padding-bottom: 40px;
+    @media screen and (max-width: $pads-media) {
+      padding-bottom: 28px;
+    }
+    @media screen and (max-width: $phones-media) {
+      flex-wrap: wrap;
+      padding-bottom: 8px;
+    }
+    .imgText {
+      @media screen and (max-width: $phones-media) {
+        width: 100%;
+        font-size: 14px;
+        line-height: 21px;
+      }
+      .img {
+        margin-right: 38px;
+        @media screen and (max-width: $pads-media) {
+          display: none;
+        }
+      }
+      .text {
+        line-height: 24px;
+        font-size: 16px;
+      }
+    }
+    .ul {
+      @media screen and (max-width: $phones-media) {
+        flex-wrap: wrap;
+      }
+    }
+    .li {
+      margin-right: 62px;
+      @media screen and (max-width: $pads-media) {
+        margin-right: 24px;
+      }
+      @media screen and (max-width: $phones-media) {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+    .li:last-child {
+      margin-right: 0;
+      @media screen and (max-width: $phones-media) {
+        margin-bottom: 0px;
+        padding-bottom: 24px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 680px) {
+  .footer .infos .menu__ul {
+    display: none;
+  }
+
+  .footer .infosTwo {
+    order: -1;
+  }
+
+  .footer .infosTwo .imgTextUl .icon {
+    width: 20px;
+    height: 20px;
+  }
+}

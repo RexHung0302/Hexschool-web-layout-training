@@ -1,0 +1,170 @@
+.main_product_op {
+  padding-top: 108px;
+  @media screen and (max-width: $pads-media) {
+    padding-top: 50px;
+  }
+  .header__ul {
+    .li {
+      width: calc(100% / 3);
+      padding: 24px 0;
+      border: 1px solid #DCDCDC;
+      border-top: none;
+      border-bottom: none;
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+    .li.active {
+      border-bottom: 16px solid $Primary;
+      @media screen and (max-width: $pads-media) {
+        border-bottom: 8px solid $Primary;
+      }
+      @media screen and (max-width: $phones-media) {
+        border-bottom: 4px solid $Primary;
+      }
+    }
+    h2 {
+      @media screen and (max-width: $pads-media) {
+        font-size: 28px;
+        line-height: 42px;
+      }
+      @media screen and (max-width: $phones-media) {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+    .icon {
+      padding-right: 8px;
+      @media screen and (max-width: $pads-media) {
+        width: 32px;
+        height: 32px;
+      }
+      @media screen and (max-width: $phones-media) {
+        width: 15px;
+        height: 12px;
+      }
+    }
+  }
+  .showImgRow {
+    margin-bottom: 88px;
+    @media screen and (max-width: $pads-media) {
+      margin-bottom: 32px;
+    }
+    div {
+      &:first-child {
+        .img {
+          padding-right: 12px;
+          @media screen and (max-width: $pads-media) {
+            padding-right: 0;
+          }
+        }
+      }
+      &:last-child {
+        .img {
+          padding-left: 12px;
+          @media screen and (max-width: $pads-media) {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+  .title {
+    font-size: 42px;
+    line-height: 63px;
+    @media screen and (max-width: $pads-media) {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    @media screen and (max-width: $phones-media) {
+      font-size: 20px;
+    }
+  }
+  .subTitle {
+    font-size: 32px;
+    line-height: 63px;
+    margin-bottom: 48px;
+    @media screen and (max-width: $pads-media) {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    @media screen and (max-width: $phones-media) {
+      font-size: 16px;
+    }
+  }
+  .goods__ul {
+    margin-bottom: 88px;
+    @media screen and (max-width: $pads-media) {
+      margin-bottom: 52px;
+    }
+    .li {
+      margin: 12px;
+      transition: all .5s linear;
+      width: calc(100% / 3 - 24px);
+      @include responsive-width(
+        calc(100% / 3 - 24px),
+        calc(100% / 3 - 24px),
+        calc(100% / 2 - 24px),
+        calc(100%)
+      );
+      .goodInfo {
+        margin-bottom: 4px;
+      }
+      .goodName {
+        flex-basis: 100%;
+        font-size: 24px;
+        line-height: 40px;
+        @media screen and (max-width: $pads-media) {
+          flex-basis: 50%;
+          line-height: 30px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 16px;
+        }
+      }
+      .goodPrice {
+        flex-basis: 100%;
+        color: $Primary;
+        font-size: 24px;
+        line-height: 40px;
+        @media screen and (max-width: $pads-media) {
+          flex-basis: 50%;
+          text-align: end;
+          line-height: 30px;
+        }
+        @media screen and (max-width: $phones-media) {
+          font-size: 16px;
+        }
+      }
+      .color__ul {
+        .li {
+          width: 19px;
+          height: 19px;
+          margin: 0;
+          margin-right: 8px;
+          border-radius: 4px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+        .li.li-green {
+          background-color: #5F3E2D;
+        }
+        .li.li-yellow {
+          background-color: #B75929;
+        }
+      }
+    }
+  }
+  .pagenation_ul {
+    margin-bottom: 156px;
+    @media screen and (max-width: $pads-media) {
+      display: flex;
+      margin-bottom: 104px;
+    }
+    @media screen and (max-width: $phones-media) {
+      margin-bottom: 56px;
+    }
+  }
+}

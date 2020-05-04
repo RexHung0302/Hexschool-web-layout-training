@@ -1,0 +1,132 @@
+---
+title: Week_4 - [多頁式網頁設計] - Blog Content
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main_blog_content">
+  <div class="searchRow" id="searchRow">
+    <div class="moreRow" onclick="searchRowPullClick()"><img class="pull-icon cursor-pointer" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow"></div>
+    <ul class="ul container list-style-none pl-0 m-0 d-flex ai-c">
+      <li class="li">最新消息</li>
+      <li class="li">特別企劃</li>
+      <li class="li">新品上市</li>
+      <li class="li">鏡框小知識</li>
+      <img class="d-block icon cursor-pointer" src="./assets/Images/iconfinder_icon-ios7-search-strong_211817.svg" alt="search">
+    </ul>
+  </div>
+  <!-- 麵包屑 -->
+  <nav class="breadcrumb container">
+    <ol class="ol container list-style-none pl-0 m-0 d-flex ai-c">
+      <li class="li">首頁</li>
+      <li class="li">部落格</li>
+      <li class="li">特別企劃</li>
+      <li class="li">情人特別企劃</li>
+    </ol>
+  </nav>
+  <!-- 標頭下的 Tag -->
+  <nav class="subTitle_tag container">
+    <ol class="ol container list-style-none pl-0 m-0 d-flex ai-c">
+      <li class="li">special</li>
+      <li class="li">event</li>
+    </ol>
+  </nav>
+  <section class="container">
+    <div class="titleBox d-flex ai-fs">
+      <!-- 文章區塊 -->
+      <div class="textPart">
+        <h2 class="m-0">情人特別企劃</h2>
+        <p class="m-0 d-flex jc-sb ai-c subTitle">
+          <span>2020 Valentine’s Special</span>
+          <span>2020/02/14</span>
+        </p>
+        <div class="contentBox">
+          <div>
+            <img class="d-block img" src="./assets/Images/56.png" alt="56.png">
+          </div>
+          <br/>
+          <p class="m-0">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <br/>
+          <div>
+            <img class="d-block img" src="./assets/Images/44.png" alt="44.png">
+          </div>
+          <br/>
+          <p class="m-0">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <br/>
+          <div>
+            <img class="d-block img" src="./assets/Images/48.png" alt="48.png">
+          </div>
+          <br/>
+          <p class="m-0">一年一度西洋情人節即將到來，我們推出最強「情人節企劃」，為這個甜蜜的節日加溫。 本次拍攝的鏡框款式與 NEEDS CLASSIC 聯名設計款，偶爾跟另一半來個低調情侶單品，結合彼此喜好、找出合適框型款式，在這個春夏輕鬆搭出屬於你們的甜蜜默契！</p>
+          <br/>
+          <div>
+            <img class="d-block img" src="./assets/Images/92.png" alt="92.png">
+          </div>
+          <br/>
+          <p class="m-0">2/14(五)-2/20(日)</p>
+          <p class="m-0">至本店單筆消費滿2980元, 就送情人節限定眼鏡盒1個</p>
+          <p class="m-0">期間優惠還有~~持他牌鏡框更換鏡片</p>
+          <p class="m-0">薄型非球面鏡片折300元</p>
+          <p class="m-0">濾藍光鏡片折500元</p>
+          <br/>
+          <p class="m-0">快快帶上另一半</p>
+          <p class="m-0">讓彼此每一次睜開眼，都被愛的視線包圍!</p>
+        </div>
+        <div class="shareRow d-flex ai-c">
+          <span class="item">Share</span>
+          <a class="item" href="#">
+            <img class="icon va-b" src="./assets/Images/logo-facebook.svg" alt="logo-facebook">
+          </a>
+          <a class="item" href="#">
+            <img class="icon va-b" src="./assets/Images/logo-instagram.svg" alt="logo-instagram">
+          </a>
+        </div>
+        <hr class="hr"/>
+        <div class="otherPageRow d-flex jc-sb ai-c">
+          <div class="lastPage">
+            <a class="d-flex ai-c" href="#">
+              <img class="icon va-b" src="./assets/Images/arrow-undo-outline.svg" alt="arrow-undo-outline">
+              <span>上一篇：街頭潮人訪問 1</span>
+            </a>
+          </div>
+          <div class="nextPage">
+            <a class="d-flex ai-c" href="#">
+              <span>下一篇：街頭潮人訪問 2</span>
+              <img class="icon va-b" src="./assets/Images/arrow-redo-outline.svg" alt="arrow-redo-outline">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 標籤區塊 -->
+      <div class="tagPart">
+        <div class="tagTitleBox d-flex ai-c">
+          <img class="icon va-b" src="./assets/Images/ic_label_outline_48px.svg" alt="ic_label_outline_48px">
+          <span class="title">TAGS</span>
+        </div>
+        <ul class="ul container list-style-none pl-0 m-0 d-flex ai-c fw-w">
+          <li class="li">
+            <a href="#">special</a>
+          </li>
+          <li class="li">
+            <a href="#">sale</a>
+          </li>
+          <li class="li">
+            <a href="#">new_item</a>
+          </li>
+          <li class="li">
+            <a href="#">interview</a>
+          </li>
+          <li class="li">
+            <a href="#">trivia</a>
+          </li>
+          <li class="li">
+            <a href="#">news</a>
+          </li>
+          <li class="li">
+            <a href="#">event</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>

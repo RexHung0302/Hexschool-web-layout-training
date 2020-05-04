@@ -2,6 +2,15 @@
 node_modules
 /dist
 
+/**/node_modules/
+/*/node_modules/
+/**/.gitignore/
+/*/.gitignore/
+/**/package-lock.json/
+/*/package-lock.json/
+/*/dist/
+/**/dist/
+
 # local env files
 .env
 .env.local
@@ -20,3 +29,8 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Glup Floder
+
+/web-layout-training-gulp/node_modules
+/web-layout-training-gulp/package-lock.json

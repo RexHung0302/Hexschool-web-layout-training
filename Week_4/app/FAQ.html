@@ -1,0 +1,64 @@
+---
+title: Week_4 - [多頁式網頁設計] - FAQ
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<main class="main_FAQ">
+  <!-- Banner -->
+  <section class="banner d-flex ai-fe">
+    <div class="slogan container d-flex ai-c">
+      <h2 class="my-0 slogan__title">常見問題</h2>
+      <img class="d-block icon" src="./assets/Images/help-circle-sharp.svg" alt="help-circle-sharp">
+    </div>
+  </section>
+  <!-- content -->
+  <section class="content container">
+    <h2 class="m-0 subTitle">我想詢問配鏡問題</h2>
+    <!-- 每一個問題 -->
+    <div class="collapseDiv">
+      <div class="collapseDiv__header cursor-pointer" onclick="openCollapseHandler(this)">
+        <h2 class="m-0">Q1.請問可否自備鏡框單配鏡片？</h2><img class="icon" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow">
+      </div>
+      <div class="collapseDiv__body">
+        <span>A1.我牌鏡框搭配薄型非球面鏡片1480元，搭配功能型鏡片則依鏡片種類加價購買。 當日購買JINS盒裝眼鏡，搭配薄型非球面鏡片980元(隔日後則為1480元)，搭配功能型鏡片則依鏡片種類加價購買。 他牌鏡框，搭配薄型非球面鏡片1980元，搭配功能型鏡片則依鏡片種類加價購買。</span>
+      </div>
+    </div>
+    <!-- 每一個問題 -->
+    <div class="collapseDiv">
+      <div class="collapseDiv__header cursor-pointer" onclick="openCollapseHandler(this)">
+        <h2 class="m-0">Q2.眼鏡都可以20分鐘取件嗎？</h2><img class="icon" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow">
+      </div>
+      <div class="collapseDiv__body">
+        <span>A2.若門市內有您選擇鏡片之庫存，最快於20分鐘內即可交件。染色鏡片及遠近兩用漸變焦眼鏡等需特別訂製的鏡片，則需要一周左右的作業時間。※ 特殊構造鏡框、無鏡框眼鏡等的鏡框加工，依據狀況亦有需要更長作業時間的情況發生。</span>
+      </div>
+    </div>
+    <!-- 每一個問題 -->
+    <div class="collapseDiv">
+      <div class="collapseDiv__header cursor-pointer" onclick="openCollapseHandler(this)">
+        <h2 class="m-0">Q3.散光鏡片需要額外加價嗎？</h2><img class="icon" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow">
+      </div>
+      <div class="collapseDiv__body">
+        <span>A3.非球面鏡片比起球面鏡片可減低影像扭曲現象使其更加輕薄，因此可製作出相較以往更加輕盈的眼鏡。無論你是高度近視、遠視還是散光，無論任何度數我們皆以HK$0提供給你最適合的薄型非球面鏡片。</span>
+      </div>
+    </div>
+    <!-- 每一個問題 -->
+    <div class="collapseDiv">
+      <div class="collapseDiv__header cursor-pointer" onclick="openCollapseHandler(this)">
+        <h2 class="m-0">Q4.我可以使用舊眼鏡的度數配鏡片嗎？</h2><img class="icon" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow">
+      </div>
+      <div class="collapseDiv__body">
+        <span>A4.攜帶您的舊眼鏡到門市，並為您以原鏡片度數配鏡片，不需要另外驗光(驗光服務為免費提供)。基本上不建議使用隱形眼鏡度數配鏡片。</span>
+      </div>
+    </div>
+    <!-- 每一個問題 -->
+    <div class="collapseDiv">
+      <div class="collapseDiv__header cursor-pointer" onclick="openCollapseHandler(this)">
+        <h2 class="m-0">Q5.請問可以單購買鏡框嗎？</h2><img class="icon" src="./assets/Images/ic_keyboard_arrow_up_24px.svg" alt="arrow">
+      </div>
+      <div class="collapseDiv__body">
+        <span>A5.當然！因鏡框為韓國製，並針對亞洲人臉型設計，採用極輕抗凹材質，全系列款式純框僅9 克上下，非常多客戶直接購買鏡框，日後搭上鏡片只需要收取微薄的手續費。</span>
+      </div>
+    </div>
+  </section>
+</main>
