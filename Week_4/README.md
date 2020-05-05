@@ -53,7 +53,7 @@ Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-train
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
 
-Blog: [點我](#)
+Blog: [點我](https://rexhung0302.github.io/2020/05/05/20200505/#mor)
 
 ---
 

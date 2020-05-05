@@ -5,24 +5,12 @@
 @import './base/normalize'; //- 初始化 CSS
 
 /*------------------------------------*\
-    $MODULE
-\*------------------------------------*/
-
-// @import './module/bootstrap-v4.2/bootstrap.scss';           //- BootStrap-v4.2
-
-/*------------------------------------*\
     $VARIABLE
 \*------------------------------------*/
 
 @import './helper/variable';    //- 共用 變數
 @import './helper/mixin.scss';  //- 函式
 @import './base/base';          //- 共用 CSS
-
-/*------------------------------------*\
-    $THEMES
-\*------------------------------------*/
-
-@import './themes/icon';    //- Icon CSS
 
 /*------------------------------------*\
     $PAGES
