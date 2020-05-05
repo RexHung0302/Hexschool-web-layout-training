@@ -27,7 +27,7 @@
 ```
 //- 安裝 node.js 跳過
 
-1. $ npm install --global gulp //- 安裝全域 gulp
+1. $ npm install --global gulp //- 安裝全域 gulp, 如果無法安裝請在最前方加上 sudo -> 例：sudo npm i gulp -g
 
 2. $ git clone https://github.com/RexHung0302/Hexschool-web-layout-training.git
 
