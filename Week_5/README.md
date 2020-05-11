@@ -65,7 +65,7 @@ Blog: [點我](#)
 
 本週頁面目錄在此：
 
-1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_5/dist)
+1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_5/dist/index.html)
 
 2. [Assignment](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_5/dist/assignment.html)
 
