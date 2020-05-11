@@ -3,12 +3,12 @@
 var userRow = document.getElementsByClassName('userRow'); //- 判斷目前頁面
 
 $(document).ready(function () {
-  console.log(location.pathname); // 目前在 Admin 頁面
-
-  if (location.pathname.match(/admin.html/i)) {
+  // console.log(!!location.pathname.match(/admin.html/i));
+  // 目前在 Admin 頁面
+  if (!!location.pathname.match(/admin.html/i)) {
     $('#Admin_li').addClass('active');
   } // 目前在 Assignment 頁面
-  else if (location.pathname.match(/assignment.html/i)) {
+  else if (!!location.pathname.match(/assignment.html/i)) {
       $('#Assignment_li').addClass('active');
     } // 其他
     else {
