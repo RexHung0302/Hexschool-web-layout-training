@@ -2,7 +2,7 @@ let userRow = document.getElementsByClassName('userRow');
 
 //- 判斷目前頁面
 $(document).ready(function(){
-  // alert(location.pathname);
+  console.log(location.pathname);
   // 目前在 Admin 頁面
   if(location.pathname === '/admin.html') {
     $('#Admin_li').addClass('active');
