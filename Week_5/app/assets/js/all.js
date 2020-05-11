@@ -4,11 +4,11 @@ let userRow = document.getElementsByClassName('userRow');
 $(document).ready(function(){
   console.log(location.pathname);
   // 目前在 Admin 頁面
-  if(location.pathname === '/admin.html') {
+  if(location.pathname.match(/admin.html/i)) {
     $('#Admin_li').addClass('active');
   }
   // 目前在 Assignment 頁面
-  else if(location.pathname === '/assignment.html') {
+  else if(location.pathname.match(/assignment.html/i)) {
     $('#Assignment_li').addClass('active');
   }
   // 其他
