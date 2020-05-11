@@ -1107,7 +1107,10 @@ a {
       line-height: 24px;
       font-weight: bold; }
   .admin table tbody tr {
-    border-bottom: 1px solid #CDDDCD; }
+    border-bottom: 1px solid #CDDDCD;
+    translate: background-color .5s ease; }
+    .admin table tbody tr:hover {
+      background-color: #EDF4EE; }
   .admin table tbody td {
     padding: 19px 0; }
   .admin table tbody a {

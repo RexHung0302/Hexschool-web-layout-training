@@ -26,6 +26,10 @@
     tbody {
       tr {
         border-bottom: 1px solid #CDDDCD;
+        translate: background-color .5s ease;
+        &:hover {
+          background-color: $Primary;
+        }
       }
       td {
         padding: 19px 0;
