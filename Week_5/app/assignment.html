@@ -1,0 +1,306 @@
+---
+title: Assignment
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="assignment">
+  <!-- 上方的標題及功能欄 -->
+  <nav class="d-flex ai-c headerNav">
+    <h2 class="m-0">Assigment</h2>
+    <div class="selectBox d-flex ai-c cursor-pointer mr-auto">
+      <select id="assignmentSelect" name="assignmentSelect" class="cursor-pointer">
+        <option value="0">All Courses</option>
+      </select>
+      <label for="assignmentSelect" class="m-0 d-flex cursor-pointer">
+        <i class="material-icons icon">keyboard_arrow_down</i>
+      </label>
+    </div>
+    <!-- 每一個選項 -->
+    <ul class="menu list-style-none m-0 pl-0 d-flex ai-fs">
+      <li class="li">
+        <a href="#" class="d-flex ai-c cursor-pointer">
+          <i class="material-icons icon">search</i>
+        </a>
+      </li>
+      <li class="li">
+        <a href="#" class="d-flex ai-c cursor-pointer">
+          <i class="material-icons icon">notifications_active</i>
+        </a>
+      </li>
+  </nav>
+  <!-- 內容 -->
+  <section class="main d-flex ai-fs fw-w">
+    <div class="titleRow d-flex jc-sb ai-c w-100">
+      <!-- 下拉欄位 -->
+      <div class="selectBox d-flex ai-c cursor-pointer">
+        <select id="assignmentSelect" name="assignmentSelect" class="cursor-pointer">
+          <option value="0">All(4)</option>
+        </select>
+        <label for="assignmentSelect" class="m-0 d-flex cursor-pointer">
+          <i class="material-icons icon">keyboard_arrow_down</i>
+        </label>
+      </div>
+      <!-- 標頭 -->
+      <div class="text-end">
+        <p class="m-0 commemtText">2 comments</p>
+      </div>
+    </div>
+    <div class="contentRow d-flex ai-fs w-100">
+      <!-- 左側通訊錄 -->
+      <div class="directoryBox">
+        <!-- 通訊錄列表 -->
+        <div class="directoryBox__content">
+          <div class="list list-style-none pl-0 d-flex ai-fs fd-c">
+            <!-- 每一則通訊錄內容 -->
+            <div class="li active d-flex ai-fs cursor-pointer">
+              <!-- 左側資訊 -->
+              <div class="info">
+                <p class="cc m-0">Chapter Assignment 2</p>
+                <p class="text-ellipsis subject m-0">Please check this file for me, thanks!</p>
+              </div>
+              <!-- 右側資訊 -->
+              <div class="infoTwo">
+                <p class="time m-0">4 hrs ago</p>
+                <p class="name m-0">Emily Wang</p>
+              </div>
+            </div>
+            <!-- 每一則通訊錄內容 -->
+            <div class="li d-flex ai-fs cursor-pointer">
+              <!-- 左側資訊 -->
+              <div class="info">
+                <p class="cc m-0">Chapter Assignment 1</p>
+                <p class="text-ellipsis subject m-0">My Homework</p>
+              </div>
+              <!-- 右側資訊 -->
+              <div class="infoTwo">
+                <p class="time m-0">12 hrs ago</p>
+                <p class="name m-0">David Xu</p>
+              </div>
+            </div>
+            <!-- 每一則通訊錄內容 -->
+            <div class="li d-flex ai-fs cursor-pointer">
+              <!-- 左側資訊 -->
+              <div class="info">
+                <p class="cc m-0">Final Assignment</p>
+                <p class="text-ellipsis subject m-0">Have a problem with this file for me, thanks!</p>
+              </div>
+              <!-- 右側資訊 -->
+              <div class="infoTwo">
+                <p class="time m-0">18 hrs ago</p>
+                <p class="name m-0">Tony Wei</p>
+              </div>
+            </div>
+            <!-- 每一則通訊錄內容 -->
+            <div class="li d-flex ai-fs cursor-pointer">
+              <!-- 左側資訊 -->
+              <div class="info">
+                <p class="cc m-0">Final Assignment</p>
+                <p class="text-ellipsis subject m-0">Did I do it right?</p>
+              </div>
+              <!-- 右側資訊 -->
+              <div class="infoTwo">
+                <p class="time m-0">19 hrs ago</p>
+                <p class="name m-0">Christina Lin</p>
+              </div>
+            </div>
+            <!-- 每一則通訊錄內容 -->
+            <div class="li d-flex ai-fs cursor-pointer">
+              <!-- 左側資訊 -->
+              <div class="info">
+                <p class="cc m-0">切版直播班</p>
+                <p class="text-ellipsis subject m-0">我通關了嗎？不得不說吼 校長及助教太神啦 這邊應該太長會被CSS隱藏不要偷偷用 F12 看 ^^</p>
+              </div>
+              <!-- 右側資訊 -->
+              <div class="infoTwo">
+                <p class="time m-0">1 hrs ago</p>
+                <p class="name m-0">Rex Hung</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 右側訊息內容欄位 -->
+      <div class="messageBox position-relative" id="messageBox">
+        <!-- 對話框 -->
+        <div class="messageBox__content">
+          <!-- 最頂部 -->
+          <div class="titleInfo d-flex ai-c">
+            <!-- 左側資訊 -->
+            <div class="info text-left">
+              <p class="cc m-0">Chapter Assignment 2</p>
+              <p class="subject m-0">Please check this file for me, thanks!</p>
+            </div>
+            <!-- 右側按鈕 -->
+            <div class="toolBox text-center">
+              <a href="#" class="d-flex ai-c cursor-pointer">
+                <i class="material-icons icon">more_vert</i>
+              </a>
+            </div>
+          </div>
+          <!-- 訊息內容 -->
+          <div class="contentInfo" id="contentInfo">
+            <!-- 每一個使用者傳送訊息 -->
+            <div class="userRow d-flex ai-fs">
+              <!-- 使用者圖像 -->
+              <div class="profileInfo">
+                <img class="d-block img" src="./assets/images/emilywang.jpeg" alt="emilywang">
+              </div>
+              <!-- 內容 -->
+              <div class="messageInfo">
+                <!-- 標題及操作按鈕 -->
+                <div class="infoPart">
+                  <!-- 名稱時間區塊(這邊多包一層因為如果是自己發訊息會有操作按鈕) -->
+                  <div class="header">
+                    <p class="m-0 name">Emily Wang</p>
+                    <p class="m-0 time">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+                <!-- 內容 -->
+                <div class="infoText">
+                  <p class="m-0">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="important">div</span> is bigger than the height of the <span class="important">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin.</p>
+                  <p class="m-0">What is the gap or extra space below image?</p>
+                </div>
+                <!-- 附件 -->
+                <a href="#" class="annexBox" download>
+                  <i class="material-icons icon">attach_file</i>
+                  <span>HW-2-David.zip</span>
+                </a>
+              </div>
+            </div>
+            <!-- 每一個使用者傳送訊息(加上 userRow-you 才會有其他 CSS 屬性) -->
+            <div class="userRow d-flex ai-fs userRow-you">
+              <!-- 使用者圖像 -->
+              <div class="profileInfo">
+                <img class="d-block img" src="./assets/images/andychen.jpeg" alt="andychen">
+              </div>
+              <!-- 內容 -->
+              <div class="messageInfo">
+                <!-- 標題及操作按鈕 -->
+                <div class="infoPart">
+                  <!-- 名稱時間區塊(這邊多包一層因為如果是自己發訊息會有操作按鈕) -->
+                  <div class="header">
+                    <!-- 左邊 -->
+                    <div class="dec mr-auto">
+                      <p class="m-0 name">Andy Chen (You)</p>
+                      <p class="m-0 time">13:24 AM (1 hours ago)</p>
+                    </div>
+                    <!-- 右邊 -->
+                    <ul class="tool list-style-none m-0 pl-0 d-flex ai-c">
+                      <li class="li">
+                        <a href="#" class="d-flex">
+                          <i class="material-icons icon">star_border</i>
+                        </a>
+                      </li>
+                      <li class="li" class="d-flex">
+                        <a href="#">
+                          <i class="material-icons icon">edit</i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- 內容 -->
+                <div class="infoText">
+                  <p class="m-0">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.</p>
+                  <br/>
+                  <p class="m-0">You can:</p>
+                  <br/>
+                  <p class="m-0">
+                    <ul class="m-0">
+                      <li>adjust the <span class="important">vertical-align</span> of the image to position it elsewhere (e.g. the <span class="important">middle</span> ) or</li>
+                      <li>change the <span class="important">display</span> so it isn’t inline.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 左右按鈕及回覆按鍵 -->
+        <div class="messageBox__tool d-flex ai-c jc-sb">
+          <!-- 左右按鈕 -->
+          <div class="arrowBox d-flex ai-c">
+            <a href="#">
+              <i class="material-icons icon">chevron_left</i>
+            </a>
+            <a href="#">
+              <i class="material-icons icon">chevron_right</i>
+            </a>
+          </div>
+          <!-- 回覆按鍵 -->
+          <div class="btnBox d-flex ai-c">
+            <a href="#" class="btn btn-secondary">Mark as read</a>
+            <a href="#" class="btn btn-primary" id="outside_reply">Reply</a>
+          </div>
+        </div>
+        <!-- 打開回覆視窗 -->
+        <div class="messageBox__replyBox d-flex fd-c" id="replyBox">
+          <!-- 工具欄位 -->
+          <ul class="toolRow list-style-none m-0 pl-0 d-flex ai-c">
+            <li class="li">
+              <!-- 下拉欄位 -->
+              <div class="selectBox d-flex ai-c cursor-pointer">
+                <select id="assignmentSelect" name="assignmentSelect" class="cursor-pointer">
+                  <option value="1">Body Text</option>
+                  <option value="66666666">六角 Text</option>
+                  <option value="77777777">超猛 Text</option>
+                </select>
+                <label for="assignmentSelect" class="m-0 d-flex cursor-pointer">
+                  <i class="material-icons icon">arrow_drop_down</i>
+                </label>
+              </div>
+            </li>
+            <li class="li">
+              <a href="#">
+                <i class="material-icons icon">format_bold</i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#">
+                <i class="material-icons icon">format_italic</i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#">
+                <i class="material-icons icon">format_list_bulleted</i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#">
+                <i class="material-icons icon">format_list_numbered</i>
+              </a>
+            </li>
+            <li class="li">
+              <!-- 隱藏的圖片上傳 Input -->
+              <input type="file" class="d-none" id="imgUploadInput" accept="image/*">
+              <a href="#" id="imgUploadBtn">
+                <i class="material-icons icon">insert_photo</i>
+              </a>
+            </li>
+            <li class="li">
+              <!-- 隱藏的檔案上傳 Input -->
+              <input type="file" class="d-none" id="fileUploadInput" accept="text/html,.pdf,.xls,video/*,audio/*,.csv,.xlsx">
+              <a href="#" id="fileUploadBtn">
+                <i class="material-icons icon">insert_link</i>
+              </a>
+            </li>
+            <li class="li">
+              <a href="#">
+                <i class="material-icons icon">unfold_more</i>
+              </a>
+            </li>
+          </ul>
+          <!-- 輸入區塊 -->
+          <div class="contenteditableBox fg-1 position-relative" contenteditable placeholder="Textarea placeholder..." id="contenteditableBox"></div>
+          <!-- 輸入按鈕 回覆按鍵  -->
+          <div class="btnBox d-flex ai-c">
+            <a href="#" class="btn btn-secondary" id="cancelBtn">Cancel</a>
+            <a href="#" class="btn btn-primary">Reply</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

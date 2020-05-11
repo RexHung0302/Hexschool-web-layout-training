@@ -1,0 +1,284 @@
+.assignment {
+  //- 客製化下拉選單
+  .selectBox {
+    height: 29px;
+    line-height: 29px;
+    select {
+      margin-right: 8px;
+      background-color: #ffffff00;
+      border: none;
+      appearance:none;  // 隱藏預設下拉箭頭
+      -moz-appearance:none;
+      -webkit-appearance:none;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+    }
+  }
+  // 主要內容
+  .main {
+    // 通訊錄
+    .directoryBox {
+      flex-basis: 40%;
+      // 通訊錄列表 加這層只是要放上 overflow: scroll; 拿掉訊息列表就會一路往下排
+      &__content {
+        height: 248px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: 1px solid #CDDDCD;
+        border-radius: 2px;
+        .li {
+          width: 100%;
+          padding: 12px;
+          border-bottom: 1px solid #CDDDCD;
+          transform: all .5s linear;
+          &:hover {
+            background: $Primary;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+        .li.active {
+          background-color: $Primary;
+        }
+        .info {
+          flex-basis: 60%;
+        }
+        .infoTwo {
+          flex-basis: 40%;
+          text-align: end;
+        }
+        // Carbon Copy
+        .cc {
+          font-size: 12px;
+          line-height: 24px;
+          color: #121212;
+          margin-bottom: 4px;
+        }
+        .subject {
+          font-size: 16px;
+          line-height: 24px;
+          font-weight: bold;
+          max-width: 160px;
+        }
+        .time {
+          font-size: 12px;
+          line-height: 24px;
+          color: #121212;
+          margin-bottom: 4px;
+        }
+        .name {
+          font-size: 12px;
+          line-height: 24px;
+          color: #0000009A;
+        }
+      }
+    }
+    .titleRow {
+      margin-bottom: 6px;
+    }
+    .commemtText {
+      font-size: 12px;
+      line-height: 24px;
+      color: #707070;
+    }
+    // 訊息欄位
+    .messageBox {
+      margin-left: 16px;
+      flex-basis: 60%;
+      &__content {
+        border: 1px solid #CDDDCD;
+        border-radius: 2px;
+        margin-bottom: 16px;
+      }
+      .titleInfo {
+        padding: 12px 17px 12px 16px;
+        background-color: $Primary;
+        border-bottom: 1px solid #CDDDCD;
+      }
+      .info {
+        flex-basis: 95%;
+      }
+      .toolBox {
+        flex-basis: 5%;
+        .icon:hover {
+          color: #0000005c;
+        }
+      }
+      // Carbon Copy
+      .cc {
+        font-size: 12px;
+        line-height: 24px;
+        color: #121212;
+        margin-bottom: 4px;
+      }
+      .subject {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+      // 訊息內容
+      .contentInfo {
+        padding: 16px;
+        .userRow:last-child {
+          .messageInfo {
+            border-bottom: none;
+            margin-bottom: 0;
+          }
+        }
+        .profileInfo {
+          flex-basis: 10%;
+          .img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 8px;
+          }
+        }
+        .messageInfo {
+          flex-basis: 90%;
+          margin-bottom: 12.5px;
+          border-bottom: 1px solid $Primary;
+          .infoPart {
+            margin-bottom: 16px;
+            text-align: left;
+          }
+          .name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 4px;
+            line-height: 24px;
+          }
+          .time {
+            font-size: 12px;
+            color: #0000009A;
+          }
+          .important {
+            background-color: $Primary;
+            color: $Secondary;
+            padding: 0 4px;
+          }
+          .infoText {
+            margin-bottom: 16px;
+            p {
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+          .annexBox {
+            border: 1px solid #CDDDCD;
+            background-color: $Primary;
+            border-radius: 2px;
+            padding: 8px 12px;
+            font-weight: bold;
+            display: inline-flex;
+            margin-bottom: 16px;
+            .icon {
+              width: 24px;
+              height: 24px;
+              margin-right: 8px;
+            } 
+            span {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+          hr {
+            border: 1px solid $Primary;
+            margin-top: 0;
+            margin-bottom: 12.5px;
+          }
+        }
+        //- 如果訊息是自己這邊發送
+        .userRow-you {
+          .infoText {
+            margin-bottom: 0;
+          }
+          .header {
+            display: flex;
+            align-items: flex-start;
+          }
+          .li {
+            margin-right: 24px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          .icon {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      // 下方方向按鈕及按鍵
+      &__tool {
+        a {
+          margin-right: 23px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      // 下方回覆輸入區塊
+      &__replyBox {
+        border: 1px solid #CDDDCD;
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        background-color: #FFFFFF;
+        right: 0;
+        height: 0;
+        transition: all .5s;
+        overflow: hidden;
+        z-index: 10;
+        .toolRow {
+          padding: 18px 25px;
+          background: $Primary;
+          border-bottom: 1px solid #CDDDCD;
+          .li {
+            margin-right: 24px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          .icon {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        //- 輸入框
+        .contenteditableBox {
+          outline: none;
+          padding: 16px 24px;
+          overflow-y: auto;
+          margin-bottom: 51px;
+        }
+        [contenteditable][placeholder]:empty:before {
+          content: attr(placeholder);
+          position: absolute;
+          color: gray;
+          background-color: transparent;
+        }
+        //- 按鈕
+        .btnBox {
+          position: absolute;
+          bottom: 16px;
+          right: 24px;
+          a {
+            margin-right: 8px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    .messageBox.show {
+      .messageBox__replyBox {
+        display: flex;
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+.admin {
+  .headerNav {
+    margin-bottom: 48px;
+  }
+  .addBtn {
+    .icon {
+      margin-right: 8px;
+    }
+    .span {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  table {
+    border-collapse: collapse;
+    margin-bottom: 63px;
+    thead {
+      border-bottom: 1px solid #121212;
+      td {
+        padding-bottom: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid #CDDDCD;
+      }
+      td {
+        padding: 19px 0;
+      }
+      a {
+        margin-right: 24px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        &:hover {
+          color: #0000005c;
+        }
+      }
+    }
+  }
+  .detailModal {
+    .card {
+      min-width: 480px;
+      .mainInfo {
+        margin-bottom: 24px;
+      }
+    }
+    .profileImg {
+      width: 141px;
+      height: 170px;
+      flex-basis: 40%;
+      overflow: hidden;
+      .img {
+        object-fit: cover;
+      }
+    }
+    .profileInfo {
+      flex-basis: 60%;
+      margin-left: 24px;
+    }
+    .tag {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    .role {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .name {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .email {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      color: #0000009A;
+    }
+    .showDetailRow {
+      pointer-events: auto;
+      .important {
+        padding: 4px 8px;
+        background: $Primary;
+      }
+      .icon {
+        transition: transform .5s;
+      }
+      .icon.show {
+        transform: rotate(180deg);
+      }
+    }
+    .detailBtnInfo {
+      position: relative;
+      max-height: 0;
+      top: 0;
+      overflow: hidden;
+      transition: all 0.5s;
+    }
+    .detailBtnInfo.show {
+      max-height: 60px;
+    }
+    .btn {
+      margin-right: 23px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .editDetailModal,
+  .addDetailModal {
+    .card {
+      padding: 0;
+      min-width: 480px;
+    }
+    .card-header {
+      padding: 32px;
+      border-bottom: 1px solid #CDDDCD;
+    }
+    .title {
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: bold;
+    }
+    .card-body {
+      padding: 32px;
+      padding-top: 0;
+      max-height: 576px;
+      overflow-y: auto;
+    }
+    .subTitle {
+      font-size: 20px;
+      line-height: 33px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .input-group {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      label {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 4px;
+      }
+      input {
+        border: 1px solid #CDDDCD;
+        border-radius: 2px;
+        width: 100%;
+        padding: 16px;
+      }
+      .disabled {
+        background-color: $Primary;
+        border: none;
+      }
+    }
+    .part {
+      padding: 24.5px 0;
+      border-bottom: 1px solid #CDDDCD;
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    .verificationPart {
+      .label {
+        margin-bottom: 18px;
+      }
+      .icon {
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        color: $Secondary;
+      }
+      .icon.warningRemind {
+        color: #E3006E;
+      }
+      .verifiedLabel {
+        font-size: 16px;
+        line-height: 33px;
+      }
+      .time {
+        font-size: 14px;
+        line-height: 33px;
+      }
+      .btn {
+        padding: 16px;
+        cursor: pointer;
+      }
+      .disabled {
+        background: #FFFFFF;
+        color: #CDDDCD;
+        cursor: no-drop;
+        border: 1px solid #CDDDCD;
+      }
+    }
+    .accessLevelSelect {
+        border: 1px solid #121212;
+        padding: 16px;
+        appearance:none;  // 隱藏預設下拉箭頭
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background: #FFFFFF;
+    }
+    .accessLevelIcon {
+      position: absolute;
+      right: 16px;
+      pointer-events: none;
+    }
+    .accessLevelPart {
+      .li {
+        margin-bottom: 21px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .deactivatePart {
+      .warningRow {
+        margin-bottom: 18px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+      .btn {
+        padding: 16px;
+      }
+    }
+    .card-footer {
+      padding: 16px;
+      border-top: 1px solid #CDDDCD;
+      .btn {
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

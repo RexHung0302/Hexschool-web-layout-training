@@ -1,0 +1,78 @@
+.sideBar {
+  min-width: 296px;
+  min-height: 100vh;
+  padding: 32px 0;
+  background-color: $Primary;
+  h1 {
+    margin-bottom: 34px;
+    padding: 0 32px;
+  }
+  .menu {
+    margin-bottom: auto;
+    .li {
+      position: relative;
+      margin-bottom: 29px;
+      a {
+        padding: 0 32px;
+      }
+      a:hover {
+        color: $Secondary;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 4px;
+          height: 100%;
+          background-color: $Secondary;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+      }
+    }
+    .li.active {
+      a::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $Secondary;
+      }
+      a {
+        color: $Secondary;
+      }
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      margin-right: 16px;
+    }
+  }
+  .profileImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 16px;
+    background-position: center center;
+    background-size: cover;
+  }
+  .userInfo {
+    .name {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+    .emailText {
+      font-size: 14px;
+      line-height: 24px;
+      color: #0000009A;
+    }
+  }
+}

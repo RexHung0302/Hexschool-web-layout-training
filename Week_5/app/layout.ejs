@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%- title %></title>
+  <!-- Googl Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <section class="d-flex">
+    <div class="sideBar d-flex fd-c fg-1">
+      <!-- Logo -->
+      <h1 class="m-0">
+        <a href="./index.html" class="d-flex ai-c logo">
+          <img src="./assets/images/logo-ANSWER.svg" alt="logo-ANSWER" class="img">
+        </a>
+      </h1>
+      <!-- 每一個選項 -->
+      <ul class="menu list-style-none pl-0 d-flex ai-fs fd-c">
+        <li class="li" id="Dashboard_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">insert_chart</i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Question_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">forum</i>
+            <span>Question</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Assignment_li">
+          <a href="./assignment.html" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">assignment</i>
+            <span>Assignment</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Course_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">video_library</i>
+            <span>Course</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Admin_li">
+          <a href="./admin.html" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">supervisor_account</i>
+            <span>Admin</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Settings_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">settings</i>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex ai-c jc-c">
+        <!-- 大頭貼 -->
+        <div class="profileImg" style="background-image: url('./assets/images/andychen.jpeg')"></div>
+        <div class="userInfo">
+          <label class="font-weight-bold name d-block">Andy Chen</label>
+          <span class="emailSpan">andy0401@mail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <%- contents %>
+    </div>
+  </section>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

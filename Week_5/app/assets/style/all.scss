@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+
+@import './base/normalize'; //- 初始化 CSS
+
+/*------------------------------------*\
+    $VARIABLE
+\*------------------------------------*/
+
+@import './helper/variable';    //- 共用 變數
+// @import './helper/mixin.scss';  //- 函式
+@import './base/base';          //- 共用 CSS
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+
+//- layout
+@import './layout/sideBar';     //- Sidebar
+@import './layout/header';      //- Header
+
+//- pages
+@import './pages/index';             //- 主頁
+@import './pages/assignment';        
+@import './pages/admin';  
