@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Admin</title>
+  <!-- Googl Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Material Icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <section class="d-flex">
+    <div class="sideBar d-flex fd-c fg-1">
+      <!-- Logo -->
+      <h1 class="m-0">
+        <a href="./index.html" class="d-flex ai-c logo">
+          <img src="./assets/images/logo-ANSWER.svg" alt="logo-ANSWER" class="img">
+        </a>
+      </h1>
+      <!-- 每一個選項 -->
+      <ul class="menu list-style-none pl-0 d-flex ai-fs fd-c">
+        <li class="li" id="Dashboard_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">insert_chart</i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Question_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">forum</i>
+            <span>Question</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Assignment_li">
+          <a href="./assignment.html" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">assignment</i>
+            <span>Assignment</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Course_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">video_library</i>
+            <span>Course</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Admin_li">
+          <a href="./admin.html" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">supervisor_account</i>
+            <span>Admin</span>
+          </a>
+        </li>
+        <li class="li d-flex ai-c cursor-pointer" id="Settings_li">
+          <a href="#" class="d-flex ai-c cursor-pointer">
+            <i class="material-icons icon">settings</i>
+            <span>Settings</span>
+          </a>
+        </li>
+      </ul>
+      <div class="d-flex ai-c jc-c">
+        <!-- 大頭貼 -->
+        <div class="profileImg" style="background-image: url('./assets/images/andychen.jpeg')"></div>
+        <div class="userInfo">
+          <label class="font-weight-bold name d-block">Andy Chen</label>
+          <span class="emailSpan">andy0401@mail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      
+<section class="admin">
+  <!-- 上方的標題及功能欄 -->
+  <nav class="d-flex ai-c headerNav">
+    <h2 class="m-0">Admin</h2>
+    <div class="mr-auto fg-1 addBtn">
+      <a href="#" class="d-flex ai-c" onclick="showAddDetailModalHandler()">
+        <i class="material-icons icon">add</i>
+        <span class="span">Add New Admin</span>
+      </a>
+    </div>
+    <!-- 每一個選項 -->
+    <ul class="menu list-style-none m-0 pl-0 d-flex ai-fs">
+      <li class="li">
+        <a href="#" class="d-flex ai-c cursor-pointer">
+          <i class="material-icons icon">search</i>
+        </a>
+      </li>
+      <li class="li">
+        <a href="#" class="d-flex ai-c cursor-pointer">
+          <i class="material-icons icon">notifications_active</i>
+        </a>
+      </li>
+  </nav>
+  <!-- 內容 -->
+  <section class="main">
+    <table class="w-100">
+      <thead>
+        <tr>
+          　<td>ID</td>
+          　<td>Name</td>
+          　<td>Email</td>
+          　<td>Verified</td>
+          　<td></td>
+        　</tr>
+      </thead>
+    　<tbody>
+        <tr>
+        　<td>#1</td>
+        　<td>Emir Wicks</td>
+          <td>emir.wicks@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#2</td>
+        　<td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#3</td>
+        　<td>Mahima Lopez</td>
+          <td>Mahima.Lopez@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#4</td>
+        　<td>Pharrell Murray</td>
+          <td>Pharrell.Murray@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#5</td>
+        　<td>Annika Mcbride</td>
+          <td>Annika.Mcbride@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#6</td>
+        　<td>Fatimah Clark</td>
+          <td>Fatimah.Clark@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#7</td>
+        　<td>Klaudia Rhodes</td>
+          <td>Klaudia.Rhodes@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#8</td>
+        　<td>Tillie Lucero</td>
+          <td>Tillie.Lucero@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr> 
+        <tr>
+        　<td>#9</td>
+        　<td>Sabrina Stephenson</td>
+          <td>Sabrina.Stephenson@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+        <tr>
+        　<td>#10</td>
+        　<td>Annie Smith</td>
+          <td>Annie.Smith@mail.com</td>
+          <td>Yes</td>
+          <td class="text-end">
+            <a href="#" onclick="showDetailModalHandler()">
+              <i class="material-icons icon">visibility</i>
+            </a>
+            <a href="#" onclick="showEditDetailModalHandler()">
+              <i class="material-icons icon">edit</i>
+            </a>
+          </td>
+      　</tr>
+      </tbody>
+    </table>
+    <ul class="pagenation list-style-none m-0 pl-0 d-flex ai-c jc-fe">
+      <li class="li"><a href="#"><i class="material-icons icon">keyboard_arrow_left</i></a></li>
+      <li class="li"><a href="#" class="active">1</a></li>
+      <li class="li"><a href="#">2</a></li>
+      <li class="li"><a href="#">3</a></li>
+      <li class="li"><a href="#"><i class="material-icons icon">keyboard_arrow_right</i></a></li>
+    </ul>
+  </section>
+
+  <!-- 個人資料詳細彈窗 -->
+  <section class="modal detailModal d-flex ai-c jc-c" id="detailModal">
+    <div class="card position-relative" id="targetOne">
+      <!-- 關閉按鈕 -->
+      <a href="#" class="close-btn closeModal-btn"><i class="material-icons icon"">close</i></a>
+      <div class="d-flex ai-fs mainInfo">
+        
+        <!-- 大頭照 -->
+        <div class="profileImg">
+          <img src="./assets/images/emir.jpeg" alt="emir" class="img h-100">
+        </div>
+        <!-- 右方詳細內容 -->
+        <div class="profileInfo">
+          <p class="m-0 tag">#1</p>
+          <p class="m-0 role">Admin</p>
+          <p class="m-0 name">Emir Wicks</p>
+          <p class="m-0 email">emir.wicks@mail.com</p>
+          <div class="showDetailRow">
+            <a href="#" class="d-flex ai-c jc-sb" id="showDetailBtn">
+              <label class="m-0 important cursor-pointer">verified</label>
+              <i class="material-icons icon" id="showDetailRow__arrowIcon">keyboard_arrow_down</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 下方詳細內容 -->
+      <div class="detailBtnInfo" id="detailBtnInfo">
+        <div class="btnBox d-flex ai-c jc-fe">
+          <a href="#" class="btn btn-danger" id="cancelBtn">Deactivate</a>
+          <a href="#" class="btn btn-primary">Edit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 新增個人資訊彈窗 -->
+  <section class="modal addDetailModal d-flex ai-c jc-c" id="addDetailModal">
+    <from action="./admin.html" method="post">
+      <div class="card position-relative" id="targetTwo">
+        <section class="card-header">
+          <!-- 關閉按鈕 -->
+          <a href="#" class="close-btn closeModal-btn"><i class="material-icons icon"">close</i></a>
+          <p class="m-0 title">New Admin</p>
+        </section>
+        <section class="card-body">
+          <section class="part">
+            <p class="subTitle m-0">Account</p>
+            <div class="input-group">
+              <label for="name" class="m-0">Name</label>
+              <input type="text">
+            </div>
+            <div class="input-group">
+              <label for="email" class="m-0">Email</label>
+              <input type="text">
+            </div>
+          </section>
+          <section class="part verificationPart">
+            <p class="subTitle m-0">Verification</p>
+            <div class="input-group">
+              <p class="m-0 d-flex ai-c jc-sb label">
+                <span class="d-flex ai-c">
+                  <i class="material-icons icon warningRemind">warning</i>
+                  <span class="verifiedLabel">Unverified</span>
+                </span>
+              </p>
+              <button class="btn btn-secondary w-100">Send Verification Mail</button>
+            </div>
+          </section>
+          <section class="part accessLevelPart">
+            <p class="subTitle m-0">Access Level</p>
+            <div class="input-group d-flex ai-c cursor-pointer position-relative">
+              <select class="accessLevelSelect w-100 cursor-pointer" name="accessLevelSelect" id="accessLevel">
+                <option value="0">-Choose access level-</option>
+                <option value="1">Admin</option>
+                <option value="2">六角新手</option>
+                <option value="3">六角老司機</option>
+              </select>
+              <label for="accessLevelSelect" class="m-0 d-flex accessLevelIcon cursor-pointer">
+                <i class="material-icons icon">keyboard_arrow_down</i>
+              </label>
+            </div>
+          </section>
+          <section class="part accessLevelPart">
+            <p class="subTitle m-0">Custom Access</p>
+            <ul class="checkBox list-style-none m-0 pl-0 d-flex ai-fs fd-c">
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_1" name="customAccess" value="lecture"/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_1"></label>
+                    <label class="label cursor-pointer" for="customAccess_1">lecture</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_2" name="customAccess" value="Coupon" />
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_2"></label>
+                    <label class="label cursor-pointer" for="customAccess_2">Coupon</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_3" name="customAccess" value="Message"/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_3"></label>
+                    <label class="label cursor-pointer" for="customAccess_3">Message</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_4" name="customAccess" value="Setting"/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_4"></label>
+                    <label class="label cursor-pointer" for="customAccess_4">Setting</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_5" name="customAccess" value="TaskMenu" />
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_5"></label>
+                    <label class="label cursor-pointer" for="customAccess_5">Task Menu</label>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </section>
+        </section>
+        <section class="card-footer">
+          <!-- 關閉按鈕 -->
+          <div class="btnBox d-flex ai-c jc-fe">
+            <a href="#" class="btn btn-secondary closeModal-btn" id="cancelBtn">Cancel</a>
+            <a href="#" class="btn btn-primary">Add</a>
+          </div>
+        </section>
+      </div>
+    </from>
+  </section>
+
+  <!-- 編輯個人資訊彈窗 -->
+  <section class="modal editDetailModal d-flex ai-c jc-c" id="editDetailModal">
+    <from action="./admin.html" method="post">
+      <div class="card position-relative" id="targetThree">
+        <section class="card-header">
+          <!-- 關閉按鈕 -->
+          <a href="#" class="close-btn closeModal-btn"><i class="material-icons icon"">close</i></a>
+          <p class="m-0 title">Edit Admin</p>
+        </section>
+        <section class="card-body">
+          <section class="part">
+            <p class="subTitle m-0">Account</p>
+            <div class="input-group">
+              <label for="name" class="m-0">Name</label>
+              <input type="text" class="disabled" disabled value="Emir Wicks">
+            </div>
+            <div class="input-group">
+              <label for="email" class="m-0">Email</label>
+              <input type="text" class="disabled" disabled value="emir.wicks@mail.com">
+            </div>
+          </section>
+          <section class="part verificationPart">
+            <p class="subTitle m-0">Verification</p>
+            <div class="input-group">
+              <p class="m-0 d-flex ai-c jc-sb label">
+                <span class="d-flex ai-c">
+                  <i class="material-icons icon">check_circle</i>
+                  <span class="verifiedLabel">Verified</span>
+                </span>
+                <span class="time">2020/4/12</span>
+              </p>
+              <button class="btn btn-secondary w-100 disabled" disabled>Send Verification Mail</button>
+            </div>
+          </section>
+          <section class="part accessLevelPart">
+            <p class="subTitle m-0">Access Level</p>
+            <div class="input-group d-flex ai-c cursor-pointer position-relative">
+              <select class="accessLevelSelect w-100 cursor-pointer" name="accessLevelSelect" id="accessLevel">
+                <option value="0">-Choose access level-</option>
+                <option value="1">Admin</option>
+                <option value="2">六角新手</option>
+                <option value="3">六角老司機</option>
+              </select>
+              <label for="accessLevelSelect" class="m-0 d-flex accessLevelIcon cursor-pointer">
+                <i class="material-icons icon">keyboard_arrow_down</i>
+              </label>
+            </div>
+          </section>
+          <section class="part accessLevelPart">
+            <p class="subTitle m-0">Custom Access</p>
+            <ul class="checkBox list-style-none m-0 pl-0 d-flex ai-fs fd-c">
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_1" name="customAccess" value="lecture" checked/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_1"></label>
+                    <label class="label cursor-pointer" for="customAccess_1">lecture</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_2" name="customAccess" value="Coupon" />
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_2"></label>
+                    <label class="label cursor-pointer" for="customAccess_2">Coupon</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_3" name="customAccess" value="Message" checked/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_3"></label>
+                    <label class="label cursor-pointer" for="customAccess_3">Message</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_4" name="customAccess" value="Setting" checked/>
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_4"></label>
+                    <label class="label cursor-pointer" for="customAccess_4">Setting</label>
+                  </div>
+                </div>
+              </div>
+              <div class="li">
+                <div class="checkBoxArea cursor-pointer">
+                  <div class="checkBoxArea__content cursor-pointer">
+                    <input class="input d-none" type="checkbox" id="customAccess_5" name="customAccess" value="TaskMenu" />
+                    <label class="selectCheckBox mb-0 cursor-pointer" for="customAccess_5"></label>
+                    <label class="label cursor-pointer" for="customAccess_5">Task Menu</label>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </section>
+          <section class="part deactivatePart">
+            <p class="subTitle m-0">Deactivate Account</p>
+            <p class="m-0 d-flex ai-c warningRow">
+              <i class="material-icons icon warningRemind">warning</i>
+              <span class="warningRemind">This cannot be undone!</span>
+            </p>
+            <p class="m-0">
+              <button class="btn btn-danger w-100 cursor-pointer" id="cancelBtn">Deactivate This Account</button>
+            </p>
+          </section>
+        </section>
+        <section class="card-footer">
+          <!-- 關閉按鈕 -->
+          <div class="btnBox d-flex ai-c jc-fe">
+            <a href="#" class="btn btn-secondary closeModal-btn" id="cancelBtn">Cancel</a>
+            <a href="#" class="btn btn-primary">Add</a>
+          </div>
+        </section>
+      </div>
+    </from>
+  </section>
+</section>
+    </div>
+  </section>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

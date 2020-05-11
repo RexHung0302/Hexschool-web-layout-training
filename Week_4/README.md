@@ -37,7 +37,7 @@
 
 5. $ npm install // 安裝套件
 
-6. $ gulp // 輸入 gulp 後面如果沒帶名稱會自動抓 gulp 的 default 任務(gulp介紹之後會再補上)
+6. $ gulp // 輸入 gulp 後面如果沒帶名稱會自動抓 gulp 的 default 任務(Gulp 介紹請點參考下方連結處)
 
 7. Enjoy!
 
@@ -54,6 +54,8 @@ Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-train
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
 
 Blog: [點我](https://rexhung0302.github.io/2020/05/05/20200505/#mor)
+
+> Gulp 介紹：[點我](https://rexhung0302.github.io/2020/05/06/20200506/#more)
 
 ---
 
