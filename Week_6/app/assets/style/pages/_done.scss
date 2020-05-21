@@ -1,0 +1,34 @@
+.downPage {
+    position: relative;
+    top: -61px;
+    margin-bottom: -61px;
+    z-index: 1;
+    .first-container {
+        @media screen and (max-width: 992px){
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .btn {
+            padding: 19px 45px;
+        }
+    }
+    //- 右半邊有背景圖的
+    .bgPart {
+        background: url('../images/img9.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        &__textBox {
+            margin-top: 189px;
+        }
+    }
+}
+
+.logoText {
+    color: #FFFFFF;
+    @media screen and (min-width: 992px){
+        color: #000000;
+    }
+}

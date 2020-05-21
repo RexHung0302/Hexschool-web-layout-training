@@ -1,0 +1,133 @@
+.detailPage {
+    .container {
+        @media screen and (max-width: 992px) {
+            max-width: 100%;
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    .row {
+        @media screen and (min-width: 992px) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+    //- 右邊那塊
+    .detailToolsBox {
+        top: -40px;
+        @media screen and (min-width: 992px) {
+            top: 0;
+            display: flex;
+            align-items: center;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    //- 左邊那塊
+    .goodBg {
+        position: relative;
+        background: url('../images/img17.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 360px;
+        @media screen and (max-width: 992px) {
+            max-width: 100%;
+        }
+        @media screen and (min-width: 992px) {
+            height: 442px;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    .onSale {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        left: 16px;
+        top: 16px;
+        color: #FFFFFF;
+        @media screen and (max-width: 992px) {
+            left: auto;
+            right: 16px;
+        }
+    }
+    //- 很多訊息及按鈕那個框框
+    .detailInfoBox {
+        border-radius: 2px;
+        padding: 16px;
+        position: relative;
+        background-color: #FFFFFF;
+        @media screen and (min-width: 992px) {
+            padding: 32px;
+            height: 298px;
+            left: -80px;
+        }
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .numBox {
+            flex-basis: 50%;
+            @media screen and (min-width: 992px) {
+                flex-basis: calc(50% - 4px);
+                margin-right: 8px;
+            }
+            &__inputBox {
+                background:#F2F2F2;
+                border-radius: 4px;
+                padding: 16px;
+            }
+            .input {
+                background: #ffffff00;
+                border: none;
+                text-align: center;
+                width: 40px;
+            }
+        }
+        .priceBox {
+            flex-basis: 50%;
+            @media screen and (min-width: 992px) {
+                flex-basis: 100%;
+            }
+        }
+        .buttonRow {
+            flex-wrap: wrap;
+        }
+        .btn {
+            height: 56px;
+            flex-basis: 100%;
+            @media screen and (min-width: 992px) {
+                flex-basis: calc(50% - 4px);
+            }
+        }
+    }
+    //- 輪播
+    .swiper-container {
+        .swiper-slide {
+        position: relative;
+        width: 350px!important;
+        height: 409px!important;
+        @media screen and (max-width: 992px) {
+            width: 240px!important;
+            height: 299px!important;
+        }
+        }
+        img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        @media screen and (max-width: 992px) {
+            width: 240px;
+            height: 240px;
+        }
+        }
+        .onSale {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        right: 16px;
+        top: 16px;
+        color: #FFFFFF;
+        }
+    }
+}

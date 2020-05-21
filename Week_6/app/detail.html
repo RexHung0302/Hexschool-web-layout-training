@@ -1,0 +1,101 @@
+---
+title: detail
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="detailPage">
+    <!-- 圖片跟一堆按鈕 -->
+    <div class="container mb-4 mb-lg-7">
+        <div class="row">
+            <div class="col-12 col-lg-7 goodBg">
+                <span class="onSale">On Sale</span>
+            </div>
+            <div class="col-12 col-lg-5 detailToolsBox">
+                <div class="detailInfoBox">
+                    <p class="mb-3 text-secondary">Home / Product / Cup</p>
+                    <p class="mb-3 title">Tatami Cup</p>
+                    <div class="d-flex align-items-center buttonRow">
+                        <div class="numBox mb-3 mb-lg-0 order-lg-2">
+                            <div class="numBox__inputBox d-flex justify-content-around align-items-center">
+                                <i class="material-icons remove__icon  cursor-pointer" onclick="addNumHandler(-1)">remove</i>
+                                <input type="number" value="1" class="input" id="numInput">
+                                <i class="material-icons add__icon cursor-pointer" onclick="addNumHandler(1)">add</i>
+                            </div>
+                        </div>
+                        <div class="priceBox text-end mb-3 mb-lg-4 order-lg-1">
+                            <p class="text-dark text-line-through mb-1">NT$1,200</p>
+                            <h5 class="mb-0">NT$1,080</h5>
+                        </div>
+                        <button class="btn btn-primary order-lg-3">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 介紹文 -->
+    <div class="container mb-7 mb-lg-8">
+        <div class="row">
+            <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                <p class="mb-0">This beautiful light grey cup comes from Taiwan. Add some minimalist scenes to your lifetime and use this cup for tea, coffee, dessert, or to place small items as a dish tray.</p>
+            </div>
+            <div class="col-12 col-lg-7">
+                <p class="mb-0 text-secondary">
+                    Made in Taiwan<br/>8 x 8 x 6 cm<br/>Dishwasher and Microwave-safe
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 輪播 -->
+    <section class="carousel mb-7 mb-md-8">
+        <div class="container">
+            <!-- 你可能會喜歡 -->
+            <h2 class="mb-3 mb-4 font-weight-bold">You might also like…</h2>
+            <!-- Swiper -->
+            <div class="swiper-container vw-100">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <span class="onSale">On Sale</span>
+                    <img src="./assets/images/img17.jpg" alt="img17" class="mb-2">
+                    <h5 class="mb-1">Tatami Cup</h5>
+                    <label>
+                        <span class="mr-2">NT$1,080</span>
+                        <span class="text-line-through text-secondary">NT$1,200</span>
+                    </label>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/img19.jpg" alt="img19" class="mb-2">
+                    <h5 class="mb-1">Shiro Plate</h5>
+                    <label>
+                        <span>NT$1,200</span>
+                    </label>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/img20.jpg" alt="img20" class="mb-2">
+                    <h5 class="mb-1">Sumo Vase</h5>
+                    <label>
+                        <span>NT$4,800</span>
+                    </label>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/img21.jpg" alt="img21" class="mb-2">
+                    <h5 class="mb-1">Ceramic Vase</h5>
+                    <label>
+                        <span>NT$3,600</span>
+                    </label>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/img23.jpg" alt="img23" class="mb-2">
+                    <h5 class="mb-1">Kabi Mug</h5>
+                    <label>
+                        <span>NT$980</span>
+                    </label>
+                </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="./assets/js/detailPage.js"></script>

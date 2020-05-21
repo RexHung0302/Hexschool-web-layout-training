@@ -1,0 +1,71 @@
+.indexPage {
+  position: relative;
+  top: -61px;
+  margin-bottom: -61px;
+  z-index: 1;
+  .first-container {
+    @media screen and (max-width: 992px){
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .btn {
+      padding: 19px 45px;
+    }
+  }
+  //- 右半邊有背景圖的
+  .bgPart {
+    background: url('../images/img12.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    &__textBox {
+        margin-top: 189px;
+    }
+  }
+  //- 文章閱讀區塊
+  .learnList {
+      .li:nth-child(2) {
+            @media screen and (min-width: 768px){
+                flex-direction: row-reverse;
+            }
+      }
+  }
+  //- 中間有個人頭的地方
+  .banner {
+    background: url('../images/img10.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+  }
+  //- 輪播
+  .swiper-container {
+      .swiper-slide {
+        position: relative;
+        width: 350px!important;
+        height: 409px!important;
+        @media screen and (max-width: 992px) {
+            width: 240px!important;
+            height: 299px!important;
+        }
+      }
+      img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        @media screen and (max-width: 992px) {
+            width: 240px;
+            height: 240px;
+        }
+      }
+      .onSale {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        right: 16px;
+        top: 16px;
+        color: #FFFFFF;
+      }
+  }
+}

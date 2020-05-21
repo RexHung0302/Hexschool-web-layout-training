@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $VARIABLE
+\*------------------------------------*/
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import './helper/variables'; //- 修改 BS 變數
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './base/base'; //- 共用 CSS
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+
+//- layout
+@import './layout/header'; //- Header
+@import './layout/footer'; //- Footer
+//- pages
+@import './pages/index';        //- 主頁
+@import './pages/product';      //- 產品頁面
+@import './pages/detail';       //- 詳細商品頁面
+@import './pages/infomation';   //- 結帳頁面
+@import './pages/done';         //- 完成頁面

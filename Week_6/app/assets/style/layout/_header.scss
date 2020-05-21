@@ -1,0 +1,125 @@
+.header {
+    position: relative;
+    height: 61px;
+    z-index: 2;
+    .navbar {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .shopping__icon {
+        width: 24px;
+        height: 24px;
+    }
+    .menuList {
+        .nav-item {
+            display: none;
+        }
+    }
+    .downArrow__icon {
+        display: none;
+    }
+    .backArrow {
+        display: none;
+    }
+    .navbar-nav {
+        .active {
+            .nav-link {
+                padding: 0;
+                color: #000000;
+            }
+        }
+        .nav-link {
+            color: #000000;
+        }
+    }
+    .bugerBtnIcon {
+        color: #000000;
+    }
+    //- 打開 Menu
+    .showMenuList {
+        .menuList {
+            @media screen and (max-width: 992px){
+                position: fixed;
+                left: 0;
+                top: 0;
+                background-color: #FFFFFF;
+                height: 100vh;
+                transition: width .5s;
+                padding: 16px 15px;
+                max-width: 100%;
+                width: 100%;
+            }
+            li {
+                @media screen and (max-width: 992px){
+                    width: 100%;
+                    order: 2;
+                }
+            }
+            .nav-item {
+                @media screen and (max-width: 992px){
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 16px 0;
+                    border-bottom: 1px solid #000000;
+                    a {
+                        color: #000000!important;
+                        font-size: 24px;
+                    }
+                    .downArrow__icon {
+                        display: block;
+                        color: #000000;
+                    }
+
+                }
+            }
+            .shopping__li {
+                @media screen and (max-width: 992px){
+                    order: 1;
+                    margin-bottom: 32px;
+                }
+                a {
+                    @media screen and (max-width: 992px){
+                        color: #000000;
+                    }
+                }
+            }
+            .backArrow {
+                @media screen and (max-width: 992px){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+//- 如果在首頁
+.nowOnIndexPage {
+    .navbar-nav {
+        .active {
+            .nav-link {
+                color: #FFFFFF;
+            }
+        }
+        .nav-link {
+            color: #FFFFFF;
+        }
+    }
+    .shopping__icon {
+        color: #FFFFFF;
+    }
+    .logoText {
+        font-family: Black Italic Raleway;
+        color: #000000;
+        @media screen and (max-width: 992px){
+            color: #FFFFFF;
+        }
+    }
+    .bugerBtnIcon {
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,46 @@
+.footer {
+    .subscribe {
+        background: url('../images/img22.jpg') no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 400px;
+        @media screen and (max-width: 768px){
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url('../images/img22.jpg') no-repeat;
+            background-position: center center;
+            background-size: cover;
+            height: 224px;
+        }
+        .title {
+            font-size: 48px;
+            @media screen and (max-width: 768px){
+                font-size: 32px;
+            }
+            
+        }
+    }
+    //- 客製化輸入框
+    .subscribeInput {
+        background: #ffffff00;
+        color: $secondary;
+        border: 1px solid #FFFFFF99;
+        padding: 19px 16px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        &::placeholder {
+            color: #FFFFFF99;
+        }
+    }
+    //- 客製化按鈕
+    .subscribeBtn {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 20px 44px;
+    }
+    .copyright {
+        padding: 23px 0px;
+        background: #000;
+        @media screen and (max-width: 768px){
+            padding: 39px 0;
+        }
+    }
+}

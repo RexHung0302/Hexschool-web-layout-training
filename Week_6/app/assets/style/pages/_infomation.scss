@@ -1,0 +1,113 @@
+.informationPage {
+    .breadcrumb {
+        background:#FFFFFF;
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        content: ">"; 
+    }
+    .breadcrumb-item.passPage a {
+        color: $primary;
+    }
+    .breadcrumb-item.active {
+        color: #000000;
+        font-weight: bold;
+    }
+    .form-group {
+        label {
+            font-size: 20px;
+        }
+    }
+    .detailBox {
+        width: 100%;
+        background: #F2F2F2;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        @media screen and (min-width: 992px) {
+            width: calc(40% - 15px);
+            margin-left: 15px;
+        }
+    }
+    .breadcrumbBox {
+        width: 100%;
+    }
+    .formBox {
+        width: 100%;
+        @media screen and (min-width: 992px) {
+            width: calc(60% - 15px);
+            margin-right: 15px;
+        }
+    }
+    hr {
+        border: 1px solid #00000060;
+    }
+    .detailBox {
+        .infoBox {
+            padding: 16px;
+            transition: max-height .5s linear;
+            @media screen and (max-width: 992px) {
+                max-height: 0px;
+                overflow: hidden;
+                padding: 0px;
+            }
+        }
+        .infoBox.show {
+            @media screen and (max-width: 992px) {
+                max-height: 500px;
+                padding: 16px;
+            }
+        }
+    }
+    .arrowIcon.show {
+        transform: rotate(180deg);
+    }
+    .goToPayMentBtn {
+        width: 100%;
+        padding: 19px;
+    }
+    .btnBox {
+        flex-direction: column-reverse;
+        align-items: center;
+        @media screen and (min-width: 992px) {
+            flex-direction: row;
+        }
+        div {
+            justify-content: center;
+            @media screen and (min-width: 992px) {
+                justify-content: flex-start;
+            }
+        }
+    }
+    .decTextBox {
+        background: #FFFFFF;
+        border: 1px solid #00000060;
+        border-right: none;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        z-index: 2;
+        right: -5px;
+        position: relative;
+    }
+    .decTextBoxOne {
+        border-bottom-left-radius: 0;
+    }
+    .decTextBoxTwo {
+        border-top-left-radius: 0;
+    }
+    .information_select {
+        border: 1px solid #00000060;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        &:focus,
+        &:active,
+        &:hover {
+            outline: none;
+        }
+    }
+    .information_select_one {
+        border-bottom-right-radius: 0;
+    }
+    .information_select_two {
+        border-top-right-radius: 0;
+    }
+}
