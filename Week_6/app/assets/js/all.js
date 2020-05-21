@@ -11,7 +11,7 @@ function changePageHandler(targetPage) {
     console.log($(window).width());
     // 小於 992px 可以用下拉的方式選擇要去哪一頁
     if(targetPage === 'Product' && $(window).width() < 992) return;
-    window.location = '/product.html';
+    window.location = './product.html';
 }
 
 //- 判斷目前頁面並加上 Class 讓側邊顯示該有的 CSS
