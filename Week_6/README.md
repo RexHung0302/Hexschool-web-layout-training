@@ -63,7 +63,7 @@ Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-train
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html)
 
-Blog: [點我]()
+Blog: [點我](＃)
 
 > Gulp 介紹：[點我](https://rexhung0302.github.io/2020/05/06/20200506/#more)
 
@@ -72,3 +72,13 @@ Blog: [點我]()
 本週頁面目錄在此：
 
 1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html)
+
+2. [商品頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/product.html)
+
+3. [商品詳細頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/detail.html)
+
+4. [購物車詳細頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/information.html)
+
+5. [購物車付款頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/payment.html)
+
+6. [完成頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/done.html)
