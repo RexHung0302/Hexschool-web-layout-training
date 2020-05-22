@@ -1,0 +1,94 @@
+//- 購物車彈窗
+.shoppingCartModal {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 11;
+    padding: 54px 48px;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.shoppingCartModal.show {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    @media screen and (min-width: 992px) {
+        width: 540px;
+    }
+    .titleRow {
+        margin-bottom: 28px;
+    }
+    //- 標題
+    .title {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    //- 關閉按鈕
+    .closeIcon {
+        font-size: 3rem;
+    }
+    .li {
+        margin-bottom: 8px;
+    }
+    .goodLists {
+        img {
+            width: 96px;
+            height: 96px;
+            object-fit: cover;
+            @media screen and (min-width: 992px) {
+                width: 112px;
+                height: 112px;
+            }
+        }
+    }
+    .detailInfo {
+        background:#F2F2F2;
+        height: 96px;
+        width: 100%;
+        padding: 8px;
+        &__title {
+            font-weight: bold;
+        }
+        @media screen and (min-width: 992px) {
+            height: 112px;
+            padding: 16px;
+        }
+    }
+    .countBox {
+        .input {
+            background: #ffffff00;
+            border: none;
+            text-align: center;
+            width: 40px;
+        }
+    }
+    //- 總價錢區塊
+    .totalInfo {
+        .emptyBox {
+            width: 0;
+            @media screen and (min-width: 992px) {
+                width: 112px;
+            }
+        }
+        .textInfoBox {
+            width: 100%;
+            .btn {
+                width: calc(100% - 96px);
+                position: absolute;
+                bottom: 54px;
+                @media screen and (min-width: 992px) {
+                    width: 100%;
+                    position: relative;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+}

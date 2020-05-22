@@ -1,0 +1,88 @@
+//- 客製化 CheckBox
+.checkBoxArea {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        .input {
+            margin-right: 5px;
+        }
+        .label {
+            margin-bottom: 0;
+        }
+        //- 客製化藍色的框
+        .selectCheckBox {
+            position: relative;
+            margin-right: 5px;
+            background-color: $primary;
+            border-radius: 4px;
+            border: none;
+            width: 16px;
+            height: 16px;
+            transition: all .2s;
+            text-align: center;
+            &::before,
+            &::after {
+                position: absolute;
+                width: 4px;
+                background-color: #FFFFFF;
+                box-sizing: border-box;
+                display: inline-block;
+                border-radius: 5px;
+                transition: opacity ease .5;
+                /* 設置轉換原點座標 */
+                transform-origin:left top;
+            }
+            /* 短邊 */
+            &::before {
+                left: 0;
+                top: 6px;
+                transform: rotate(-45deg);
+                z-index: 2;
+            }
+            /* 長邊 */
+            &::after {
+                left: 6px;
+                top: 12px;
+                transform: rotate(-135deg);
+                z-index: 1;
+            }
+        }
+        //- 注意 HTML 那邊的隱藏 Input 一定要在 Label 上面
+        .input[type="checkbox"]:checked+.selectCheckBox::before {
+            content: '';
+            height: 8px;
+            animation: do_before_check 0.2s ease 0s forwards;
+        }
+        .input[type="checkbox"]:checked+.selectCheckBox::after {
+            content: '';
+            height: 18px;
+            animation: do_after_check 0.4s ease 0s forwards;
+        }
+    }
+}
+
+@keyframes do_before_check {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 8px;
+    }
+}
+
+@keyframes do_after_check {
+    0% {
+        height: 0;
+    }
+    50% {
+        height: 0;
+    }
+    100% {
+        height: 18px;
+    }
+}

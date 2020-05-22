@@ -94,6 +94,9 @@
             }
         }
     }
+    .logoText {
+        font-family: 'Raleway', sans-serif;
+    }
 }
 
 
@@ -113,7 +116,7 @@
         color: #FFFFFF;
     }
     .logoText {
-        font-family: Black Italic Raleway;
+        font-family: 'Raleway', sans-serif;
         color: #000000;
         @media screen and (max-width: 992px){
             color: #FFFFFF;
