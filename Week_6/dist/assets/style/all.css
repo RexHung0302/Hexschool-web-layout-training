@@ -12856,6 +12856,11 @@ a {
   left: 0;
 }
 
+.pagenation .active {
+  text-decoration: underline;
+  color: #0E8A00 !important;
+}
+
 /*------------------------------------*\
     $PAGES
 \*------------------------------------*/
@@ -13686,12 +13691,12 @@ a {
   margin-top: 189px;
 }
 
-.logoText {
+.done-logoText {
   color: #FFFFFF;
 }
 
 @media screen and (min-width: 992px) {
-  .logoText {
+  .done-logoText {
     color: #000000;
   }
 }

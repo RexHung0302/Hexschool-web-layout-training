@@ -12,10 +12,11 @@
     $COMPONENTS
 \*------------------------------------*/
 
-@import './components/utilities';   //- 共用 Class
+@import './components/utilities';         //- 共用 Class
 @import './components/shoppingCartModal'; //- 購物車彈窗
 @import './components/customCheckBox';    //- 客製化 CheckBox
 @import './components/darkScreen';        //- 布幕
+@import './components/pagenation';        //- 分頁器
 
 
 /*------------------------------------*\

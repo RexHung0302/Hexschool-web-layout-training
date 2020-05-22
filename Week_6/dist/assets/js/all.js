@@ -18,16 +18,22 @@ function changePageHandler(targetPage) {
 
 
 $(document).ready(function () {
-  // console.log(!!location.pathname.match(/admin.html/i));
-  // 目前在 首頁 頁面
+  console.log(location.pathname); // 目前在 首頁 頁面
+
   if (!!location.pathname.match(/index/i)) {
     // navbar 替 a 標籤加上白色文字
     $('.header').addClass('nowOnIndexPage');
-  } else if (!!location.pathname.match(/information|payment|done/i)) {
+  } else if (!!location.pathname.match(/information|payment/i)) {
     // 目前在付款頁面１
     $('.bugerBtnIcon').remove();
     $('.menuList').remove();
     $('#footer').remove();
+  } else if (!!location.pathname.match(/done/i)) {
+    $('.bugerBtnIcon').remove();
+    $('.menuList').remove();
+    $('#footer').remove(); // 目前在完成頁面
+
+    $('.logoText').addClass('done-logoText');
   }
 }); //- 購物車新增數量
 
