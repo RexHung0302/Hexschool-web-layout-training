@@ -54,7 +54,7 @@
     >
     > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html)
     >
-    > [Blog](#)
+    > [Blog](https://rexhung0302.github.io/2020/05/24/20200523/#more)
     >
     > 本週頁面可至 [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_6) 內參考目錄或點進 [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html) 自由切換
 
