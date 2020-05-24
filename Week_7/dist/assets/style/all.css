@@ -12568,7 +12568,7 @@ img {
   visibility: hidden;
 }
 
-[data-aos].animate {
+[data-aos].aos-animate {
   visibility: visible;
 }
 
