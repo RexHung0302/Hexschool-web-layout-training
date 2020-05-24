@@ -1,0 +1,51 @@
+//- 基本設定
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+    color: #121212;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    transition: all .5s;
+}
+
+
+/* Icon */
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+//- AOS
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate {
+  visibility: visible;
+}
+:root {
+    --animate-duration: 1800ms;
+    --animation-delay: 2.9s;
+}

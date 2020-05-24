@@ -1,0 +1,101 @@
+.indexPage {
+  .title {
+    font-size: 96px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 128px;
+  }
+  //- 輪播圖
+  .carouselImg {
+    height: 864px;
+    background: url('../images/josh-nuttall-pIwu5XNvXpk-unsplash.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  //- 輪播按鈕區
+  .carouselMenu {
+    height: 120px;
+    line-height: 120px;
+    overflow: hidden;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    .btnLi {
+      padding: 36px;
+      flex-basis: 10%;
+      font-size: 18px;
+    }
+    .nameLi {
+      flex-basis: 80%;
+      padding: 36px;
+    }
+    li {
+      border-right: 1px solid #000;
+      &:first-child {
+        border-left: 1px solid #000;
+      }
+    }
+  }
+  .decBox {
+    padding-left: 135px;
+    padding-right: 96px;
+  }
+  .decBox-2 {
+    padding-left: 96px;
+    padding-right: 135px;
+  }
+  .readMore {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    .textPart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      width: 150px;
+      height: 61px;
+    }
+    .iconPart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 61px;
+      height: 61px;
+    }
+    &-one {
+      left: -150px;
+      .textPart {
+        background: #FFFFFF;
+      }
+      .iconPart {
+        background: #000;
+      }
+    }
+    &-two {
+      right: -61px;
+      .textPart {
+        background: #000;
+        color: #FFFFFF;
+      }
+      .iconPart {
+        background: #FFFFFF;
+      }
+    }
+  }
+  .banner {
+    height: 640px;
+    background: url('../images/josh-nuttall-RqFUxO6MKjw-unsplash.jpg') no-repeat;
+    background-position: 50% 26%;
+    background-size: cover;
+    .mottoBox {
+      margin-bottom: 77px;
+      background: #FFFFFF;
+    }
+  }
+  .collection {
+    .img {
+      width: 450px;
+      height: 600px;
+    }
+  }
+}

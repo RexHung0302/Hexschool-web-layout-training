@@ -59,6 +59,11 @@
     > 本週頁面可至 [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_6) 內參考目錄或點進 [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html) 自由切換
 
 7. 第七週：視差滾動
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_7)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_7/dist/index.html)
+    >
+    > [Blog](#)
 
 8. 第八週：CSS 模組化管理
 

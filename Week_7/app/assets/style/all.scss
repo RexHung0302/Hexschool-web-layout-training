@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    $VARIABLE
+\*------------------------------------*/
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import './helper/variables'; //- 修改 BS 變數
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './base/base'; //- 共用 CSS
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+@import './components/utilities';  //- 共用 Class
+@import './components/btn';        //- 按鈕
+
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+
+//- layout
+@import './layout/header'; //- Header
+@import './layout/footer'; //- Footer
+//- pages
+@import './pages/index';        //- 主頁
