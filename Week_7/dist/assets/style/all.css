@@ -12531,7 +12531,6 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
   font-family: 'Merriweather', serif;
   color: #121212;
 }
@@ -13061,6 +13060,10 @@ a {
 
 .indexPage .readMore-two .iconPart {
   background: #FFFFFF;
+}
+
+.indexPage .img-two {
+  z-index: -1;
 }
 
 .indexPage .banner {
