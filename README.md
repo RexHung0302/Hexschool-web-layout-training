@@ -63,7 +63,7 @@
     >
     > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_7/dist/index.html)
     >
-    > [Blog](#)
+    > [Blog](https://rexhung0302.github.io/2020/05/25/20200525/#more)
 
 8. 第八週：CSS 模組化管理
 
