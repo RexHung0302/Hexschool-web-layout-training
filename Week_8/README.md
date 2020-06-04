@@ -63,11 +63,11 @@ Blog: [點我](https://rexhung0302.github.io/2020/06/05/20200605/)
 
 2. [房間搜尋頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/result.html)
 
-3. [房間詳細頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/detail.html)
+3. [房間詳細資訊頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/detail.html)
 
 4. [下訂頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/reserve.html)
 
-5. [下定成功頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/reserve-success.html)
+5. [下訂成功頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/reserve-success.html)
 
 6. [登入頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/login.html)
 
