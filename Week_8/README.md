@@ -56,3 +56,19 @@ Blog: [點我](https://rexhung0302.github.io/2020/06/05/20200605/)
 > Gulp 介紹：[點我](https://rexhung0302.github.io/2020/05/06/20200506/#more)
 
 ---
+
+本週頁面目錄在此：
+
+1. [首頁](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/index.html)
+
+2. [房間搜尋頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/result.html)
+
+3. [房間詳細頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/detail.html)
+
+4. [下訂頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/reserve.html)
+
+5. [下定成功頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/reserve-success.html)
+
+6. [登入頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/login.html)
+
+6. [會員頁面](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/member.html)
