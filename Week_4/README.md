@@ -49,7 +49,7 @@
 
 Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_4)
 
-設計稿：[點我](https://xd.adobe.com/view/8e014262-a911-458f-7b23-71a7fe4819c6-f830/grid)
+設計稿：授權關係無法附上連結
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_4/dist/index.html)
 

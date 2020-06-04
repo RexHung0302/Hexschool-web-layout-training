@@ -53,7 +53,7 @@
 
 Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_5)
 
-設計稿：[點我](https://xd.adobe.com/view/bd869667-ead5-4620-4329-ee0709cfef9e-cbb7/)
+設計稿：授權關係無法附上連結
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_5/dist/assignment.html)
 

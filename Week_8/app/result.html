@@ -1,0 +1,837 @@
+---
+title: result
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="resultPage pt-9">
+    <div class="search search-header">
+        <div class="container">
+            <!-- 手機版搜尋區塊 -->
+            <div class="row no-gutters d-md-none">
+                <div class="col text-center border-right">
+                    <a href="#" class="text-decoration-none">
+                        <span class="text-gray-dark font-size-ssm">Bangkok</span>
+                    </a>
+                </div>
+                <div class="col text-center border-right">
+                    <a href="#" class="text-decoration-none">
+                        <span class="text-gray-dark font-size-ssm">17 June - 19 June</span>
+                    </a>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="text-decoration-none">
+                        <span class="text-gray-dark font-size-ssm">2 adults・1 room</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 平板搜尋欄位 -->
+            <div class="row d-none d-md-block">
+                <div class="col-12">
+                    <div class="search d-flex align-items-center flex-wrap">
+                        <div class="select select-primary d-flex align-items-center mr-2 flex-grow-1">
+                            <span class="material-icons pr-3">place</span>
+                            <label class="mb-0">
+                                <p class="mb-0 font-size-ssm">Destination</p>
+                                <p class="mb-0 font-size-sm text-gray-dark">Bangkok, Thailand</p>
+                            </label>
+                            
+                        </div>
+                        <div class="select select-primary d-flex align-items-center mr-2 flex-grow-1">
+                            <span class="material-icons pr-3">date_range</span>
+                            <!-- 平板寬度時出現 -->
+                            <label class="mb-0 d-none d-md-block d-lg-none">
+                                <p class="mb-0 font-size-ssm">Check-in / Check-out</p>
+                                <p class="mb-0 font-size-sm text-gray-dark">17 June - 19 June</p>
+                            </label>
+                            <!-- 電腦寬度時出現 -->
+                            <div class="align-items-center d-none d-lg-flex w-100">
+                                <label class="mb-0 w-50 border-right border-background-primary">
+                                    <p class="mb-0 font-size-ssm">Check-in</p>
+                                    <p class="mb-0 font-size-sm text-gray-dark">17 June</p>
+                                </label>
+                                <label class="mb-0 w-50 pl-3">
+                                    <p class="mb-0 font-size-ssm">Check-out</p>
+                                    <p class="mb-0 font-size-sm text-gray-dark">19 June</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="select select-primary d-flex align-items-center mr-2 flex-grow-1">
+                            <span class="material-icons pr-3">person</span>
+                            <label class="mb-0">
+                                <p class="mb-0 font-size-ssm">Guests</p>
+                                <p class="mb-0 font-size-sm text-gray-dark">2 adults・1 room</p>
+                            </label>
+                        </div>
+                        <a class="btn btn-primary p-3 text-decoration-none" type="button" href="./result.html">SEARCH</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 頂部區塊 -->
+    <section class="pt-8 pt-sm-8 pt-md-11 mb-md-4">
+        <section class="container pt-md-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <h4 class="mb-0 font-weight-bold text-center text-md-start">Bangkok<sup class="text-primary">3,240</sup></h4>
+                </div>
+                <!-- 手機寬度時顯示 -->
+                <div class="col-12 col-md-8 d-md-none">
+                    <div class="row">
+                        <div class="col-6 border-right border-background-primary my-3">
+                            <a href="#" class="d-flex align-items-center justify-content-center text-black text-decoration-none" onclick="filterModalHandler()">
+                                <span class="material-icons pr-2">filter_list</span>
+                                <span class="text-secondary">FILTER</span>
+                            </a>
+                        </div>
+                        <div class="col-6 my-3">
+                            <a href="#" class="d-flex align-items-center justify-content-center text-black text-decoration-none" type="button" id="dropdownSortButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="material-icons pr-2">sort</span>
+                                <span class="text-secondary">SORT</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownSortButton">
+                                <a class="dropdown-item" href="#">Recommended</a>
+                                <a class="dropdown-item" href="#">Lowest Price</a>
+                                <a class="dropdown-item" href="#">Best Value</a>
+                                <a class="dropdown-item" href="#">Distance to City Center</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 平板以上出現 -->
+                <div class="col-8 d-none d-md-block">
+                    <div class="d-flex align-items-center">
+                        <div class="mr-4"><a href="#" class="text-decoration-none text-primary font-weight-bold">Recommended</a></div>
+                        <div class="mr-4"><a href="#" class="text-decoration-none text-secondary font-weight-bold">Lowest Price</a></div>
+                        <div class="mr-4"><a href="#" class="text-decoration-none text-secondary font-weight-bold">Best value</a></div>
+                        <div class="mr-4"><a href="#" class="text-decoration-none text-secondary font-weight-bold">Distance to City Center</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- 旅館列表 -->
+    <section class="container mb-9">
+        <div class="row">
+            <div class="col-4 d-none d-md-block">
+                <!-- Filter區塊 -->
+                <section class="bg-background-primary rounded p-4">
+                    <p class="mb-3 text-secondary font-weight-bold">Deals</p>
+                    <!-- 客製化 CheckBox -->
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="free_cancellation" name="deals">
+                            <label class="selectCheckBox mb-0" for="free_cancellation"></label>
+                            <label class="label text-gray-dark" for="free_cancellation">Free cancellation</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="no_prepayment" name="deals">
+                            <label class="selectCheckBox mb-0" for="no_prepayment"></label>
+                            <label class="label text-gray-dark" for="no_prepayment">No prepayment</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox pb-4 border-bottom">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="special_offers" name="deals">
+                            <label class="selectCheckBox mb-0" for="special_offers"></label>
+                            <label class="label text-gray-dark" for="special_offers">Special offers</label>
+                        </div>
+                    </div>
+                    <p class="mb-3 text-secondary font-weight-bold mt-4">Popular filter</p>
+                    <!-- 客製化 CheckBox -->
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="breakfast_included" name="popular_filter">
+                            <label class="selectCheckBox mb-0" for="breakfast_included"></label>
+                            <label class="label text-gray-dark" for="breakfast_included">Breakfast included</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="free_Wi-Fi" name="popular_filter">
+                            <label class="selectCheckBox mb-0" for="free_Wi-Fi"></label>
+                            <label class="label text-gray-dark" for="free_Wi-Fi">Free Wi-Fi</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox pb-4 border-bottom">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="swimming_pool" name="popular_filter">
+                            <label class="selectCheckBox mb-0" for="swimming_pool"></label>
+                            <label class="label text-gray-dark" for="swimming_pool">Swimming pool</label>
+                        </div>
+                    </div>
+                    <p class="mb-3 text-secondary font-weight-bold mt-4">Budget</p>
+                    <!-- Range -->
+                    <section class="range-slider w-100 mb-3 overflow-hidden">
+                        <span class="rangeValues"></span>
+                        <input value="5" min="0" max="100" step="0.5" type="range" class="custom-range">
+                        <input value="50" min="0" max="100" step="0.5" type="range" class="custom-range">
+                    </section>
+                    <!-- 電腦寬度時出現 -->
+                    <section class="d-flex align-items-center pb-4 border-bottom">
+                        <div class="select select-primary mr-lg-2 d-block d-md-flex d-lg-block flex-grow-1">
+                            <div class="align-items-center d-none d-md-flex w-100 border-right border-background-primary">
+                                <label class="mb-0 p-2">
+                                    <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Min price</p>
+                                    <p class="mb-0 font-size-sm text-gray-dark">TWD 800</p>
+                                </label>
+                            </div>
+                            <div class="align-items-center d-none d-md-flex d-lg-none w-100">
+                                <label class="mb-0 p-2">
+                                    <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Min price</p>
+                                    <p class="mb-0 font-size-sm text-gray-dark">TWD 800</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mr-2 d-none d-lg-block">-</div>
+                        <div class="select select-primary d-none d-lg-block flex-grow-1">
+                            <div class="align-items-center d-none d-lg-flex w-100">
+                                <label class="mb-0 p-2">
+                                    <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Max price</p>
+                                    <p class="mb-0 font-size-sm text-gray-dark">TWD 4,000+</p>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <p class="mb-3 text-secondary font-weight-bold mt-4">Rating</p>
+                    <!-- 客製化 CheckBox -->
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="star5" name="star">
+                            <label class="selectCheckBox mb-0" for="star5"></label>
+                            <label class="label text-dark mr-2" for="star5">★★★★★</label>
+                            <label class="label text-gray-dark" for="star5">5.0</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="star4" name="star">
+                            <label class="selectCheckBox mb-0" for="star4"></label>
+                            <label class="label text-dark mr-2" for="star4">★★★★</label>
+                            <label class="label text-gray-dark" for="star4">4.0</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="star3" name="star">
+                            <label class="selectCheckBox mb-0" for="star3"></label>
+                            <label class="label text-dark mr-2" for="star3">★★★</label>
+                            <label class="label text-gray-dark" for="star3">3.0</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="star2" name="star">
+                            <label class="selectCheckBox mb-0" for="star2"></label>
+                            <label class="label text-dark mr-2" for="star2">★★</label>
+                            <label class="label text-gray-dark" for="star2">2.0</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="star1" name="star">
+                            <label class="selectCheckBox mb-0" for="star1"></label>
+                            <label class="label text-dark mr-2" for="star1">★</label>
+                            <label class="label text-gray-dark" for="star1">1.0</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox pb-4 border-bottom">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="Unrated" name="star">
+                            <label class="selectCheckBox mb-0" for="Unrated"></label>
+                            <label class="label text-gray-dark" for="Unrated">Unrated</label>
+                        </div>
+                    </div>
+                    <p class="mb-3 text-secondary font-weight-bold mt-4">Stay Type</p>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="Hotel" name="Type">
+                            <label class="selectCheckBox mb-0" for="Hotel"></label>
+                            <label class="label text-gray-dark" for="Hotel">Hotel</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="Apartment" name="Type">
+                            <label class="selectCheckBox mb-0" for="Apartment"></label>
+                            <label class="label text-gray-dark" for="Apartment">Apartment</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="Unique" name="Type">
+                            <label class="selectCheckBox mb-0" for="Unique"></label>
+                            <label class="label text-gray-dark" for="Unique">Unique</label>
+                        </div>
+                    </div>
+                    <div class="customCheckBox mb-2">
+                        <div class="customCheckBox__content">
+                            <input class="input d-none" type="checkbox" id="Hostel" name="Type">
+                            <label class="selectCheckBox mb-0" for="Hostel"></label>
+                            <label class="label text-gray-dark" for="Hostel">Hostel</label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-12 col-md-8">
+                <!-- 卡片內容 -->
+                <section class="mb-7">
+                    <!-- 每一個橫向卡片 -->
+                    <a href="./detail.html" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Rachada1.jpg" alt="Rachada1">
+                            <div class="row p-1 p-md-2 p-lg-3">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Rachada, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・2 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Rachada Hotel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★</span>
+                                        <span class="text-gray-dark mb-0">4.0 (283)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Deluxe Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">Free cancellation</span>
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (283)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-0 d-none d-md-block">per night</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD 1,980</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Phaya.jpg" alt="Phaya">
+                            <div class="row p-1 p-md-2 p-lg-3">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Phaya Thai, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・2.9 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Forever Place</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★★</span>
+                                        <span class="text-gray-dark mb-0">5.0 (121)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">Free cancellation</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">5.0 (121)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="text-gray-dark mb-0 d-block d-lg-inline-block text-line-through delPrice">TWD 1,980</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD <span class="text-primary">1,680</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Bangkapi.jpg" alt="Bangkapi">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Bangkapi, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・14 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">LUV Hotel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★</span>
+                                        <span class="text-gray-dark mb-0">4.0 (325)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">Free cancellation</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (325)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD 2,460</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Chatuchack1.jpg" alt="Chatuchack1">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Chatuchack, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・12 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">WOW Life Hotel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★</span>
+                                        <span class="text-gray-dark mb-0">4.0 (204)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (204)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="text-gray-dark mb-0 d-block d-lg-inline-block text-line-through delPrice">TWD 2,880</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD <span class="text-primary">2,240</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Chatuchack2.jpg" alt="Chatuchack2">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Chatuchack, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・8 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Celebrity Palace</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★★</span>
+                                        <span class="text-gray-dark mb-0">5.0 (189)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">5.0 (189)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="text-gray-dark mb-0 d-block d-lg-inline-block text-line-through delPrice">TWD 2,120</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD <span class="text-primary">1,890</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/RangRak.jpg" alt="RangRak">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Rang Rak, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・4.4 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">RR Space</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★</span>
+                                        <span class="text-gray-dark mb-0">4.0 (112)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (112)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-0 d-none d-md-block">per night</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD 2,029</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Watana1.jpg" alt="Watana1">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Watana, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・6 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Bangkok Hostel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★★</span>
+                                        <span class="text-gray-dark mb-0">5.0 (102)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm mr-1">Free cancellation</span>
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (102)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-0 d-none d-md-block">per night</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD 880</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/Watana2.jpg" alt="Watana2">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Watana, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・6 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Watana First Hostel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★</span>
+                                        <span class="text-gray-dark mb-0">3.0 (608)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">Free cancellation</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">3.0 (608)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="text-gray-dark mb-0 d-block d-lg-inline-block text-line-through delPrice">TWD 1,280</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD <span class="text-primary">790</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/DinDaeng1.jpg" alt="DinDaeng1">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Din Daeng, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・7 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">DD Space</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★★</span>
+                                        <span class="text-gray-dark mb-0">4.0 (138)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">Free cancellation</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">4.0 (138)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-1 d-none d-md-block">per night</p>
+                                        <p class="text-gray-dark mb-0 d-block d-lg-inline-block text-line-through delPrice">TWD 1,700</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD <span class="text-primary">1,240</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 每一個橫向卡片 -->
+                    <a href="#" class="text-decoration-none">
+                        <div class="d-flex rowCard align-items-md-center">
+                            <img class="img-fluid rounded-left mr-2 mr-lg-3" src="./assets/images/DinDaeng2.jpg" alt="DinDaeng2">
+                            <div class="row p-1 p-md-2 p-lg-3 w-100">
+                                <div class="col-12 col-md-7">
+                                    <p class="mb-0">
+                                        <span class="text-primary font-size-ssm">Din Daeng, Bangkok</span>
+                                        <span class="text-gray-dark font-size-ssm d-none d-lg-block">・7 km from center</span>
+                                    </p>
+                                    <p class="title text-secondary">Dininn Hotel</p>
+                                    <label class="mb-1 d-md-none">
+                                        <span class="text-dark mb-0 mr-1">★★★</span>
+                                        <span class="text-gray-dark mb-0">3.0 (446)</span>
+                                    </label>
+                                    <p class="mb-0 mb-lg-2 text-gray-dark font-weight-bold font-size-sm">Standard Double Room</p>
+                                    <p class="mb-0 mb-md-2 mb-lg-3 text-gray-dark font-size-ssm">2 guests・1 bed (Queen size)</p>
+                                    <div class="d-none d-md-block">
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm mr-1">Free cancellation</span>
+                                        <span class="badge badge-pill badge-background-primary text-gray-dark font-size-ssm">No prepayment</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 d-flex flex-column justify-content-between">
+                                    <div class="text-end">
+                                        <span class="text-dark mb-0 d-none d-md-block d-lg-inline-block">★★★</span>
+                                        <span class="text-gray-dark mb-0 d-none d-md-block d-lg-inline-block">3.0 (446)</span>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="text-gray-dark mb-0 d-none d-md-block">per night</p>
+                                        <p class="mb-0 d-block d-lg-inline-block font-weight-bold price">TWD 3,450</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+                <nav aria-label="Page navigation example" class="customPagenation p-3 bg-background-primary rounded d-flex align-items-center justify-content-between">
+                    <button class="btn btn-outline-primary d-none d-xl-block">PREVIOUS</button>
+                    <button class="btn btn-outline-primary d-block d-xl-none"><</button>
+                    <ul class="pagination justify-content-center align-items-center mb-0">
+                        <li class="page-item active"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">2</a></li>
+                        <li class="page-item d-none d-md-block"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">3</a></li>
+                        <li class="page-item d-none d-lg-block"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">4</a></li>
+                        <li class="page-item d-none d-lg-block"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">5</a></li>
+                        <li class="page-item d-none d-lg-block"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">6</a></li>
+                        <li class="page-item"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link border-0 p-2 text-black font-weight-bold" href="#">9</a></li>
+                    </ul>
+                    <button class="btn btn-primary d-none d-xl-block">NEXT</button>
+                    <button class="btn btn-primary d-block d-xl-none">></button>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- Subscribe -->
+    <section class="subscribe bg-background-primary">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 col-lg-5">
+                    <p class="title mb-3 mb-md-0 text-center">Subscribe for Exclusive Offer</p>
+                </div>
+                <div class="col-12 col-md-8 col-lg-7 text-center">
+                    <div class="btn-group w-100">
+                        <input class="input p-3 rounded-left border-0 w-100" placeholder="Your email address"/>
+                        <button class="btn btn-primary p-3">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 手機版才會有的 Fliter -->
+    <section class="filterModal" id="js_filterModal">
+        <div class="filterModal__header p-3 d-flex align-items-center justify-content-between">
+            <label class="mb-0 d-flex align-items-center">
+                <span class="material-icons pr-2">filter_list</span>
+                <span class="text-secondary">FILTER</span>
+            </label>
+            <span class="material-icons cursor-pointer" onclick="filterModalHandler()">close</span>
+        </div>
+        <div class="filterModal__body p-3 bg-background-primary">
+            <p class="mb-3 text-secondary font-weight-bold">Deals</p>
+            <!-- 客製化 CheckBox -->
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="free_cancellation" name="deals">
+                    <label class="selectCheckBox mb-0" for="free_cancellation"></label>
+                    <label class="label text-gray-dark" for="free_cancellation">Free cancellation</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="no_prepayment" name="deals">
+                    <label class="selectCheckBox mb-0" for="no_prepayment"></label>
+                    <label class="label text-gray-dark" for="no_prepayment">No prepayment</label>
+                </div>
+            </div>
+            <div class="customCheckBox pb-4 border-bottom">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="special_offers" name="deals">
+                    <label class="selectCheckBox mb-0" for="special_offers"></label>
+                    <label class="label text-gray-dark" for="special_offers">Special offers</label>
+                </div>
+            </div>
+            <p class="mb-3 text-secondary font-weight-bold mt-4">Popular filter</p>
+            <!-- 客製化 CheckBox -->
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="breakfast_included" name="popular_filter">
+                    <label class="selectCheckBox mb-0" for="breakfast_included"></label>
+                    <label class="label text-gray-dark" for="breakfast_included">Breakfast included</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="free_Wi-Fi" name="popular_filter">
+                    <label class="selectCheckBox mb-0" for="free_Wi-Fi"></label>
+                    <label class="label text-gray-dark" for="free_Wi-Fi">Free Wi-Fi</label>
+                </div>
+            </div>
+            <div class="customCheckBox pb-4 border-bottom">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="swimming_pool" name="popular_filter">
+                    <label class="selectCheckBox mb-0" for="swimming_pool"></label>
+                    <label class="label text-gray-dark" for="swimming_pool">Swimming pool</label>
+                </div>
+            </div>
+            <p class="mb-3 text-secondary font-weight-bold mt-4">Budget</p>
+            <!-- Range -->
+            <section class="range-slider w-100 mb-3 overflow-hidden">
+                <span class="rangeValues"></span>
+                <input value="5" min="0" max="100" step="0.5" type="range" class="custom-range">
+                <input value="50" min="0" max="100" step="0.5" type="range" class="custom-range">
+            </section>
+            <!-- 電腦寬度時出現 -->
+            <section class="d-flex align-items-center pb-4 border-bottom">
+                <div class="select select-primary mr-lg-2 d-block d-md-flex d-lg-block flex-grow-1">
+                    <div class="align-items-center d-none d-md-flex w-100 border-right border-background-primary">
+                        <label class="mb-0 p-2">
+                            <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Min price</p>
+                            <p class="mb-0 font-size-sm text-gray-dark">TWD 800</p>
+                        </label>
+                    </div>
+                    <div class="align-items-center d-none d-md-flex d-lg-none w-100">
+                        <label class="mb-0 p-2">
+                            <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Min price</p>
+                            <p class="mb-0 font-size-sm text-gray-dark">TWD 800</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="mr-2 d-none d-lg-block">-</div>
+                <div class="select select-primary d-none d-lg-block flex-grow-1">
+                    <div class="align-items-center d-none d-lg-flex w-100">
+                        <label class="mb-0 p-2">
+                            <p class="mb-0 font-size-ssm text-secondary font-weight-bold">Max price</p>
+                            <p class="mb-0 font-size-sm text-gray-dark">TWD 4,000+</p>
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <p class="mb-3 text-secondary font-weight-bold mt-4">Rating</p>
+            <!-- 客製化 CheckBox -->
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="star5" name="star">
+                    <label class="selectCheckBox mb-0" for="star5"></label>
+                    <label class="label text-dark mr-2" for="star5">★★★★★</label>
+                    <label class="label text-gray-dark" for="star5">5.0</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="star4" name="star">
+                    <label class="selectCheckBox mb-0" for="star4"></label>
+                    <label class="label text-dark mr-2" for="star4">★★★★</label>
+                    <label class="label text-gray-dark" for="star4">4.0</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="star3" name="star">
+                    <label class="selectCheckBox mb-0" for="star3"></label>
+                    <label class="label text-dark mr-2" for="star3">★★★</label>
+                    <label class="label text-gray-dark" for="star3">3.0</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="star2" name="star">
+                    <label class="selectCheckBox mb-0" for="star2"></label>
+                    <label class="label text-dark mr-2" for="star2">★★</label>
+                    <label class="label text-gray-dark" for="star2">2.0</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="star1" name="star">
+                    <label class="selectCheckBox mb-0" for="star1"></label>
+                    <label class="label text-dark mr-2" for="star1">★</label>
+                    <label class="label text-gray-dark" for="star1">1.0</label>
+                </div>
+            </div>
+            <div class="customCheckBox pb-4 border-bottom">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="Unrated" name="star">
+                    <label class="selectCheckBox mb-0" for="Unrated"></label>
+                    <label class="label text-gray-dark" for="Unrated">Unrated</label>
+                </div>
+            </div>
+            <p class="mb-3 text-secondary font-weight-bold mt-4">Stay Type</p>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="Hotel" name="Type">
+                    <label class="selectCheckBox mb-0" for="Hotel"></label>
+                    <label class="label text-gray-dark" for="Hotel">Hotel</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="Apartment" name="Type">
+                    <label class="selectCheckBox mb-0" for="Apartment"></label>
+                    <label class="label text-gray-dark" for="Apartment">Apartment</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-2">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="Unique" name="Type">
+                    <label class="selectCheckBox mb-0" for="Unique"></label>
+                    <label class="label text-gray-dark" for="Unique">Unique</label>
+                </div>
+            </div>
+            <div class="customCheckBox mb-8">
+                <div class="customCheckBox__content">
+                    <input class="input d-none" type="checkbox" id="Hostel" name="Type">
+                    <label class="selectCheckBox mb-0" for="Hostel"></label>
+                    <label class="label text-gray-dark" for="Hostel">Hostel</label>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="./assets/js/result.js"></script>

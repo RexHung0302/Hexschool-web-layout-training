@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%- title %>
+    </title>
+    <!-- Googl Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/css/swiper.min.css">
+    <!-- 主要的 CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <!-- 套件 -->
+    <script src="./assets/js/vendors.js"></script>
+    <!-- 輪播 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js"></script>
+    <!-- 主要的 JS -->
+    <script src="./assets/js/all.js"></script>
+</head>
+
+<body>
+    <section>
+        <!-- Header -->
+        <section class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center py-4" id="js_header_area">
+                        <span class="material-icons d-md-none" id="js_menu_btn">menu</span>
+                        <h4 class="mb-0 mr-md-auto">
+                            <a href="./index.html" class="text-decoration-none text-primary font-weight-bold">ALOHA</a>
+                        </h4>
+                        <a href="#" class="text-decoration-none d-md-none" id="js_login_btn">Login</a>
+                        <ul class="list-style-none pl-0 m-0 d-md-flex align-items-center d-none" id="js_header_tools">
+                            <li><a href="#" class="text-decoration-none mr-7 d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons">language</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Traditional Chinese</a>
+                                    <a class="dropdown-item" href="#">Simplified Chinese</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
+                            </li>
+                            <li><a href="#" class="text-decoration-none mr-7">Sign up</a></li>
+                            <li><a href="./login.html" class="text-decoration-none">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 主要內容 -->
+        <%- contents %>
+        <!-- Footer -->
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column py-4 flex-md-row justify-content-between">
+                    <span class="text-gray-dark order-2 mr-md-auto mr-lg-8 order-md-1 order-lg-0">© 2020 ALOHA, Inc. All rights reserved.</span>
+                    <ul class="list-style-none p-0 d-flex align-items-center mb-3 mb-md-0 order-1 mr-lg-auto mb-lg-0 order-md-2 order-lg-0" id="js_moreInfoArea">
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark">FAQs</a>
+                        </li>
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-gray-dark">Privacy policy</a>
+                        </li>
+                    </ul>
+                    <ul class="list-style-none p-0 mb-0 d-none d-lg-flex align-items-center" id="js_footer_tools">
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark  d-flex align-items-center">
+                                <span class="material-icons mr-2 text-black">language</span>
+                                <span class="text-decoration-none mr-7 d-flex align-items-center dropdown-toggle text-gray-dark" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-gray-dark  d-flex align-items-center">
+                                <span class="material-icons mr-2 text-black">attach_money</span>
+                                <span class="text-decoration-none d-flex align-items-center dropdown-toggle text-gray-dark" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">TWD</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

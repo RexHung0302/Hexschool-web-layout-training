@@ -1,0 +1,17 @@
+.customCollapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.customCollapse.show {
+    max-height: 100%;
+}
+
+.arrowIcon {
+    transition: all .5s;
+}
+
+.arrowIcon.show {
+    transform: rotate(180deg);
+}

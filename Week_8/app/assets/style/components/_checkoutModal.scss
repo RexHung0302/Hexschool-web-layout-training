@@ -1,0 +1,11 @@
+.checkoutModal {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.checkoutModal.show {
+    max-height: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}

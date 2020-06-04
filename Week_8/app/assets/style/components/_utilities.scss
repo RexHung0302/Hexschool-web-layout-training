@@ -1,0 +1,99 @@
+// Utilities
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.list-style-none {
+    list-style: none;
+}
+
+.font-weight-bold {
+    font-weight: bold!important;
+}
+
+.font-size-ssm {
+    font-size: 12px;
+}
+
+.font-size-sm {
+    font-size: 14px;
+}
+
+.w-100vw {
+    width: 100vw;
+}
+
+.text-end {
+    text-align: end;
+}
+
+.top-0 {
+    top: 0;
+}
+
+.z-99 {
+    z-index: 99;
+}
+
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+
+.vertical-align-middle {
+    vertical-align: middle!important;
+}
+
+.box-shadow-none {
+    box-shadow: none;
+}
+
+.rounded-top-left {
+    border-top-left-radius: 8px;
+}
+
+.rounded-top-right {
+    border-top-right-radius: 8px;
+}
+
+.rounded-md-left {
+    @media screen and(min-width: 768px) {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+
+.border-md-0 {
+    @media screen and(min-width: 768px) {
+        border: none!important;
+    }
+}
+
+.bottom-0 {
+    bottom: 0;
+}
+
+.w-md-auto {
+    @media screen and(min-width: 768px) {
+        width: auto!important;
+    }
+}
+
+.border-radius-sm {
+    border-radius: $border-radius-sm;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.rounded-md-top-0 {
+    @media screen and(max-width: 768px) {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+}

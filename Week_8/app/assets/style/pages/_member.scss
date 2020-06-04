@@ -1,0 +1,29 @@
+.memberPage {
+    img {
+        width: 100%!important;
+        height: 226px!important;
+        @media screen and(min-width: 768px) {
+            width: 271px!important;
+        }
+        @media screen and(min-width: 960px) {
+            width: 255px!important;
+        }
+    }
+    .info {
+        padding: 24px;
+        background-color: #F1F0F8;
+        @media screen and(min-width: 768px) {
+            padding: 0;
+            background-color: transparent;
+        }
+    }
+    .user{
+        &-square {
+            img {
+                width: 64px!important;
+                height: 64px!important;
+                overflow: hidden;
+            }   
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.search {
+    position: relative;
+    background-color: #F1F0F8;
+    &-border {
+        border-radius: 8px;
+    }
+    // 首頁才會有的樣式
+    &-index {
+        top: -60px;
+        // 這邊要單獨下 CSS 因為格線系統沒辦法很完美的分割, 會有斷行(下在 991px 不然 992 會因為 mb-lg-0 造成黏再一起)
+        .select,
+        .btn {
+            @media screen and(max-width: 991px) {
+                width: 100%;
+            }
+        }
+    }
+    // 在最上方時的樣式
+    &-header {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        padding: 8px 0;
+        @media screen and(min-width: 720px) {
+            padding: 16px 0;
+        }
+        @media screen and(min-width: 960px) {
+            padding: 24px 0;
+        }
+        .select {
+            
+            @media screen and(min-width: 720px) {
+                padding: 10px 8px;
+            }
+            @media screen and(min-width: 960px) {
+                padding: 10px 16px;
+            }
+        }
+    }
+}

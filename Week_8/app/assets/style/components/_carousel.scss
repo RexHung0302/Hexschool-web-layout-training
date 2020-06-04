@@ -1,0 +1,63 @@
+// Bootstrap
+.carousel-bootstrap-customer {
+    img {
+        filter: brightness(0.7);
+        height: 315px;
+        object-fit: cover;
+        @media screen and(min-width: 720px) {
+            height: 320px;
+        }
+    }
+    .carousel-control-prev, 
+    .carousel-control-next {
+        opacity: 1;
+    }
+    .slogan {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        color: #FFFFFF;
+        &__text {
+            max-width: 218px;
+            margin: 0 auto;
+            font-size: 32px;
+            @media screen and(min-width: 720px) {
+                font-size: 48px;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+
+// Swiper
+.carousel-swiper-suctomer {
+    img {
+        width: 240px;
+        height: 164px;
+        border-radius: 8px;
+        @media screen and(min-width: 720px) {
+            width: 270px;
+            height: 185px;
+        }
+        @media screen and(min-width: 960px) {
+            width: 255px;
+            height: 175px;
+        }
+    }
+    .arrow {
+        position: absolute;
+        z-index: 100;
+        top: 78px;
+        right: -4px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #F1F0F8;
+    }
+}

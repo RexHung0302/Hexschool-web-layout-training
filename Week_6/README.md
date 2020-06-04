@@ -59,7 +59,7 @@
 
 Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_6)
 
-設計稿：[點我](https://xd.adobe.com/view/b251d34b-5ec0-4978-7793-0fd19c2eaad1-c460/)
+設計稿：授權關係無法附上連結
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_6/dist/index.html)
 

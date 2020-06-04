@@ -1,0 +1,64 @@
+---
+title: login
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="loginPage">
+    <div class="position-absolute w-100 d-none d-sm-block d-lg-none" style="background: url('./assets/images/login.jpg') no-repeat;background-position: center center;background-size: cover;height: 100vh;">
+    </div>
+    <div class="row no-gutters h-100vh">
+        <div class="col-7 position-absolute d-none d-lg-block" style="background: url('./assets/images/login.jpg') no-repeat;background-position: center center;background-size: cover;height: 100vh;"></div>
+        <div class="container">
+            <div class="row justify-content-center h-100vh">
+                <div class="col-lg-8 d-none d-lg-block">
+                    <div class="d-flex flex-lg-column h-100vh justify-content-between">
+                        <div class="mt-11">
+                            <h1 class="mt-0 mb-3">An ideal hotel makes a wonderful Trip.</h1>
+                            <p class="mb-0 text-gray-dark">Discover your dream destination and hotel on ALOHA.com</p>
+                        </div>
+                        <div>
+                            <button class="btn btn-black py-2 px-3 mb-4 d-flex align-items-center"><span class="material-icons mr-2">place</span>Osaka Castel, Japan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 h-100vh">
+                    <div class="d-block d-sm-flex d-lg-block flex-sm-column flex-lg-row justify-content-sm-between h-100vh">
+                        <div class="mt-11">
+                            <h2 class="font-weight-bold mb-3">Login</h2>
+                            <form action="./index.html">
+                                <div class="form-group mb-3">
+                                    <label for="email" class="mb-1">Email</label>
+                                    <input type="email" class="form-control border-radius-sm" id="email">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="password" class="mb-1">Passwords</label>
+                                    <input type="password" class="form-control border-radius-sm" id="password">
+                                </div>
+                                <p class="text-gray-dark font-size-sm mb-3">By signing in or creating an account, you agree with our <span class="text-primary">Terms & Conditions</span> and <span class="text-primary"></span>Privacy Statement</span></p>
+                                <!-- 客製化 CheckBox -->
+                                <div class="customCheckBox mb-5">
+                                    <div class="customCheckBox__content">
+                                        <input class="input d-none" type="checkbox" id="remember" name="remember">
+                                        <label class="selectCheckBox mb-0" for="remember"></label>
+                                        <label class="label text-gray-dark" for="remember">Remember me</label>
+                                    </div>
+                                </div>
+                                <a type="button" class="btn btn-primary btn-block mb-2 border-radius-sm text-decoration-none" href="./member.html">Login</a>
+                                <p class="text-center mb-0">
+                                    <span class="font-size-sm text-gray-dark">Don’t have an account yet?<a class="font-size-sm text-primary text-decoration-none text-primary font-weight-bold" href="#"> Sign up</a></span>
+                                </p>
+                            </form>
+                        </div>
+                        <div class="d-none d-sm-flex d-lg-none align-items-center justify-content-center">
+                            <button class="btn btn-black py-2 px-3 mb-4 d-flex align-items-center"><span class="material-icons mr-2">place</span>Osaka Castel, Japan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</section>
+<script src="./assets/js/login.js"></script>

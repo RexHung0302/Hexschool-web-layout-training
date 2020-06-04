@@ -1,0 +1,54 @@
+.album {
+    &__one {
+        transition: all .5s;
+        width: calc(100% / 2);
+        @media screen and(min-width: 768px) {
+            height: 268px;
+        }
+        @media screen and(min-width: 960px) {
+            height: 434px;
+        }
+    }
+    &__two {
+        width: 100%;
+        transition: all .5s;
+        @media screen and(min-width: 768px) {
+            height: 132px;
+        }
+        @media screen and(min-width: 960px) {
+            height: 213px;
+        }
+    }
+    &__three {
+        width: 40%;
+        @media screen and(min-width: 768px) {
+            height: 132px;
+        }
+        @media screen and(min-width: 960px) {
+            height: 213px;
+        }
+    }
+    &__four {
+        width: 100%;
+        @media screen and(min-width: 768px) {
+            height: 93px;
+        }
+        @media screen and(min-width: 960px) {
+            height: 151px;
+        }
+    }
+    .more {
+        width: 100%;
+        background: #000;
+        color: #FFFFFF;
+        @media screen and(min-width: 768px) {
+            height: 34px;
+        }
+        @media screen and(min-width: 960px) {
+            height: 54px;
+        }
+    }
+    .w-60 {
+        width: 60%;
+    }
+}

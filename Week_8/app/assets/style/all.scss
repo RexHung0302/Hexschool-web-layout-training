@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    $VARIABLE
+\*------------------------------------*/
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import './variables'; //- 修改 BS 變數
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import './base'; //- 共用 CSS
+
+/*------------------------------------*\
+    $COMPONENTS
+\*------------------------------------*/
+
+@import './components/carousel';        //- 幻燈片
+@import './components/search';          //- 搜尋欄位
+@import './components/btn';             //- 按鈕
+@import './components/text';            //- 文字
+@import './components/bookmark';        //- 書籤
+@import './components/dropdownCard';    //- 下拉卡片
+@import './components/subscribe';       //- 訂閱區塊(因為有字體變化, 無法再縮減, 最少還會有一個 CSS 存在)
+@import './components/customCheckBox';  //- 客製化 CheckBox
+@import './components/range';           //- 客製化 Range
+@import './components/rowCard';         //- 橫向卡片
+@import './components/customPagenation';//- 分頁器
+@import './components/customDropdown';  //- 下拉菜單
+@import './components/filterModal';     //- 彈窗
+@import './components/checkoutModal';   //- 結帳的彈窗
+@import './components/customCollapse';  //- 下拉折疊
+@import './components/utilities';       //- 共用 Class
+
+/*------------------------------------*\
+    $PAGES
+\*------------------------------------*/
+
+// Layout
+@import './layout/header.scss';         //- 頂部
+
+@import './pages/detail';               //- 詳細頁面
+@import './pages/member';               //- 會員頁面

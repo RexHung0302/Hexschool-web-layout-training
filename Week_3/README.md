@@ -24,7 +24,7 @@
 
 Source Code：[點我](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_3)
 
-設計稿：[點我](https://xd.adobe.com/view/14382793-a7ff-4859-64a3-a19a08895be4-6209/screen/bdd41402-cf7c-4ec5-8890-7fd53275c834/Tablet-Material-Design-Home-1/)
+設計稿：授權關係無法附上連結
 
 Demo：[點我](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_3/index.html)
 

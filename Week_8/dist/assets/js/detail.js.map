@@ -1,0 +1,1 @@
+{"version":3,"sources":["detail.js"],"names":["showCheckoutModalHandler","$","toggleClass"],"mappings":";;AAAA;AACA,SAASA,wBAAT,GAAoC;AAChCC,EAAAA,CAAC,CAAC,mBAAD,CAAD,CAAuBC,WAAvB,CAAmC,MAAnC;AACH","sourcesContent":["// 顯示 Checkout Modal\nfunction showCheckoutModalHandler() {\n    $('#js_checkoutModal').toggleClass('show');\n}"],"file":"detail.js"}

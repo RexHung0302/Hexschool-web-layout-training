@@ -1,0 +1,21 @@
+.bookmark {
+    a {
+        color: #00000099;
+        font-weight: bold;
+    }
+    &__item {
+        border-bottom: 2px solid #F1F0F8;
+        padding-bottom: 2px;
+        width: 88px;
+        text-align: center;
+        @media screen and(min-width: 720px) {
+            width: 115px;
+        }
+    }
+    .active {
+        a {
+            color: $primary;
+        }
+        border-bottom: 2px solid $primary;
+    }
+}

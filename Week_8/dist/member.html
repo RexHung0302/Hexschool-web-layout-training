@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        member
+    </title>
+    <!-- Googl Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,700&display=swap" rel="stylesheet">
+    <!-- Material Icon -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- 輪播 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/css/swiper.min.css">
+    <!-- 主要的 CSS -->
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <!-- 套件 -->
+    <script src="./assets/js/vendors.js"></script>
+    <!-- 輪播 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.1/js/swiper.min.js"></script>
+    <!-- 主要的 JS -->
+    <script src="./assets/js/all.js"></script>
+</head>
+
+<body>
+    <section>
+        <!-- Header -->
+        <section class="header" id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between align-items-center py-4" id="js_header_area">
+                        <span class="material-icons d-md-none" id="js_menu_btn">menu</span>
+                        <h4 class="mb-0 mr-md-auto">
+                            <a href="./index.html" class="text-decoration-none text-primary font-weight-bold">ALOHA</a>
+                        </h4>
+                        <a href="#" class="text-decoration-none d-flex align-items-center d-md-none" type="button" id="dropdownUserButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="d-inline-block rounded-circle overflow-hidden userCard userCard-border-primary">
+                                <img class="img-fluid" src="./assets/images/profile.jpg" alt="">
+                            </div>
+                        </a>
+                        <ul class="list-style-none pl-0 m-0 d-md-flex align-items-center d-none" id="js_header_tools">
+                            <li><a href="#" class="text-decoration-none mr-7 d-flex align-items-center dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons">language</span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Traditional Chinese</a>
+                                    <a class="dropdown-item" href="#">Simplified Chinese</a>
+                                    <a class="dropdown-item" href="#">English</a>
+                                </div>
+                            </li>
+                            <li class="btn-group">
+                                <a href="#" class="text-decoration-none dropdown-toggle d-flex align-items-center" type="button" id="dropdownUserButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <div class="d-inline-block rounded-circle overflow-hidden userCard userCard-border-primary mr-2">
+                                        <img class="img-fluid" src="./assets/images/profile.jpg" alt="">
+                                    </div>
+                                    <span>David Lin</span>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <a class="dropdown-item" href="./index.html">Sign Out</a>
+                                    <a class="dropdown-item" href="https://www.hexschool.com/">前往六角官網</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 主要內容 -->
+        <section class="memberPage pt-9">
+    <div class="container mt-4">
+        <div class="row flex-column flex-lg-row">
+            <div class="col-12 col-lg-8 order-2 order-lg-1">
+                <h4 class="mb-4 font-weight-bold text-secondary">My Bookings</h4>
+                <ul class="list-style-none pl-0 d-flex align-items-center mb-0 font-weight-bold">
+                    <li class="mr-4"><a href="#" class="text-decoration-none text-primary">Upcoming</a></li>
+                    <li><a href="#" class="text-decoration-none">Completed</a></li>
+                </ul>
+                <!-- 每一個橫向卡片 -->
+                <div class="d-flex rowCard align-items-md-center mt-3 flex-column flex-md-row pb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="mr-3 mr-lg-3 w-md-auto rounded-top rounded-md-top-0 rounded-md-left" src="./assets/images/Rachada1.jpg" alt="Rachada1">
+                        </div>
+                    </div>
+                    <div class="row flex-column flex-md-row">
+                        <div class="col-12 col-md-7">
+                            <div class="info">
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">airline_seat_individual_suite</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">Rachada Hotel</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">Deluxe Suite with Pool</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">date_range</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">17 June 2020 - 19 June 2020</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">2 nights・2 adults</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">attach_money</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">TWD 4,633</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">includes taxes and charges</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="text-start text-md-end info pt-0">
+                                <span class="text-primary mb-0 font-weight-bold">VIEW DETAILS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex rowCard align-items-md-center mt-3 flex-column flex-md-row pb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="mr-3 mr-lg-3 w-md-auto rounded-top rounded-md-top-0 rounded-md-left" src="./assets/images/Chatuchack1.jpg" alt="Chatuchack1">
+                        </div>
+                    </div>
+                    <div class="row flex-column flex-md-row">
+                        <div class="col-12 col-md-7">
+                            <div class="info">
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">airline_seat_individual_suite</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">WOW Life Hotel</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">Standard Double Room</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">date_range</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">8 Sep 2020 - 15 Sep 2020</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">7 nights・2 adults</p>
+                                    </div>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="col-2">
+                                        <span class="material-icons">attach_money</span>
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="mb-0 font-weight-bold text-secondary">TWD 13,084</p>
+                                        <p class="mb-0 text-gray-dark font-size-sm">includes taxes and charges</p>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <div class="text-start text-md-end info pt-0">
+                                <span class="text-primary mb-0 font-weight-bold">VIEW DETAILS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 order-1 order-lg-2">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                    <label class="d-flex align-items-center mb-0">
+                        <h4 class="mb-0 font-weight-bold text-secondary d-inline-block mr-2">Profile</h4>
+                        <span class="badge badge-pill badge-primary p-1 px-2 d-flex align-items-center">
+                            <span class="material-icons mr-1">check</span>
+                            <span>VERIFIED</span>
+                        </span>
+                    </label>
+                    <div>
+                        <span class="text-primary font-weight-bold">Edit</span>
+                    </div>
+                </div>
+                <div class="p-3 p-md-4 bg-background-primary">
+                    <div class="d-flex flex-column flex-md-row flex-lg-column justify-content-md-between">
+                        <!-- User Details -->
+                        <div class="row justify-content-between">
+                            <div class="col-8">
+                                <p class="mb-4 font-weight-bold text-secondary">User details</p>
+                                <div class="row">
+                                    <div class="col-4 d-none d-md-block d-lg-none">
+                                        <div class="user-square rounded overflow-hidden">
+                                            <img src="./assets/images/profile.jpg" alt="profile">
+                                        </div>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-3 text-gray-dark font-size-sm">David Lin</p>
+                                        <p class="mb-3 text-gray-dark font-size-sm">david0520@mail.com.tw</p>
+                                        <p class="mb-3 text-gray-dark font-size-sm">+886 9 32 456 789</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-md-none d-lg-block col-4 text-end">
+                                <div class="user-square rounded overflow-hidden">
+                                    <img src="./assets/images/profile.jpg" alt="profile" class="rounded">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Payment methids -->
+                        <div>
+                            <p class="mb-4 font-weight-bold text-secondary">Payment methods</p>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="bg-light rounded p-3">
+                                        <p class="mb-1 text-gray-dark font-size-sm">xxxx-xxxx-7890</p>
+                                        <p class="mb-1 text-gray-dark font-size-sm">DAVID LIN</p>
+                                        <p class="mb-1 text-gray-dark font-size-sm d-flex justify-content-between align-items-center">
+                                            <span>08/2029</span>
+                                            <span class="bg-black font-size-ssm text-light p-1">VISA</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="bg-light rounded p-3 h-100 d-flex justify-content-center align-items-center">
+                                        <button class="btn btn-primary rounded-circle d-flex"><span class="material-icons">add</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Footer -->
+        <section class="footer" id="footer">
+            <div class="container">
+                <div class="d-flex align-items-center flex-column py-4 flex-md-row justify-content-between">
+                    <span class="text-gray-dark order-2 mr-md-auto mr-lg-8 order-md-1 order-lg-0">© 2020 ALOHA, Inc. All rights reserved.</span>
+                    <ul class="list-style-none p-0 d-flex align-items-center mb-3 mb-md-0 order-1 mr-lg-auto mb-lg-0 order-md-2 order-lg-0" id="js_moreInfoArea">
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark">FAQs</a>
+                        </li>
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark">Terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-gray-dark">Privacy policy</a>
+                        </li>
+                    </ul>
+                    <ul class="list-style-none p-0 mb-0 d-none d-lg-flex align-items-center" id="js_footer_tools">
+                        <li class="mr-4">
+                            <a href="#" class="text-decoration-none text-gray-dark  d-flex align-items-center">
+                                <span class="material-icons mr-2 text-black">language</span>
+                                <span class="text-decoration-none mr-7 d-flex align-items-center dropdown-toggle text-gray-dark" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-gray-dark  d-flex align-items-center">
+                                <span class="material-icons mr-2 text-black">attach_money</span>
+                                <span class="text-decoration-none d-flex align-items-center dropdown-toggle text-gray-dark" type="button" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false">TWD</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

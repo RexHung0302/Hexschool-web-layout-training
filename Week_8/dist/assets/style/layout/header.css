@@ -1,0 +1,18 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-bottom: 8px;
+}
+
+.header .userCard {
+  width: 24px;
+  height: 24px;
+}
+
+.header .userCard-border-primary {
+  border: 2px solid #6C51E2;
+}
+
+/*# sourceMappingURL=header.css.map */

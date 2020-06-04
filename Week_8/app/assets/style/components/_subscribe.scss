@@ -1,0 +1,21 @@
+.subscribe {
+    // 首頁才有
+    &-index {
+        padding: 24px 0;
+        @media screen and(min-width: 720px) {
+            padding: 92px 0;
+        }
+        .title {
+            font-size: 24px;
+            @media screen and(min-width: 720px) {
+                font-size: 48px;
+            }
+        }
+    }
+    .title {
+        font-size: 24px;
+        @media screen and(min-width: 960px) {
+            font-size: 32px;
+        }
+    }
+}

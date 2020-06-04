@@ -1,0 +1,14 @@
+.customPagenation {
+    .page-item {
+        padding: 8px 14px;
+    }
+    .page-item.active {
+        background: #FFFFFF;
+    }
+    a {
+        background: #F1F0F8;
+    }
+    .page-item.active .page-link {
+        background: #FFFFFF;
+    }
+}

@@ -1,0 +1,96 @@
+---
+title: reserve
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="reservePage pt-9">
+    <!-- 手機寬度才會出現 -->
+    <div class="position-fixed d-md-none p-3 bg-background-primary w-100 z-99">
+        <a class="d-flex align-items-center justify-content-between align-items-center mb-0 w-100 text-decoration-none" href="#" onclick="detailHandelr()">
+            <span class="text-gray-dark d-flex align-items-center">Total<span class="font-size-sm text-secondary font-weight-bold ml-2">TWD 4,633</span></span>
+            <span class="text-primary font-weight-bold font-size-sm d-flex align-items-center">Detail<span class="material-icons ml-1 arrowIcon" id="arrowIcon">keyboard_arrow_down</span></span>
+        </a>
+        <div class="customCollapse" id="customCollapse">
+            <hr class="border-light my-4">
+            <p class="text-secondary font-weight-bold mb-3">Booking details</p>
+            <p class="text-gray-dark mb-2 font-size-sm">17 June 2020 - 19 June 2020・2 nights</p>
+            <p class="text-gray-dark mb-2 font-size-sm">2 adults・1 room</p>
+            <p class="text-gray-dark mb-4 font-size-sm">Rachada Hotel</p>
+            <hr class="mb-4 border-light">
+            <p class="text-secondary font-weight-bold mb-3">Price summary</p>
+            <label class="d-flex align-items-center justify-content-between text-gray-dark mb-2 font-size-sm">
+                <span>Deluxe Suite with Pool</span>
+                <span>TWD 3,960</span>
+            </label>
+            <label class="d-flex align-items-center justify-content-between text-gray-dark mb-2 font-size-sm">
+                <span>VAT (7%)</span>
+                <span>TWD 277</span>
+            </label>
+            <label class="d-flex align-items-center justify-content-between text-gray-dark mb-4 font-size-sm">
+                <span>Property service charge</span>
+                <span>TWD 396</span>
+            </label>
+            <hr class="mb-4 border-light">
+            <label class="d-flex align-items-center justify-content-between">
+                <span class="text-gray-dark">Property service charge</span>
+                <span class="font-weight-bold">TWD 4,633</span>
+            </label>
+        </div>
+    </div>
+    <!-- 表單及資訊 -->
+    <div class="container mb-10">
+        <div class="row justify-content-center mt-9 mt-md-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <p class="title mb-4 text-secondary font-weight-bold">Reservation details</p>
+                <form action="./reserve.html">
+                    <div class="form-group mb-3">
+                        <label for="name" class="mb-1">Name</label>
+                        <input type="text" class="form-control border-radius-sm" id="name">
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="email" class="mb-1">Email</label>
+                        <input type="email" class="form-control border-radius-sm" id="email">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="phone" class="mb-1">Phone (optional)</label>
+                        <input type="tel" class="form-control border-radius-sm" id="phone">
+                    </div>
+                    <a type="button" class="btn btn-primary btn-block mb-2 border-radius-sm text-decoration-none" href="./reserve-success.html">Reserve</a>
+                    <p class="text-center mb-0">
+                        <a class="font-size-sm text-primary text-decoration-none" href="#">Reserve now, pay at stay</a>
+                    </p>
+                </form>
+            </div>
+            <div class="col col-md-6 col-lg-4 d-none d-md-block">
+                <div class="p-4 bg-background-primary rounded">
+                    <p class="text-secondary font-weight-bold mb-3">Booking details</p>
+                    <p class="text-gray-dark mb-2 font-size-sm">17 June 2020 - 19 June 2020・2 nights</p>
+                    <p class="text-gray-dark mb-2 font-size-sm">2 adults・1 room</p>
+                    <p class="text-gray-dark mb-4 font-size-sm">Rachada Hotel</p>
+                    <hr class="mb-4 border-light">
+                    <p class="text-secondary font-weight-bold mb-3">Price summary</p>
+                    <label class="d-flex align-items-center justify-content-between text-gray-dark mb-2 font-size-sm">
+                        <span>Deluxe Suite with Pool</span>
+                        <span>TWD 3,960</span>
+                    </label>
+                    <label class="d-flex align-items-center justify-content-between text-gray-dark mb-2 font-size-sm">
+                        <span>VAT (7%)</span>
+                        <span>TWD 277</span>
+                    </label>
+                    <label class="d-flex align-items-center justify-content-between text-gray-dark mb-4 font-size-sm">
+                        <span>Property service charge</span>
+                        <span>TWD 396</span>
+                    </label>
+                    <hr class="mb-4 border-light">
+                    <label class="d-flex align-items-center justify-content-between">
+                        <span class="text-gray-dark">Property service charge</span>
+                        <span class="font-weight-bold">TWD 4,633</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+<script src="./assets/js/reserve.js"></script>

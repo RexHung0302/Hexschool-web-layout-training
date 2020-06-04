@@ -1,0 +1,345 @@
+---
+title: index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+<section class="indexPage pt-9">
+    <!-- 頭部幻燈片區塊 -->
+    <section id="carouselExampleControls" class="carousel slide carousel-bootstrap-customer" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/images/index-banner.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/DinDaeng1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/images/Bangkok.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <div class="slogan">
+            <div class="slogan__text">
+                <p class="mb-0">Discover your ideal hotel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 搜尋欄位 -->
+    <section class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-md-10">
+                <div class="search search-border search-index p-4 d-flex align-items-center flex-wrap">
+                    <div class="btn-group mb-3 mb-lg-0 mr-lg-3 flex-grow-1">
+                        <div class="select select-primary p-3 d-flex align-items-center flex-grow-1" id="dropdownPlaceButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="material-icons pr-3">place</span>
+                            <span>Destination</span>
+                            <div class="dropdown-menu bg-light" aria-labelledby="dropdownPlaceButton">
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mr-2">★</span>
+                                        <label class="mb-0">
+                                            <p class="mb-0">Bangkok</p>
+                                            <p class="mb-0 text-gray-dark font-size-ssm">Thailand</p>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mr-2">★</span>
+                                        <label class="mb-0">
+                                            <p class="mb-0">Osaka</p>
+                                            <p class="mb-0 text-gray-dark font-size-ssm">Japan</p>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mr-2">★</span>
+                                        <label class="mb-0">
+                                            <p class="mb-0">Roma</p>
+                                            <p class="mb-0 text-gray-dark font-size-ssm">Italy</p>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mr-2">★</span>
+                                        <label class="mb-0">
+                                            <p class="mb-0">Paris</p>
+                                            <p class="mb-0 text-gray-dark font-size-ssm">London</p>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center">
+                                        <span class="mr-2">★</span>
+                                        <label class="mb-0">
+                                            <p class="mb-0">Reykjavík</p>
+                                            <p class="mb-0 text-gray-dark font-size-ssm">Iceland</p>
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select select-primary p-3 d-flex align-items-center mb-3 mb-lg-0 mr-lg-3 flex-grow-1">
+                        <span class="material-icons pr-3">date_range</span>
+                        <span>Check-in / Check-out</span>
+                    </div>
+                    <div class="btn-group mb-3 mb-lg-0 mr-lg-3 flex-grow-1">
+                        <div class="select select-primary p-3 d-flex align-items-center flex-grow-1" id="dropdownPersonButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="material-icons pr-3">person</span>
+                            <span>Guests</span>
+                            <div class="dropdown-menu bg-light" aria-labelledby="dropdownPersonButton">
+                                <a class="dropdown-item mb-3" href="#">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="mr-4">Adult</span>
+                                        <label class="d-flex justify-content-between mb-0">
+                                            <span class="material-icons mr-3">remove</span>
+                                            <span class="text-secondary mr-3">2</span>
+                                            <span class="material-icons">add</span>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item mb-3" href="#">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="mr-4">Child</span>
+                                        <label class="d-flex justify-content-between mb-0">
+                                            <span class="material-icons mr-3">remove</span>
+                                            <span class="text-secondary mr-3">0</span>
+                                            <span class="material-icons">add</span>
+                                        </label>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <span class="mr-4">Room</span>
+                                        <label class="d-flex justify-content-between mb-0">
+                                            <span class="material-icons mr-3">remove</span>
+                                            <span class="text-secondary mr-3">1</span>
+                                            <span class="material-icons">add</span>
+                                        </label>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a class="btn btn-primary p-3 text-decoration-none" type="button" href="./result.html">SEARCH</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Choices -->
+    <section class="container mb-7 mb-md-9">
+        <p class="title mb-4">Top Choices</p>
+        <section class="d-inline-block mb-4">
+            <ul class="bookmark list-style-none pl-0 d-flex align-items-center mb-0">
+                <li class="bookmark__item active"><a href="#" class="text-decoration-none">Bali<sup>128</sup></a></li>
+                <li class="bookmark__item"><a href="#" class="text-decoration-none">Okinawa<sup>67</sup></a></li>
+                <li class="bookmark__item"><a href="#" class="text-decoration-none">Taipei<sup>53</sup></a></li>
+            </ul>
+        </section>
+        <!-- 輪播 -->
+        <section class="carousel carousel-swiper-suctomer">
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top1.jpg" alt="top1" class="mb-2">
+                            <h5 class="mb-2">Hotel Aqua</h5>
+                            <label class="mb-2 d-block">
+                                <span class="mr-1 start">★★★★★</span>
+                                <span class="text-gray-dark">5.0</span>
+                                <span class="text-gray">・2k reviews</span>
+                            </label>
+                            <label class="d-block">
+                                <span class="mr-2 text-gray-dark">TWD 2,480</span>
+                                <span class="text-line-through text-secondary text-gray">TWD 3,980</span>
+                            </label>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top2.jpg" alt="top2" class="mb-2">
+                            <h5 class="mb-2">Mr. Kawasaki Inn</h5>
+                            <label class="mb-2 d-block">
+                                <span class="mr-1 start">★★★★</span>
+                                <span class="text-gray-dark">4.0</span>
+                                <span class="text-gray">・500 reviews</span>
+                            </label>
+                            <label class="d-block">
+                                <span class="mr-2 text-gray-dark">TWD 3,380</span>
+                            </label>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top3.jpg" alt="top3" class="mb-2">
+                            <h5 class="mb-2">Weekly Paradise</h5>
+                            <label class="mb-2 d-block">
+                                <span class="mr-1 start">★★★★</span>
+                                <span class="text-gray-dark">4.0</span>
+                                <span class="text-gray">・470 reviews</span>
+                            </label>
+                            <label class="d-block">
+                                <span class="mr-2 text-gray-dark">TWD 4,780</span>
+                            </label>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top4.jpg" alt="top4" class="mb-2">
+                            <h5 class="mb-2">Beast Hotel</h5>
+                            <label class="mb-2 d-block">
+                                <span class="mr-1 start">★★★★</span>
+                                <span class="text-gray-dark">4.0</span>
+                                <span class="text-gray">・283 reviews</span>
+                            </label>
+                            <label class="d-block">
+                                <span class="mr-2 text-gray-dark">TWD 1,980</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="arrow p-2 d-none d-md-block"><span class="material-icons">keyboard_arrow_right</span></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section class="container mb-7 mb-md-9">
+        <p class="title mb-4">Popular Destinations</p>
+        <!-- 下拉卡片 -->
+        <section class="mb-9">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Osaka.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">JAPAN</p>
+                                <h7 class="mb-0 text-light">Osaka</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Kyoto.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">JAPAN</p>
+                                <h7 class="mb-0 text-light">Kyoto</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Reykjavic.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">ICELAND</p>
+                                <h7 class="mb-0 text-light">Reykjavík</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4 mb-lg-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Paris.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">LONDON</p>
+                                <h7 class="mb-0 text-light">Paris</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-0 mb-lg-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Roman.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">Italy</p>
+                                <h7 class="mb-0 text-light">Roma</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-0">
+                    <a href="#" class="text-decoration-none">
+                        <div class="dropdownCard dropdownCard-borderRadius p-3 d-flex align-items-center justify-content-between" style="background-image: linear-gradient(rgba(140, 140, 140, 0.5),rgba(0,0,0,0.6)), url('./assets/images/Bangkok.jpg');">
+                            <label>
+                                <p class="mb-0 text-light-dark font-size-ssm">Thailand</p>
+                                <h7 class="mb-0 text-light">Bangkok</h7>
+                            </label>
+                            <span class="material-icons text-light">keyboard_arrow_down</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Get Inspiration -->
+    <section class="container mb-7 mb-md-9">
+        <p class="d-flex align-items-center justify-content-between mb-4">
+            <label class="title mb-0">Get Inspiration</label>
+            <button class="btn btn-outline-primary">SEE MORE</button>
+        </p>
+        <!-- 輪播 -->
+        <section class="carousel carousel-swiper-suctomer">
+            <div class="container">
+                <!-- Swiper -->
+                <div class="swiper-container swiper-container-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/italy.jpg" alt="italy" class="mb-4 w-100">
+                            <h5 class="mb-2">The fifth most visited country</h5>
+                            <label class="mb-0 text-gray-dark">Italy is the fifth most visited country in the world, with a total of 52.3 million…</label>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top2.jpg" alt="top2" class="mb-4 w-100">
+                            <h5 class="mb-2">Visit Thailand for Bangkok</h5>
+                            <label class="mb-0 text-gray-dark">Asian tourists primarily visit Thailand for Bangkok and the historical, natural, and…</label>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/top3.jpg" alt="top3" class="mb-4 w-100">
+                            <h5 class="mb-2">Lord of the Rings Tour</h5>
+                            <label class="mb-0 text-gray-dark">The national cuisine has been described as Pacific Rim, incorporating the native Māori…</label>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe subscribe-index bg-background-primary">
+        <div class="container">
+            <div class="row flex-column align-items-center">
+                <div class="col-12">
+                    <p class="title mb-3 text-center">Subscribe for Exclusive Offer</p>
+                </div>
+                <div class="col-12 col-md-10 col-lg-6 text-center">
+                    <div class="btn-group w-100">
+                        <input class="input p-3 rounded-left border-0 w-100" placeholder="Your email address"/>
+                        <button class="btn btn-primary p-3">SUBSCRIBE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<script src="./assets/js/indexPage.js"></script>
