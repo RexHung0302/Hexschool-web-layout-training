@@ -66,6 +66,11 @@
     > [Blog](https://rexhung0302.github.io/2020/05/25/20200525/#more)
 
 8. 第八週：CSS 模組化管理
+    > [Source Code](https://github.com/RexHung0302/Hexschool-web-layout-training/tree/master/Week_8)
+    >
+    > [Demo](https://rexhung0302.github.io/Hexschool-web-layout-training/Week_8/dist/index.html)
+    >
+    > [Blog](https://rexhung0302.github.io/2020/06/05/20200605/)
 
 ---
 
